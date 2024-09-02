@@ -1,0 +1,26 @@
+"use client"
+import { useDispatch, useSelector } from 'react-redux'
+import Link from 'next/link'
+import React from 'react'
+import { logOut } from '../store/loginStore'
+
+function Logout() {
+
+  
+  const { email,isLogged, role } = useSelector(state =>state.login) //takto muzu cist z reduceru hodnotu kterou chci
+  const dispatch = useDispatch() // diky tomu muzu pouzivat vsechny akce kteru mam v reduceru
+
+  const handleLogout = () =>{
+    dispatch(logOut())// reducer na odhlaseni
+  }
+
+  return (
+    <div className='flex justify-center items-center gap-2'>
+      <p className='text-center border-2 rounded-full p-2 sm:p-3 text-black'>{email} <small>{role}</small></p>
+      <button className='text-center text-white bg-orange hover:brightness-110 hover:scale-105 transition-all border-2 p-2 sm:p-3 rounded-full  whitespace-nowrap' onClick={handleLogout}>Odhlásit se</button>
+    </div>
+    
+  )
+}
+
+export default Logout
