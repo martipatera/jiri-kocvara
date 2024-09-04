@@ -15,8 +15,8 @@ function Logout() {
   }
 
   return (
-    <div className='flex justify-center items-center gap-2'>
-      <p className='text-center border-2 rounded-full p-2 sm:p-3 text-black'>{email} <small>{role}</small></p>
+    <div className='flex justify-center items-center gap-0'>
+      <p className='text-center text-xs border-2 md:text-sm rounded-full p-2 sm:p-3 text-black'>{email} <small>{role}</small></p>
       <button className='text-center text-white bg-orange hover:brightness-110 hover:scale-105 transition-all border-2 p-2 sm:p-3 rounded-full  whitespace-nowrap' onClick={handleLogout}>Odhlásit se</button>
     </div>
     

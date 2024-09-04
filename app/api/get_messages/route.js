@@ -1,26 +1,25 @@
 import { NextResponse } from "next/server";
 import connect from "@/app/database/db";
-import RegisterSchema from "@/app/models/RegisterSchema";
+import MessageSchema from "@/app/models/MessageSchema";
 import { usedDynamicAPIs } from "next/dist/server/app-render/dynamic-rendering";
 
 
 export const GET = async () =>{
     try{
+
         await connect()
 
-        
-        const existingUsers = await RegisterSchema.find();
+        const existingMessages = await MessageSchema.find();
 
-        const users = existingUsers.map((user)=>({
-            email: user.email,
-            id: user._id
+        const messages = existingMessages.map((message)=>({
+            author: message.author,
+            subject: message.subject,
+            message: message.message,
+            created: message.createdAt
         }))
 
         return new NextResponse(JSON.stringify({ 
-            message: "Nalezeno",
-            users
-            
-            
+            messages,     
             
          }), { status: 200 });
     }

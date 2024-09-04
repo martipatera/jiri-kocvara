@@ -1,5 +1,6 @@
 "use client"
 
+
 import React from 'react'
 import Logo from "../../components/navbarLogoJiriKocvara.png"
 import Image from 'next/image'
@@ -16,6 +17,7 @@ function Register() {
     const [msg, setMsg] = useState("")
     const [registrovan, setRegistrovan] = useState(false)
     const role = "klient"
+    const code = process.env.NEXT_PUBLIC_REGISTER_CODE
 
 
     const handleRegister = async (e) =>{
@@ -24,7 +26,7 @@ function Register() {
        
 
         try{
-            if(registerCode === "KOCVARA"){
+            if(registerCode === code ){
                 const res = await axios.post("/api/auth/register",{
                     email,
                     password,
