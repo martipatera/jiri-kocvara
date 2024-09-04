@@ -10,7 +10,8 @@ export const POST = async (request) => {
 
         // Získání dat z požadavku
         const data = await request.json();
-        const { email, password, registerCode, role } = data;
+
+        const { name, email, password, registerCode, role } = data;
 
         // Kontrola, zda uživatel již existuje
         const existingUser = await RegisterSchema.findOne({ email });
@@ -20,8 +21,7 @@ export const POST = async (request) => {
         }
 
         // Pokud uživatel neexistuje, vytvoření nové instance modelu
-        const newUser = new RegisterSchema({ email, password, registerCode, role });
-
+        const newUser = new RegisterSchema({ name, email, password, registerCode, role });
         // Uložení dat do databáze
         await newUser.save();
 

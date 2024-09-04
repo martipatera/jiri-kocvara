@@ -1,18 +1,32 @@
 import Link from 'next/link'
 import React from 'react'
 
+
+export const metadata = {
+  title: 'Konzultace | Jiří Kočvara',
+  description: 'Rezervujte si konzultaci s naším certifikovaným fitness trenérem. Probereme vaše cíle a vytvoříme plán na míru vašim potřebám. Začněte svou cestu k lepšímu zdraví!',
+};
+
 function Konzultace() {
+
+
+  
+
+
   return (
-    <div className=''>
+    <div className='h-screen'>
 
-        <span className='flex flex-col justify-center items-center pt-52 h-screen'>
+        <span className='animate-fade h-full flex flex-col pb-3 flex-grow justify-center items-center md:pt-32 mx-8 xl:mx-40'>
 
-            <h3 className='text-3xl md:text-5xl text-center p-3'>Konzultace</h3>
+            <h1 className='animate-fade text-3xl md:text-4xl text-center p-3 '>Konzultace</h1>
+            <hr className="animate-fade w-full h-1 mx-auto my-4 bg-red-500 border-0 rounded md:my-10  "></hr>
+
+            <p className='animate-fade mb-5 font-medium bg-slate-100 rounded-xl p-2'>Chceš udělat první krok k lepšímu zdraví, kondici a spokojenosti? Rezervuj si osobní konzultaci, kde společně probereme tvoje cíle, současný stav a vytvoříme plán na míru tvým potřebám. Ať už jsi úplný začátečník, nebo zkušený sportovec, spolu dosáhneme toho nejlepšího výsledku.</p>
         
             
-            <button className="bg-orange border-2 lg:hidden animate-fade rounded-full p-3 xl:p-3 text-white hover:brightness-110 hover:scale-105 transition-all whitespace-nowrap"><Link href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0lVcQhJdQ4F_xMW8k2IaANwupnudGrLTQ1PihBTO1NdI8WdicyZJcKcI4IhmvZYVjeu4i4DYDM?gv=true">Chci vědet víc!</Link></button>
+            <button className="bg-orange border-2 md:hidden animate-fade rounded-full mt-5 p-3 xl:p-3 text-white hover:brightness-110 hover:scale-105 transition-all whitespace-nowrap"><a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0lVcQhJdQ4F_xMW8k2IaANwupnudGrLTQ1PihBTO1NdI8WdicyZJcKcI4IhmvZYVjeu4i4DYDM?gv=true">Chci vědet víc!</a></button>
 
-            <iframe className='hidden lg:block' src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0lVcQhJdQ4F_xMW8k2IaANwupnudGrLTQ1PihBTO1NdI8WdicyZJcKcI4IhmvZYVjeu4i4DYDM?gv=true"  width="75%" height="100%" frameBorder="0"></iframe>
+            <iframe className='hidden md:block border-2 border-gray-300 shadow rounded-xl w-full h-full' src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0lVcQhJdQ4F_xMW8k2IaANwupnudGrLTQ1PihBTO1NdI8WdicyZJcKcI4IhmvZYVjeu4i4DYDM?gv=true"   frameBorder="0"></iframe>
     
         </span>
 

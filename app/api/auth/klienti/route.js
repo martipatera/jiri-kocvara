@@ -9,9 +9,10 @@ export const GET = async () =>{
         await connect()
 
         
-        const existingUsers = await RegisterSchema.find();
+        const existingUsers = await RegisterSchema.find({role: "klient"});
 
         const users = existingUsers.map((user)=>({
+            name: user.name,
             email: user.email,
             id: user._id
         }))

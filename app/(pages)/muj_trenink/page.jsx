@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useSelector } from 'react-redux'
 
+
 function mujTrenink() {
 
   const [messages, setMessages] = useState([])
@@ -25,18 +26,18 @@ function mujTrenink() {
     fetchMessages()
   },[])
 
-  const { isLogged } = useSelector(state =>state.login) //takto muzu cist z reduceru hodnotu kterou chci
+  const { isLogged, role } = useSelector(state =>state.login) //takto muzu cist z reduceru hodnotu kterou chci
 
   return (
     <div id='container' className='min-h-screen w-screen'>
 
       {
-          isLogged?
+          isLogged && (role === "klient") || (role === "admin")?
 
           <div className='pt-32 md:pt-48'>
             
-          <a href='https://drive.google.com/drive/folders/1HK6K7nRjSEQH0pVGKRTRNdLVWBxPsLUK?usp=sharing'>trenink</a>
-          {messages.map((message, index)=>{
+            <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="bg-orange text-center max-w-40 border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all">Moje plány</a>
+            {[...messages].reverse().map((message, index)=>{
               return <div className='p-4 max-w-screen-lg border-2 border-red-500 gap-4 mx-5 my-3 xl:mx-auto' key={index}>
                 <p className="text-base border-2 break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg">Odesílatel: {message.author}</p>
                 <p className="text-base border-2 break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg">Předmět: {message.subject}</p>

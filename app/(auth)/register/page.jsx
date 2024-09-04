@@ -8,8 +8,11 @@ import Link from 'next/link'
 import { useState } from 'react'
 import axios from 'axios'
 
+
+
 function Register() {
 
+    const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [passwordConfirm, setPasswordConfirm] = useState("")
@@ -19,15 +22,16 @@ function Register() {
     const role = "klient"
     const code = process.env.NEXT_PUBLIC_REGISTER_CODE
 
-
     const handleRegister = async (e) =>{
         e.preventDefault()
 
+        
        
 
         try{
             if(registerCode === code ){
                 const res = await axios.post("/api/auth/register",{
+                    name,
                     email,
                     password,
                     registerCode,
@@ -57,13 +61,13 @@ function Register() {
 
   return (
 
-    <div className='h-screen'>
+    <div className=''>
 
         {
             !registrovan? 
             <div className=''>
-                <section className="bg-gray-50 h-screen">
-            <div className="flex flex-col items-center justify-center px-6 pt-20 md:pt-60 mx-auto h-screen pb-16 lg:py-30 ">
+                <section className="bg-gray-50">
+            <div className="flex flex-col items-center justify-center px-6 pt-20 md:pt-24 mx-autopb-16 lg:py-30 ">
                 
                     
                     <Image 
@@ -76,12 +80,16 @@ function Register() {
                     
                         
                 
-                <div className="w-full bg-white rounded-lg shadow md:mb-20 md:mt-0 sm:max-w-md xl:p-0 ">
-                    <div className="p-6 space-y-4 md:space-y-6 sm:p-0">
+                <div className="w-full bg-white rounded-lg shadow md:mb-20 md:mt-0 sm:max-w-md xl:p-5 ">
+                    <div className="p-6 space-y-4 md:space-y-6 sm:p-4">
                         <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
                             Registrovat se
                         </h1>
                         <form className="space-y-4 md:space-y-6">
+                            <div>
+                                <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 ">Jméno a příjmení</label>
+                                <input value={name} onChange={(e)=>setName(e.target.value)} type="name" name="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   block w-full p-2.5  " placeholder="Křestní / Příjmení" required></input>
+                            </div>
                             <div>
                                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">Email</label>
                                 <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   block w-full p-2.5  " placeholder="tvujemail@email.com" required></input>
@@ -102,7 +110,7 @@ function Register() {
                                 
                                 
                             </div>
-                            <button onClick={handleRegister} type="submit" className="w-full text-white bg-orange hover:brightness-110 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Registrovat</button>
+                            <button onClick={handleRegister} type="submit" className="w-full text-white bg-orange hover:brightness-110  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Registrovat</button>
                             <p className="text-sm font-light text-gray-500 ">
                                 Už máš účet? <a href="/login" className="font-medium text-orange hover:underline ">Přihlas se tady</a>
                             </p>

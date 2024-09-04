@@ -62,7 +62,7 @@ export function CustomNavbar() {
           <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/" ? "text-orange" : ""}`} href="/">Domů</Link>
           <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/sluzby" ? "text-orange" : ""}`} href="/sluzby">Služby</Link>
           <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/profil" ? "text-orange" : ""}`} href="/profil">Profil</Link>
-          <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/klienti" ? "text-orange" : ""}`} href="/klienti">Klienti</Link>
+          <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/reference" ? "text-orange" : ""}`} href="/reference">Reference</Link>
           <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/cenik" ? "text-orange" : ""}`} href="/cenik">Ceník</Link>
           <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/kontakt" ? "text-orange" : ""}`} href="/kontakt">Kontakt</Link>
           <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/konzultace" ? "text-orange" : ""}`} href="/konzultace">Konzultace</Link>

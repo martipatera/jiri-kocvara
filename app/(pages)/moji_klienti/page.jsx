@@ -9,10 +9,10 @@ import { TextInput } from "flowbite-react";
 
 
 
+
 function MojiKlienti() {
 
-  const { email, isLogged } = useSelector(state =>state.login) //takto muzu cist z reduceru hodnotu kterou chci
-  const author = email
+  const { email, isLogged, role } = useSelector(state =>state.login) //takto muzu cist z reduceru hodnotu kterou chci
 
   const [subject, setSubject] = useState("")
   const [message, setMessage] = useState("")
@@ -21,27 +21,42 @@ function MojiKlienti() {
   const [users, setUsers] = useState([]); // Stav pro uchovávání emailů
 
 
+  let author = ""
+
+  if(role === "admin"){
+    author = "Martin Patera - Admin"
+  }
+  else{
+    author = "Jiří Kočvara - Trenér"
+  }
+
 
   const sendMessages = async (e) => {
 
     e.preventDefault()
 
+    
+
+
     if (!author || !subject || !message) {
       console.error("Všechna pole musí být vyplněna.");
       return;
-    }
+    }    
 
     try {
+      
+
       const res = await axios.post("http://localhost:3000/api/post_messages",{
-        
         author,
+        email,
         subject,
         message,
 
       });
-
       setMsg(res.data.message)
       fetchMessages()
+      setSubject("")
+      setMessage("")
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -51,7 +66,6 @@ function MojiKlienti() {
     try {
       const res = await axios.get("http://localhost:3000/api/get_messages");
       const data = await res.data
-      console.log(data.messages)
       setMessages(data.messages); // Uložení hodnot do stavu
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -67,7 +81,7 @@ function MojiKlienti() {
       try {
         const res = await axios.get("http://localhost:3000/api/auth/klienti");
         const data = await res.data
-        setUsers(data.users); // Uložení hodnot do stavu
+        await setUsers(data.users); // Uložení hodnot do stavu
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -83,13 +97,19 @@ function MojiKlienti() {
     <div id='container' className='min-h-screen'>
 
       {
-          isLogged?
-          <div className=' pt-32 sm:pt-40'>
+          isLogged && (role === "admin") || (role === "trenér")?
+          <div className=' pt-40 mx-5 sm:pt-48'>
             <div className=''>
 
               {users.length > 0 ? (
                   users.map((user, index) => {
-                    return <p className='p-4' key={index}>{user.id} <br />{user.email}</p> // Přidání klíče při mapování
+                    return <div className='flex flex-col border-2 border-red-500' key={index}>
+                      <p>Jméno {user.name}</p>
+                      <p>Email: {user.email}</p>
+                      <a href={`mailto:${user.email}`} target='_blank' className="bg-orange text-center max-w-40 border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all"  >Poslat trénink mailem</a>
+                      <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="bg-orange text-center max-w-40 border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all">Poslat trénink na disk</a>
+                      
+                    </div> // Přidání klíče při mapování
                     })
                   ) : 
                 (
@@ -114,7 +134,7 @@ function MojiKlienti() {
             <button onClick={sendMessages} className="bg-orange border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all">Poslat zprávu</button>
             <p>{msg}</p>
 
-            {messages.map((message, index)=>{
+            {[...messages].reverse().map((message, index)=>{
               return <div className='p-4 max-w-screen-lg border-2 border-red-500 gap-4 mx-5 my-3 xl:mx-auto' key={index}>
                 <p className="text-base border-2 my-2 break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg">Odesílatel:{message.author}</p>
                 <p className="text-base border-2 my-2 break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg">Předmět: {message.subject}</p>

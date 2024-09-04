@@ -4,7 +4,12 @@ const {Schema} = mongoose
 
 const messageSchema = new Schema({
 
+    
     author:{
+        type:String,
+        required:true
+    },
+    email:{
         type:String,
         required:true
     },

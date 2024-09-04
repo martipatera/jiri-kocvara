@@ -10,11 +10,11 @@ export const POST = async (request) => {
 
         // Získání dat z požadavku
         const data = await request.json();
-        const { author, subject, message } = data;
+        const { author, email, subject, message } = data;
 
 
         // Pokud uživatel neexistuje, vytvoření nové instance modelu
-        const messages = new MessageSchema({ author, subject, message });
+        const messages = new MessageSchema({ author, email, subject, message });
 
         // Uložení dat do databáze
         await messages.save();

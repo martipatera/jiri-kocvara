@@ -109,9 +109,9 @@ export default function Home() {
 
         </div>
      
-      <div className="flex flex-col flex-1 md:items-stretch animate-fade m-5 md:flex-row justify-center items-center gap-8 mx-5 p-5 backdrop-blur-md rounded-lg">
+      <div className="flex flex-col flex-1 md:items-stretch animate-fade m-5 lg:flex-row justify-center items-center gap-8 mx-5 p-5 backdrop-blur-md rounded-lg">
 
-          <div className="min-h-[325px] md:w-1/3 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border  rounded-lg shadow ">
+          <div className="min-h-[325px] lg:w-1/3 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border  rounded-lg shadow ">
               <span className="flex justify-center items-center">
                 <Image href="/"
                  src={Coach}
@@ -126,7 +126,7 @@ export default function Home() {
               
           </div>
 
-          <div className=" min-h-[325px] md:w-1/3 p-6 md:pt-9 hover:scale-105 transition-all bg-white border border-gray-200 rounded-lg shadow  ">
+          <div className=" min-h-[325px] lg:w-1/3 p-6 md:pt-9 hover:scale-105 transition-all bg-white border border-gray-200 rounded-lg shadow  ">
           <span className="flex justify-center items-center">
                 <Image href="/"
                  src={Task}
@@ -140,7 +140,7 @@ export default function Home() {
               <p className="mb-3 font-normal text-gray-900 text-center">Tréninkový plán je klíčem k dosažení vašich fitness cílů s maximální efektivitou a podporou. Tréninkové programy jsou navrženy tak, aby odpovídaly vašim individuálním potřebám a cílům, ať už se snažíte zhubnout, nabrat svaly nebo zlepšit svou kondici.</p>
               
           </div>
-          <div className=" min-h-[325px] md:w-1/3 p-6 md:pt-9 hover:scale-105 transition-all bg-white border border-gray-200 rounded-lg shadow  ">
+          <div className=" min-h-[325px] lg:w-1/3 p-6 md:pt-9 hover:scale-105 transition-all bg-white border border-gray-200 rounded-lg shadow  ">
           <span className="flex justify-center items-center">
                 <Image href="/"
                  src={Restaurant}
