@@ -45,7 +45,7 @@ function Login() {
             <section className="bg-gray-50 ">
         <div className="flex flex-col items-center justify-center px-6 pt-28 mx-auto md:h-screen lg:py-0">
                   <Image 
-                      alt="logo"
+                      alt="logo Jiri Kocvara"
                       src={Logo}
                       height={50}
                       className='m-5'
@@ -92,7 +92,7 @@ function Login() {
             <section className="bg-gray-50 ">
   <div className="flex flex-col items-center justify-center px-6 pt-44 mx-auto md:h-screen lg:py-0">
             <Image 
-                alt="logo"
+                alt="logo Jiri Kocvara"
                 src={Logo}
                 height={50}
                 >

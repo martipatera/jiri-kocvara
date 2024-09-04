@@ -26,7 +26,7 @@ export function CustomNavbar() {
           <Image src={LogoJiri}
               height={125}
               width={185}
-              alt="Site Logo" 
+              alt="Logo stránky Jiřího Kočvary" 
               priority
               className="sm:ml-10 ml-0 md:ml-0 my-5 hidden lg:block"
           />
@@ -34,7 +34,7 @@ export function CustomNavbar() {
           <Image src={LogoJK}
               height={50}
               width={50}
-              alt="Site Logo" 
+              alt="Logo stránky Jiřího Kočvary" 
               priority
               className="sm:ml-10 ml-0 md:ml-0 my-5 lg:hidden"
           />

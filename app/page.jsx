@@ -59,7 +59,7 @@ export default function Home() {
                  className="rounded-xl"
                  height={250}
                  width={350}
-                 alt="Jiri Kocvara"
+                 alt="Jiří Kočvara stojící u zrcadla ve Fitness Centrum TJ Lokomotiva Beroun s rukama v pažích"
                  >
 
               </Image>
@@ -103,8 +103,8 @@ export default function Home() {
 
         <div className="flex justify-center flex-col items-center ">
 
-          <h1 className="mt-10 text-2xl sm:text-5xl backdrop-blur-lg animate-fade rounded-xl p-4">Co nabízím</h1>
-          <hr className="w-2/3 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 animate-fade dark:bg-gray-700"></hr>
+          <h2 className="mt-10 text-2xl sm:text-5xl backdrop-blur-lg animate-fade rounded-xl p-4">Co nabízím</h2>
+          <hr className="w-2/3 h-1 mx-auto my-4 bg-white border-0 rounded md:my-10 animate-fade "></hr>
 
 
         </div>
@@ -115,14 +115,14 @@ export default function Home() {
               <span className="flex justify-center items-center">
                 <Image href="/"
                  src={Coach}
-                 alt="Coach"
+                 alt="Ikona trenéra"
                  >
 
               </Image>
               </span>
               <h5 className=" mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">Osobní trénink</h5>
               
-              <p className="mb-3 font-normal text-gray-500 text-center">Osobní individuální trénink je klíčem k maximálnímu dosažení vašich fitness cílů s maximální efektivitou. S našimi odbornými trenéry získáte osobní přístup, který vám pomůže překonat překážky a dosáhnout výsledků, které jste si vždy přáli.</p>
+              <p className="mb-3 font-normal text-gray-900 text-center">Osobní individuální trénink je klíčem k maximálnímu dosažení vašich fitness cílů s maximální efektivitou. S našimi odbornými trenéry získáte osobní přístup, který vám pomůže překonat překážky a dosáhnout výsledků, které jste si vždy přáli.</p>
               
           </div>
 
@@ -130,28 +130,28 @@ export default function Home() {
           <span className="flex justify-center items-center">
                 <Image href="/"
                  src={Task}
-                 alt="Task"
+                 alt="Ikona úkolů"
                  >
 
               </Image>
               </span>
               <h5 className=" mb-2  text-2xl text-center font-semibold tracking-tight text-gray-900 ">Tréninkový plán</h5>
               
-              <p className="mb-3 font-normal text-gray-500 text-center">Tréninkový plán je klíčem k dosažení vašich fitness cílů s maximální efektivitou a podporou. Tréninkové programy jsou navrženy tak, aby odpovídaly vašim individuálním potřebám a cílům, ať už se snažíte zhubnout, nabrat svaly nebo zlepšit svou kondici.</p>
+              <p className="mb-3 font-normal text-gray-900 text-center">Tréninkový plán je klíčem k dosažení vašich fitness cílů s maximální efektivitou a podporou. Tréninkové programy jsou navrženy tak, aby odpovídaly vašim individuálním potřebám a cílům, ať už se snažíte zhubnout, nabrat svaly nebo zlepšit svou kondici.</p>
               
           </div>
           <div className=" min-h-[325px] md:w-1/3 p-6 md:pt-9 hover:scale-105 transition-all bg-white border border-gray-200 rounded-lg shadow  ">
           <span className="flex justify-center items-center">
                 <Image href="/"
                  src={Restaurant}
-                 alt="Plan"
+                 alt="Ikona plánování"
                  >
 
               </Image>
               </span>
 
                 <h5 className="mb-2 text-2xl text-center font-semibold tracking-tight  text-gray-900  ">Stravovací plán</h5>
-              <p className="mb-3 font-normal text-gray-500 text-center">Stravovací plán je základním kamenem úspěchu na cestě za vašimi fitness cíli. Kvalitní výživa je klíčová nejen pro optimalizaci výkonu během tréninků, ale i pro celkové zdraví a pohodu.</p>
+              <p className="mb-3 font-normal text-gray-900 text-center">Stravovací plán je základním kamenem úspěchu na cestě za vašimi fitness cíli. Kvalitní výživa je klíčová nejen pro optimalizaci výkonu během tréninků, ale i pro celkové zdraví a pohodu.</p>
               
           </div>
 

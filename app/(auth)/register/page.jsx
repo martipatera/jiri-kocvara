@@ -67,7 +67,7 @@ function Register() {
                 
                     
                     <Image 
-                        alt="logo"
+                        alt="logo Jiri Kocvara"
                         src={Logo}
                         height={50}
                         className='m-5 md:mt-10'  
@@ -118,7 +118,7 @@ function Register() {
                 <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 ">
                     
                       <Image 
-                          alt="logo"
+                          alt="logo Jiri Kocvara"
                           src={Logo}
                           height={50}
                           

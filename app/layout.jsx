@@ -13,7 +13,7 @@ export const metadata = {
   title: "Jiří Kočvara | Fitness trenér",
   description: "Fitness trenér",
   icons:{
-    icon: "/favicon.png"
+    icon: "/favicon1.png"
   }
   
 };
