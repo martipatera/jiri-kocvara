@@ -45,7 +45,7 @@ export default function Home() {
         
 
         <div className="w-screen mt-32 sm:mt-52 flex justify-center items-center">
-          <p className="text-2xl m-2 p-3  sm:text-3xl backdrop-blur-lg animate-fade rounded-xl text-center sm:p-5 lg:px-8 text-white font-semibold">"Trénuj jinak, přemýšlěj lépe"</p>
+          <p className="text-2xl m-2 p-3  sm:text-3xl backdrop-blur-lg animate-fade rounded-xl text-center sm:p-5 lg:px-8 text-white font-semibold">&ldquo;Trénuj jinak, přemýšlěj lépe&rdquo;</p>
         </div>
 
         <div className="flex justify-center items-center mt-16"> 
