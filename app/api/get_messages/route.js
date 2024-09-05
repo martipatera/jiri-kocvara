@@ -24,6 +24,6 @@ export const GET = async () =>{
          }), { status: 200 });
     }
     catch(err){
-
+        return NextResponse.error(); // Vrátí chybu 500
     }
 }
