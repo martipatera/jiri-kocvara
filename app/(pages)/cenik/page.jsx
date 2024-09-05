@@ -11,13 +11,13 @@ function Cenik() {
 
 
   return (
-    <div className='h-full xl:h-screen bg-slate-200 overflow-hidden'>
-      <div className='pt-28 md:pt-36'>
+    <div className='h-full xl:h-full 2xl:h-screen bg-slate-200 overflow-hidden'>
+      <div className='pt-28 md:pt-36 xl:pt-28'>
 
         <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Ceník</h1>
-        <hr className="w-2/3 h-1 mx-auto bg-red-500 border-0 rounded animate-fade "></hr>
+        <hr className="w-2/3 h-1 mx-auto bg-red-500 border-0 rounded animate-fade"></hr>
 
-        <div className='flex flex-col flex-1 md:items-stretch animate-fade p-5 xl:flex-row justify-center items-center gap-8   rounded-lg'>
+        <div className='flex flex-col flex-1 lg:px-20 md:items-stretch animate-fade p-5 xl:pt-10 xl:flex-row justify-center items-center gap-8 rounded-lg'>
 
         
           {
