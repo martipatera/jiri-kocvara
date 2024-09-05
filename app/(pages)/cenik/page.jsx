@@ -15,9 +15,9 @@ function Cenik() {
       <div className='pt-28 md:pt-36 xl:pt-28'>
 
         <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Ceník</h1>
-        <hr className="w-2/3 h-1 mx-auto bg-red-500 border-0 rounded animate-fade"></hr>
+        <hr className="w-2/3 h-1 mx-auto mt-4 bg-red-500 border-0 rounded animate-fade"></hr>
 
-        <div className='flex flex-col flex-1 lg:px-20 md:items-stretch animate-fade p-5 xl:pt-10 xl:flex-row justify-center items-center gap-8 rounded-lg'>
+        <div className='flex flex-col flex-1 lg:px-12 md:items-stretch animate-fade p-5 xl:pt-10 xl:flex-row justify-center items-center gap-5 rounded-lg'>
 
         
           {
@@ -29,14 +29,15 @@ function Cenik() {
                     <Image src={data.icon} className='md:max-w-md'></Image>
                   </span>
 
-                  <span className='flex flex-col break-words overflow-auto'>
-                    <p className='text-lg break-words overflow-auto text-center md:text-start'><strong>{data.name}</strong></p>
-                    <p className='break-words w-full  overflow-auto text-center md:text-start'><strong>Popis: </strong>{data.popis}</p>
+                  <span className='flex flex-col break-words overflow-auto h-full'>
+                    <p className='text-lg break-words overflow-auto text-center py-2'><strong>{data.name}</strong></p>
+                    <p className='break-words w-full  overflow-auto text-center'><strong>Popis: </strong>{data.popis}</p>
                   </span>
                   
                 
-                <span className='flex justify-center items-end'>
-                  <p className='text-lg font-bold text-center  md:text-start'>{data.cena}</p>
+                <span className='flex flex-col justify-center items-center'>
+                  <hr className="w-full h-1 mt-5 bg-red-500 border-0 rounded animate-fade"></hr>
+                  <p className='text-lg font-bold text-center pt-4'>{data.cena}</p>
                 </span>
 
               </span>

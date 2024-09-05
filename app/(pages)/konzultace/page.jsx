@@ -18,8 +18,8 @@ function Konzultace() {
 
         <span className='animate-fade h-full flex flex-col pb-3 flex-grow justify-center items-center md:pt-32 mx-8 xl:mx-40'>
 
-            <h1 className='e text-3xl md:text-4xl text-center p-3 animate-fade font-semibold'>Konzultace</h1>
-            <hr className="animate-fade w-full h-1 mx-auto my-4 bg-red-500 border-0 rounded md:my-10  "></hr>
+            <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Konzultace</h1>
+            <hr className="w-2/3 h-1 mx-auto my-4 bg-red-500 border-0 rounded animate-fade"></hr>
 
             <p className='animate-fade mb-5 font-medium bg-slate-100 rounded-xl p-2'>Chceš udělat první krok k lepšímu zdraví, kondici a spokojenosti? Rezervuj si osobní konzultaci, kde společně probereme tvoje cíle, současný stav a vytvoříme plán na míru tvým potřebám. Ať už jsi úplný začátečník, nebo zkušený sportovec, spolu dosáhneme toho nejlepšího výsledku.</p>
         
