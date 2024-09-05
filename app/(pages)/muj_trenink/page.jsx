@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useSelector } from 'react-redux'
 
 
-function mujTrenink() {
+function MujTrenink() {
 
   const [messages, setMessages] = useState([])
 
@@ -73,4 +73,4 @@ function mujTrenink() {
   )
 }
 
-export default mujTrenink
+export default MujTrenink
