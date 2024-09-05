@@ -13,7 +13,7 @@ import { logIn } from '@/app/store/loginStore'
 
 
 
-function forgotPassword() {
+function ForgotPassword() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [passwordConfirm, setPasswordConfirm] = useState("")
@@ -127,4 +127,4 @@ function forgotPassword() {
   )
 }
 
-export default forgotPassword
+export default ForgotPassword

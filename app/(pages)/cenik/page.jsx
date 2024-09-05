@@ -22,7 +22,7 @@ function Cenik() {
         
           {
           cenikData.map((data,index)=>{
-            return <div key={index} className="min-h-[325px] xl:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border  rounded-lg shadow ">
+            return <div key={index} className="min-h-[325px] xl:w-1/3 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border  rounded-lg shadow ">
               <span className='flex flex-col justify-between h-full '>
 
                   <span className='flex justify-center items-center '>

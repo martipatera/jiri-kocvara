@@ -36,7 +36,8 @@ const cenikData = [
         popis: "Poskytuji komplexní programy zahrnující individuální tréninkový i stravovací plán. Tento přístup vám umožní dosáhnout vašich cílů efektivněji, protože propojuje správně nastavený trénink s optimalizovanou výživou. Na základě vašich osobních cílů a potřeb vytvořím plán, který vám pomůže budovat svalovou hmotu, redukovat tuk a zlepšit celkovou kondici, a to vše s ohledem na váš životní styl. Tento kombinovaný plán vás povede krok za krokem k úspěchu – silnějšímu tělu, lepší formě a dlouhodobému zdraví.",
         cena: "900kč"
         
-    }
+    },
+    
 
 
 ]
