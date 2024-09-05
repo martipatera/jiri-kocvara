@@ -99,15 +99,21 @@ function MojiKlienti() {
       {
           isLogged && (role === "admin") || (role === "trenér")?
           <div className=' pt-40 mx-5 sm:pt-48'>
-            <div className=''>
+            
+            <div className='flex flex-wrap  gap-4 lg:mx-32'>
 
               {users.length > 0 ? (
                   users.map((user, index) => {
-                    return <div className='flex flex-col border-2 border-red-500' key={index}>
-                      <p>Jméno {user.name}</p>
-                      <p>Email: {user.email}</p>
-                      <a href={`mailto:${user.email}`} target='_blank' className="bg-orange text-center max-w-40 border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all"  >Poslat trénink mailem</a>
-                      <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="bg-orange text-center max-w-40 border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all">Poslat trénink na disk</a>
+                    return <div className='flex flex-col border-2 rounded-lg border-gray-400 shadow  gap-2 p-5 md:p-3 lg:p-4 xl-p-5' key={index}>
+                      <h2 className='font-bold text-lg'>Klient</h2>
+                      <hr className="w-full h-1 mx-auto bg-red-500 border-0 rounded  animate-fade"></hr>
+
+                      <p><strong>Jméno:</strong> {user.name}</p>
+                      <p><strong>Email:</strong> {user.email}</p>
+                      <span className='flex'>
+                        <a href={`mailto:${user.email}`} target='_blank' className="bg-orange text-center text-sm md:text-base border-2 rounded-full p-2 xl:p-3 max-w-40 text-white hover:brightness-110 hover:scale-105 transition-all"  >Poslat trénink mailem</a>
+                        <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="bg-orange text-center md:text-base text-sm max-w-40  border-2 rounded-full p-2 xl:p-3 text-white hover:brightness-110 hover:scale-105 transition-all">Poslat trénink na disk</a>
+                      </span>
                       
                     </div> // Přidání klíče při mapování
                     })
@@ -118,28 +124,43 @@ function MojiKlienti() {
 
             </div>
 
-              <div className="max-w-lg">
-              <div className="mb-2 block">
-                <Label htmlFor="subject" value="Předmět" />
-              </div>
-              <TextInput value={subject} onChange={e => setSubject(e.target.value)} id="subject" type="text" placeholder="Předmět" required />
-            </div>
+            <div className='flex flex-col border-2 rounded-lg border-gray-400 shadow lg:mx-32 gap-2 my-3 p-5'>
+              <h2 className='font-bold text-lg'>Nová zpráva všem</h2>
+              <hr className="w-full h-1 mx-auto bg-red-500 border-0 rounded  animate-fade"></hr>
 
-            <div className="max-w-lg">
-              <div className="mb-2 block">
-                <Label htmlFor="comment" value="Tvoje zpráva" />
+
+              <div className="max-w-lg ">
+                <div className="mb-2 block">
+                  <Label htmlFor="subject" value="Předmět" className='font-bold text-lg' />
+                </div>
+                <TextInput value={subject} onChange={e => setSubject(e.target.value)} id="subject" type="text" placeholder="Předmět" required />
               </div>
-              <Textarea value={message} onChange={e => setMessage(e.target.value)} id="comment" placeholder="Zpráva" required rows={4} />
-            </div>
-            <button onClick={sendMessages} className="bg-orange border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all">Poslat zprávu</button>
-            <p>{msg}</p>
+
+              <div className="max-w-full">
+                <div className="mb-2 block">
+                  <Label htmlFor="comment" value="Tvoje zpráva" className='font-bold text-lg'/>
+                </div>
+                <Textarea value={message} onChange={e => setMessage(e.target.value)} id="comment" placeholder="Zpráva" required rows={4} />
+                <span className='flex flex-col justify-center items-center mt-4'>
+                    <button onClick={sendMessages} className="bg-orange border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all">Poslat zprávu</button>
+                    <p className='pt-2'><strong>{msg}</strong></p>
+                </span>
+            
+
+              </div>
+
+              </div>
+
+            
 
             {[...messages].reverse().map((message, index)=>{
-              return <div className='p-4 max-w-screen-lg border-2 border-red-500 gap-4 mx-5 my-3 xl:mx-auto' key={index}>
-                <p className="text-base border-2 my-2 break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg">Odesílatel:{message.author}</p>
-                <p className="text-base border-2 my-2 break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg">Předmět: {message.subject}</p>
-                <p className="text-base border-2 my-2 break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg">Zpráva: {message.message}</p>
-                <p className="text-sm border-2 my-2 break-words overflow-auto rounded-xl md:text-sm lg:text-sm xl:text-sm">Vytvořeno: {message.created}</p>
+              return <div className='flex flex-col border-2 rounded-lg border-gray-400 shadow lg:mx-32 gap-2 my-3 p-5' key={index}>
+                <h2 className='font-bold text-lg'>Nová zpráva</h2>
+                <hr className="w-full h-1 mx-auto bg-red-500 border-0 rounded  animate-fade"></hr>
+                <p className="text-base border-2  break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg"><strong>Odesílatel: </strong>{message.author}</p>
+                <p className="text-base border-2  break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg"><strong>Předmět: </strong> {message.subject}</p>
+                <p className="text-base border-2  break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg"><strong>Zpráva: </strong> {message.message}</p>
+                <p className="text-sm border-2  break-words overflow-auto rounded-xl md:text-sm lg:text-sm xl:text-sm"><strong>Vytvořeno: </strong> {message.created}</p>
                 </div>
             })}
           </div>

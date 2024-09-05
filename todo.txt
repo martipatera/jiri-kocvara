@@ -1,0 +1,1 @@
+udelat js file na cenik a ten naimportovat do /cenik a vypamovat ho

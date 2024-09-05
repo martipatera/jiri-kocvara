@@ -10,17 +10,36 @@ import Image from "next/image";
 import Logout from "./Logout"
 import { useSelector } from "react-redux";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 
 export function CustomNavbar() {
 
   const { email, isLogged, role } = useSelector(state =>state.login) //takto muzu cist z reduceru hodnotu kterou chci
-  const pathname = usePathname()  
+  const pathname = usePathname()
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll); // 7. Přidání event listeneru, který zavolá handleScroll při scrollování
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll); // 8. Odstraní event listener při unmountování komponenty, aby se předešlo únikům paměti
+    };  }, []);//Prázdné pole závislostí znamená, že effect běží pouze při mountování komponenty
+
+  
 
 
   return (
-    <div className="">
-      <Navbar fluid rounded className="fixed w-screen z-50">
+    <div >
+      <Navbar fluid rounded className={`fixed w-screen z-50 bg-white ${isScrolled? "bg-opacity-75 " : "bg-opacity-100"}`}>
         <Navbar.Brand href="/">
         
           <Image src={LogoJiri}
@@ -59,22 +78,22 @@ export function CustomNavbar() {
             
         
         <Navbar.Collapse>
-          <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/" ? "text-orange" : ""}`} href="/">Domů</Link>
-          <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/sluzby" ? "text-orange" : ""}`} href="/sluzby">Služby</Link>
-          <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/profil" ? "text-orange" : ""}`} href="/profil">Profil</Link>
-          <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/reference" ? "text-orange" : ""}`} href="/reference">Reference</Link>
-          <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/cenik" ? "text-orange" : ""}`} href="/cenik">Ceník</Link>
-          <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/kontakt" ? "text-orange" : ""}`} href="/kontakt">Kontakt</Link>
-          <Link  className={`text-base lg:text-xl focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/konzultace" ? "text-orange" : ""}`} href="/konzultace">Konzultace</Link>
+          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/" ? "text-orange" : ""}`} href="/">Domů</Link>
+          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/sluzby" ? "text-orange" : ""}`} href="/sluzby">Služby</Link>
+          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/profil" ? "text-orange" : ""}`} href="/profil">Profil</Link>
+          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/reference" ? "text-orange" : ""}`} href="/reference">Reference</Link>
+          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/cenik" ? "text-orange" : ""}`} href="/cenik">Ceník</Link>
+          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/kontakt" ? "text-orange" : ""}`} href="/kontakt">Kontakt</Link>
+          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/konzultace" ? "text-orange" : ""}`} href="/konzultace">Konzultace</Link>
             {
               isLogged && (role === "admin" || role === "trenér")? 
-                <Link  className="text-base lg:text-xl focus:text-orange hover:text-orange hover:scale-105 transition-all" href="/moji_klienti">Moji klienti</Link>
+                <Link  className="text-base lg:text-xl font-semibold focus:text-orange hover:text-orange hover:scale-105 transition-all" href="/moji_klienti">Moji klienti</Link>
               : 
                 <p></p>
             }
             {
               isLogged && (role === "klient")? 
-                <Link  className="text-base lg:text-xl focus:text-orange hover:text-orange hover:scale-105 transition-all" href="/muj_trenink">Můj trénink</Link>
+                <Link  className="text-base lg:text-xl font-semibold focus:text-orange hover:text-orange hover:scale-105 transition-all" href="/muj_trenink">Můj trénink</Link>
               : 
                 <p></p>
             }

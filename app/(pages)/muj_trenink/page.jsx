@@ -11,18 +11,21 @@ function mujTrenink() {
   const [messages, setMessages] = useState([])
 
 
-  const fetchMessages = async () => {
-    try {
-      const res = await axios.get("http://localhost:3000/api/get_messages");
-      const data = await res.data
-      console.log(data.messages)
-      setMessages(data.messages); // Uložení hodnot do stavu
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+
+
+  
 
   useEffect(()=>{
+    const fetchMessages = async () => {
+      try {
+        const res = await axios.get("http://localhost:3000/api/get_messages");
+        const data = await res.data
+        console.log(data.messages)
+        setMessages(data.messages); // Uložení hodnot do stavu
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
     fetchMessages()
   },[])
 
@@ -34,15 +37,19 @@ function mujTrenink() {
       {
           isLogged && (role === "klient") || (role === "admin")?
 
-          <div className='pt-32 md:pt-48'>
+          <div className='pt-36 md:pt-48'>
             
-            <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="bg-orange text-center max-w-40 border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all">Moje plány</a>
+            <span className='flex justify-center items-center'>
+              <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="bg-orange text-center max-w-40 border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all">Moje plány</a>
+            </span>
             {[...messages].reverse().map((message, index)=>{
-              return <div className='p-4 max-w-screen-lg border-2 border-red-500 gap-4 mx-5 my-3 xl:mx-auto' key={index}>
-                <p className="text-base border-2 break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg">Odesílatel: {message.author}</p>
-                <p className="text-base border-2 break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg">Předmět: {message.subject}</p>
-                <p className="text-base border-2  rounded-xl md:text-base lg:text-base xl:text-lg break-words overflow-auto">Zpráva: {message.message}</p>
-                <p className="text-sm border-2 break-words overflow-auto rounded-xl md:text-sm lg:text-sm xl:text-sm">Vytvořeno: {message.created}</p>
+              return <div className='flex flex-col border-2 rounded-lg border-gray-400 shadow mx-5 lg:mx-32 gap-2 my-3 p-5' key={index}>
+                <h2 className='font-bold text-lg'>Nová zpráva</h2>
+                <hr className="w-full h-1 mx-auto bg-red-500 border-0 rounded  animate-fade"></hr>
+                <p className="text-base border-2 break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg"><strong>Odesílatel:</strong> {message.author}</p>
+                <p className="text-base border-2 break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg"><strong>Předmět:</strong> {message.subject}</p>
+                <p className="text-base border-2  rounded-xl md:text-base lg:text-base xl:text-lg break-words overflow-auto"><strong>Zpráva:</strong> {message.message}</p>
+                <p className="text-sm border-2 break-words overflow-auto rounded-xl md:text-sm lg:text-sm xl:text-sm"><strong>Vytvořeno:</strong> {message.created}</p>
                 </div>
             })}
 

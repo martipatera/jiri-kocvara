@@ -20,6 +20,12 @@ import JirkaKocvara from "../public/JirkaKocvara.jpg"
 
 
 export default function Home() {
+
+
+  
+
+
+
   return (
     <div id="main" className="">
 
@@ -28,7 +34,7 @@ export default function Home() {
         <div className="flex justify-start items-start">
 
           <div className="p-5 backdrop-blur-md rounded-xl animate-fade mt-36 mx-4 sm:mt-40 sm:ml-10 md:mt-60">
-            <h1 className="text-white text-4xl sm:text-6xl">Jiří Kočvara</h1>
+            <h1 className="text-white text-4xl sm:text-6xl font-semibold">Jiří Kočvara</h1>
             <p className="text-white text-xl sm:text-2xl">Bodybuilder | Coach</p> 
 
           </div>
@@ -39,7 +45,7 @@ export default function Home() {
         
 
         <div className="w-screen mt-32 sm:mt-52 flex justify-center items-center">
-          <p className="text-2xl m-2 p-3  sm:text-3xl backdrop-blur-lg animate-fade rounded-xl text-center sm:p-5 lg:px-8 text-white">"Trénuj jinak, přemýšlěj lépe"</p>
+          <p className="text-2xl m-2 p-3  sm:text-3xl backdrop-blur-lg animate-fade rounded-xl text-center sm:p-5 lg:px-8 text-white font-semibold">"Trénuj jinak, přemýšlěj lépe"</p>
         </div>
 
         <div className="flex justify-center items-center mt-16"> 
@@ -159,7 +165,7 @@ export default function Home() {
       
 
         <div className="flex justify-center items-center mx-32 pb-10">
-          <button className="bg-orange border-2 animate-fade rounded-full p-1 xl:p-3 text-white hover:brightness-110 hover:scale-105 transition-all whitespace-nowrap"><Link href="/sluzby">Chci vědet víc!</Link></button>
+          <button className="bg-orange border-2 font-semibold animate-fade rounded-full p-1 xl:p-3 text-white hover:brightness-110 hover:scale-105 transition-all whitespace-nowrap"><Link href="/sluzby">Chci vědet víc!</Link></button>
         </div>
 
       </div>

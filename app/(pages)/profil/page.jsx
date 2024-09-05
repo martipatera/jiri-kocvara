@@ -7,7 +7,10 @@ export const metadata = {
 
 function Profil() {
   return (
-    <div className='border h-screen'>Profil</div>
+    <div className='border h-screen'>
+      <div className='pt-32 p-10'>
+      </div>
+    </div>
   )
 }
 
