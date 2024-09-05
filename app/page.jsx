@@ -109,7 +109,7 @@ export default function Home() {
 
         <div className="flex justify-center flex-col items-center ">
 
-          <h2 className="mt-10 text-2xl sm:text-5xl backdrop-blur-lg animate-fade rounded-xl p-4">Co nabízím</h2>
+          <h2 className="mt-10 text-2xl sm:text-4xl backdrop-blur-lg animate-fade rounded-xl p-4">Co nabízím</h2>
           <hr className="w-2/3 h-1 mx-auto my-4 bg-white border-0 rounded md:my-10 animate-fade "></hr>
 
 
