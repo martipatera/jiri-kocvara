@@ -20,15 +20,14 @@ export const metadata = {
 function Kontakt() {
   return (
     <div id='container' className='min-h-screen w-full overflow-x-hidden'>
-      <div className='bg-slate-200 pt-28 sm:pt-32  px-5 lg:px-10'>
+      <div className='bg-slate-200 pt-28 md:pt-40  px-5 lg:px-10 pb-5'>
 
           <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Kontakt</h1>
           <hr className="w-2/3 h-1 mx-auto my-4 bg-red-500 border-0 rounded md:my-10 animate-fade"></hr>
 
+          <div className='bg-slate-50 border-2 border-gray-300 rounded-lg shadow flex flex-col lg:flex-row justify-around p-3 mb-3 md:p-5'>
 
-          <div className=' bg-slate-50 border-2 border-gray-300 rounded-lg shadow flex flex-col lg:flex-row justify-around p-3 mb-3 md:p-5'>
-
-            <div className='flex flex-col  flex-wrap gap-3 md:gap-4'>
+            <div className='flex flex-col flex-wrap gap-3 md:gap-4'>
 
               <p className='text-2xl md:text-4xl flex-wrap break-words font-semibold'>Jiří Kočvara</p>
 
@@ -47,39 +46,47 @@ function Kontakt() {
                 <a href="mailto:trener.jirikocvara@gmail.com" target='_blank' className='break-words overflow-auto font-semibold'>trener.jirikocvara@gmail.com</a>
               </span>
 
-              <hr className="w-full h-1 mx-auto my-4 bg-red-500 border-0 rounded md:my-10 animate-fade "></hr>
+              <div>
+                <Image src={JirkaKocvara}
+                    className='block xl:hidden rounded-xl py-2'
+                    alt='Jiří Kočvara stojící u zrcadla ve Fitness Centrum TJ Lokomotiva Beroun s rukama v pažích'
+                    >
+                </Image>
+              </div>
+
+              <hr className="w-full h-1 mx-auto my-4 bg-red-500 border-0 rounded md:my-4 animate-fade "></hr>
 
 
               <span className='flex flex-col justify-center items-start text-lg md:text-xl flex-wrap break-words'>
-                <a href="https://lokomotivaberoun.cz/fitcentrum/" target='_blank' className='break-words font-semibold text-xl md:text-2xl'>TJ Lokomotiva Beroun</a>
+                <a href="https://lokomotivaberoun.cz/fitcentrum/" target='_blank' className='break-words text-blue-500 underline font-semibold text-xl md:text-2xl'>TJ Lokomotiva Beroun</a>
                 <p>266 01 Beroun-Město</p>
                 <p>Tyršova 85</p>
               </span>
 
               <span className='flex flex-col justify-center items-start text-lg md:text-xl flex-wrap break-words'>
-                <a href="https://www.tyran.cz/" target='_blank' className='break-words text-xl font-semibold md:text-2xl'>Fitness Tyran</a>
+                <a href="https://www.tyran.cz/" target='_blank' className='break-words text-xl text-blue-500 underline font-semibold md:text-2xl'>Fitness Tyran</a>
                 <p>266 01 Beroun-Město</p>
                 <p>Na Parkáně 366</p>
               </span>
 
-              
+                
 
               
             </div>
+            
 
                 <Image src={JirkaKocvara}
-                    className='rounded-xl mt-5 w-full max-w-sm md:max-w-md lg:max-w-xl xl:max-w-2xl h-auto lg:ml-4'
-                    alt='Jiří Kočvara stojící u zrcadla ve Fitness Centrum TJ Lokomotiva Beroun s rukama v pažích'
-                    
-                    >
-
+                    className='hidden xl:block rounded-xl mt-5 w-full max-w-sm md:max-w-md lg:max-w-xl xl:max-w-2xl h-auto lg:ml-4'
+                    alt='Jiří Kočvara stojící u zrcadla ve Fitness Centrum TJ Lokomotiva Beroun s rukama v pažích'>
                 </Image>
 
-              
-
           </div>
+            
 
-          <div className=' bg-slate-50 border-2 border-gray-300 rounded-lg items-center shadow flex flex-grow flex-col md:flex-row justify-around gap-5 p-3 mb-3 md:p-3'>
+          
+
+
+          <div className=' bg-slate-50 border-2 border-gray-300 rounded-lg items-center shadow flex flex-grow flex-col md:flex-row justify-around gap-5 p-3 md:p-3'>
 
             <span className='text-center'>
               <h2 className='text-xl font-semibold lg:text-2xl'>TJ Lokomotiva Beroun</h2> 

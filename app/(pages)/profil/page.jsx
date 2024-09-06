@@ -1,4 +1,6 @@
+
 import React from 'react'
+import Component from '@/app/components/Component'
 
 export const metadata = {
   title: "Profil | Jiří Kočvara",
@@ -8,9 +10,9 @@ export const metadata = {
 function Profil() {
   return (
     <div className='border h-screen'>
-      <div className='pt-32 p-10'>
-      </div>
+     <Component/>
     </div>
+
   )
 }
 

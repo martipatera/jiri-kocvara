@@ -37,6 +37,15 @@ const cenikData = [
         cena: "900kč"
         
     },
+
+    {
+        icon: FoodAndGymPlan,
+        name: "Online coaching",
+        popis: "Nabízím online coaching, který vám poskytne podporu a vedení bez ohledu na to, kde se nacházíte. Získáte individuálně přizpůsobený tréninkový a stravovací plán, pravidelné konzultace a neustálou podporu při dosahování vašich cílů. Online coaching vám umožňuje flexibilně trénovat a dodržovat stravovací plán podle vašeho rozvrhu, přičemž budete mít vždy k dispozici odborné rady, motivaci a zpětnou vazbu. S mojí pomocí dosáhnete výsledků, ať už jste doma, v posilovně, nebo na cestách!",
+        cena: "900kč"
+        
+    },
+   
     
 
 
