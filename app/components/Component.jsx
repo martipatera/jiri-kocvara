@@ -7,9 +7,7 @@ import Image from "next/image";
 
  function Component() {
   return (
-    <div className="h-screen">
-      <div className="pt-40 h-1/2 px-3">
-        <Carousel>
+        <Carousel className="h-screen xl:h-screen w-full xl:w-1/2">
           {
             carouselData.map((data, index)=>{
               return <Image key={index} src={data.name} alt={data.alt}></Image>
@@ -17,8 +15,6 @@ import Image from "next/image";
             })
           }
         </Carousel>
-      </div>
-    </div>
   );
 }
 export default Component

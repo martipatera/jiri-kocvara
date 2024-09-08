@@ -15,7 +15,7 @@ function Cenik() {
     <div className='h-full xl:h-full 2xl:h-screen bg-slate-200 overflow-hidden'>
       <div className='pt-28 md:pt-36 xl:pt-28'>
 
-        <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Služby</h1>
+        <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Ceník</h1>
         <hr className="w-2/3 h-1 mx-auto mt-4 bg-red-500 border-0 rounded animate-fade"></hr>
 
         <div className='flex flex-col flex-1 md:px-20 lg:px-28 xl:px-4 md:items-stretch animate-fade p-5 xl:pt-10  xl:flex-row justify-center items-center gap-5 rounded-lg'>
