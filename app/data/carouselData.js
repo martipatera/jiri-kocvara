@@ -1,4 +1,3 @@
-import Img1 from "../images/1.png"
 import Img2 from "../images/2.png"
 import Img3 from "../images/3.png"
 import Img4 from "../images/4.png"
@@ -9,10 +8,7 @@ import Img7 from "../images/7.png"
 
 
 const carouselData = [
-    {
-        name: Img1,
-        alt: "musim pridat"
-    },
+   
 
     {
         name: Img2,

@@ -118,7 +118,7 @@ export default function Home() {
 
         </div>
      
-      <div className="flex flex-col flex-1 md:items-stretch animate-fade lg:flex-row justify-center items-center gap-8 mx-5 p-3 md:p-5 backdrop-blur-md rounded-lg">
+      <div className="flex flex-col flex-1 md:items-stretch animate-fade lg:flex-row justify-center items-center gap-8 mx-2 md:mx-5 p-3 md:p-5 backdrop-blur-md rounded-lg">
 
           <div className="min-h-[325px] lg:w-1/3 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border rounded-lg shadow">
               <span className="flex justify-center items-center">

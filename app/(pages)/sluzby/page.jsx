@@ -26,7 +26,7 @@ function Sluzby() {
         
           {
           cenikData.map((data,index)=>{
-            return <div key={index} className="min-h-[325px] xl:w-1/3 p-6 md:pt-9 lg:hover:scale-105 transition-all text-center bg-white border  rounded-lg shadow ">
+            return <div key={index} className="min-h-[325px] xl:w-1/3 p-4 lg:p-3 md:pt-9 lg:hover:scale-105 transition-all text-center bg-white border  rounded-lg shadow ">
               <span className='flex flex-col justify-between h-full '>
 
                   <span className='flex justify-center items-center '>
@@ -37,7 +37,7 @@ function Sluzby() {
                     <p className='text-lg break-words overflow-auto text-center'><strong>{data.name}</strong></p>
                     <hr className="w-full h-1 my-3 bg-red-500 border-0 rounded animate-fade"></hr>
 
-                    <p className='break-words w-full  overflow-auto text-center'><strong>Popis: </strong>{data.popis}</p>
+                    <p className='break-words w-full overflow-auto text-center'><strong>Popis: </strong>{data.popis}</p>
                   </span>
                   
                 
@@ -52,7 +52,7 @@ function Sluzby() {
           }
           </div>
 
-          <p className='text-center text-blue-500 pb-5 px-5 text-lg'>Máš zájem o některý z programů? <Link href="/kontakt" className='underline font-semibold'>Kontaktuj mě!</Link></p>
+          <p className='text-center text-blue-500 pb-8 pt-5 px-5 text-lg'>Máš zájem o některý z programů? <Link href="/konzultace" className='underline font-semibold'>Objednej se!</Link></p>
 
 
       </div>

@@ -61,7 +61,7 @@ function Register() {
 
   return (
 
-    <div className=''>
+    <div className='h-full 2xl:h-screen'>
 
         {
             !registrovan? 

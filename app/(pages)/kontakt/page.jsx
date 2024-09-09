@@ -1,7 +1,6 @@
 import React from 'react'
 import JirkaKocvara from "../../../public/JirkaKocvara.jpg"
 import Image from 'next/image'
-
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
@@ -19,8 +18,8 @@ export const metadata = {
 
 function Kontakt() {
   return (
-    <div id='container' className='min-h-screen w-full overflow-x-hidden'>
-      <div className='bg-slate-200 pt-28 md:pt-40  px-5 lg:px-10 pb-5'>
+    <div id='container' className='min-h-screen w-full overflow-x-hidden bg-slate-200'>
+      <div className=' pt-28 md:pt-40  px-5 lg:px-10 pb-5'>
 
           <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Kontakt</h1>
           <hr className="w-2/3 h-1 mx-auto my-4 bg-red-500 border-0 rounded md:my-10 animate-fade"></hr>

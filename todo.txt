@@ -3,3 +3,4 @@ carousel fotky
 cenik a sluzby do 1 ??? zalezi jak moc jsou ceny rozdelene
 vybrat barvu pro cele stranky
 upravit vsechny <a> aby bylo videt ze to jsou linky
+lg: profil fotka
