@@ -25,19 +25,15 @@ import VideoComponent from "./components/Video";
 export default function Home() {
 
 
-  
-
-
-
   return (
     <div id="main" className=''>
 
-<div id="background-cointainer-main" className="bg-bgMain bg-cover bg-no-repeat w-full" style={{ aspectRatio: '16/9' }}>
+<div id="background-cointainer-main" className="bg-bgMain bg-cover bg-top md:bg-bottom mt-12 lg:bg-center md:mt-20 lg:mt-28 xl:mt-20 bg-no-repeat w-full" style={{ aspectRatio: '16/9' }}>
 
 
         <div className="flex justify-start items-start">
 
-          <div className="p-5 backdrop-blur-md rounded-xl animate-fade mt-36 mx-4 sm:mt-40 sm:ml-10 md:mt-60">
+          <div className="p-5 backdrop-blur-md rounded-xl animate-fade mt-72 mx-4 sm:mt-40 sm:ml-10 md:mt-72 lg:mt-40">
             <h1 className="text-white text-4xl sm:text-6xl font-semibold">Jiří Kočvara</h1>
             <p className="text-white text-xl sm:text-2xl">Bodybuilder | Coach</p> 
 
@@ -48,11 +44,11 @@ export default function Home() {
         </div>
         
 
-        <div className="w-screen mt-32 sm:mt-52 flex justify-center items-center">
+        <div className="w-screen mt-32 sm:mt-52 md:mt-32 xl:mt-72 flex justify-center items-center">
           <p className="text-2xl m-2 p-3  sm:text-3xl backdrop-blur-lg animate-fade rounded-xl text-center sm:p-5 lg:px-8 text-white font-semibold">&ldquo;Trénuj jinak, přemýšlěj lépe&rdquo;</p>
         </div>
 
-        <div className="flex justify-center items-center mt-16"> 
+        <div className="flex justify-center items-center my-10 md:my-5 lg:my-10"> 
           <p className="text-5xl text-white animate-bounce"><FaChevronDown></FaChevronDown></p>
         </div>
       
