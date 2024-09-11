@@ -28,6 +28,11 @@ module.exports = {
       },
       backgroundImage:{
         "mainImage":"url('../public/gymBackground.jpg')",
+        "JKDum":"url('../JKFotky/JKDum.jpg')",
+        "JKDeadlift":"url('../JKFotky/JKdeadlift.jpg')",
+        "bgMain":"url('../JKFotky/JirkaKocvara.jpg')",
+        "bgMain1":"url('../JKFotky/JKresized.jpg')",
+        "bgMain2":"url('../JKFotky/JirkaKocvaraR.jpg')",
       },
       animation: {
 				fade: 'fadeIn 1s ease-in-out',

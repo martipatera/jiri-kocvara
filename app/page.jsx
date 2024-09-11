@@ -11,7 +11,7 @@ import gymBackground from "../public/gymBackground.jpg"
 import { IoBookOutline } from "react-icons/io5";
 import { FaMedal } from "react-icons/fa";
 import { CiMedal } from "react-icons/ci";
-import JirkaKocvara from "../public/JirkaKocvara.jpg"
+import JirkaKocvara from "../public/jirkaCard.jpg"
 import Video from 'next-video';
 import VideoComponent from "./components/Video";
 
@@ -30,9 +30,10 @@ export default function Home() {
 
 
   return (
-    <div id="main" className="">
+    <div id="main" className=''>
 
-      <div className="h-screen bg-mainImage bg-cover bg-no-repeat bg-left-bottom sm:bg-center ">
+<div id="background-cointainer-main" className="bg-bgMain bg-cover bg-no-repeat w-full" style={{ aspectRatio: '16/9' }}>
+
 
         <div className="flex justify-start items-start">
 
@@ -59,13 +60,12 @@ export default function Home() {
 
       <div className="flex min-h-full py-5 md:py-5 lg:py-10 flex-col lg:flex-row justify-center px-3 md:px-20 lg:px-10 xl:px-32 items-center bg-mainImage bg-cover bg-no-repeat">
         
-      <div className="mb-2 w-full lg:h-[700px] p-6 m-4 bg-gray-400 border opacity-95 border-gray-200 rounded-xl shadow">
+      <div className="mb-2 w-full lg:h-[800px] p-6 m-4 bg-gray-400 border opacity-95 border-gray-200 rounded-xl shadow">
           <span className="flex justify-center items-center">
                 <Image href="/"
                  src={JirkaKocvara}
-                 className="rounded-xl"
-                 height={250}
-                 width={350}
+                 className="rounded-xl lg:max-h-[400px] lg:max-w-[350px]"
+                 
                  alt="Jiří Kočvara stojící u zrcadla ve Fitness Centrum TJ Lokomotiva Beroun s rukama v pažích"
                  >
 
@@ -77,22 +77,22 @@ export default function Home() {
                 <div className="md:p-1 font-normal flex flex-col rounded-xl bg-gray-300">
 
                   <span className="flex flex-col md:flex-row items-center m-2 gap-2 p-2 ">
-                    <FaMedal className="text-5xl"></FaMedal>
+                    <FaMedal className="text-3xl"></FaMedal>
                     <p className="text-center"><strong>IFBB Vícemistr světa mužů 2017</strong></p>
                   </span>
 
                   <span className="flex flex-col md:flex-row items-center m-2 gap-2 p-2">
-                    <FaMedal className="text-5xl"></FaMedal>
+                    <FaMedal className="text-3xl"></FaMedal>
                     <p className="text-center"><strong>IFBB Juniorský absolutní mistr České Republiky 2016</strong></p>
                   </span>
 
                   <span className="flex flex-col md:flex-row items-center m-2 gap-2 p-2">
-                    <CgGym className="text-5xl"/>
+                    <CgGym className="text-3xl"/>
                     <p className="text-center"><strong>Více než 15 let silového tréninku</strong></p>
                   </span>
 
                   <span className="flex flex-col md:flex-row items-center m-2 gap-2 p-2">
-                    <IoBookOutline className="text-5xl"/>
+                    <IoBookOutline className="text-3xl"/>
                     <p className="text-center"><strong>Trenérská praxe již více než 10 let</strong></p>
 
                   </span>
