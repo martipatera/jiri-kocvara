@@ -6,8 +6,6 @@ import Klient3b from "../../JKFotky/klienti/klient12.jpg"
 import Klient3c from "../../JKFotky/klienti/klient3.jpg"
 import Klient4a from "../../JKFotky/klienti/klient7.jpg"
 import Klient4b from "../../JKFotky/klienti/klient6.jpg"
-import Klient4c from "../../JKFotky/klienti/16.jpg"
-import Klient4d from "../../JKFotky/klienti/15.jpg"
 import Klient5 from "../../JKFotky/klienti/klient9.jpg"
 
 
