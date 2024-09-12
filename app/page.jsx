@@ -62,7 +62,7 @@ export default function Home() {
                  src={JirkaKocvara}
                  className="rounded-xl lg:max-h-[400px] lg:max-w-[350px]"
                  
-                 alt="Jiří Kočvara stojící u zrcadla ve Fitness Centrum TJ Lokomotiva Beroun s rukama v pažích"
+                 alt="Jiří Kočvara sedící u zrcadla ve Fitness Centrum TJ Lokomotiva Beroun s rukama podél těla"
                  >
 
               </Image>
