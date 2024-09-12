@@ -42,7 +42,7 @@ const reviewData = [
         img: Klient4a,
         alt: "Trenér Jiří Kočvara stojící za svojí klientkou, kterou učí cvičit rumunský mrtvý tah podle trenéra Jiřího Kočvary ve fitness cetru TJ Lokomotiva Beroun",
         name: "Jmeno P.",
-        description: "fdsa odnasimdnaisndia no iaiod asim odnasimdnaisndia no iaiod asimdoimo osand io odnasimdnaisndia no iaiod asimdoimo osand iodoimo osand iomdsadsad"
+        description: "fdsadada odnasimdnaisndia no iaiod asim odnasimdnaisndia no iaiod asimdoimo osand io odnasimdnaisndia no iaiod asimdoimo osand iodoimo osand iomdsadsad"
 
     },
 
