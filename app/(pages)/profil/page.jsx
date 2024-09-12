@@ -66,15 +66,7 @@ function Profil() {
 
               </div>
               
-
-                
-
           </div>
-
-      <div className='mx-0 lg:mx-5 py-3 md:py-10 '>
-        <GalleryWithCarousel/>
-      </div>
-
 
     </div>
     
