@@ -40,7 +40,7 @@ function MujTrenink() {
           <div className='pt-36 md:pt-48'>
             
             <span className='flex justify-center items-center'>
-              <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="bg-orange text-center max-w-40 border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all">Moje plány</a>
+              <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="text-black border-black text-center max-w-40 border-2 rounded-full p-1 xl:p-3 whitespace-nowrap  hover:brightness-110 hover:scale-105 transition-all">Moje plány</a>
             </span>
             {[...messages].reverse().map((message, index)=>{
               return <div className='flex flex-col border-2 rounded-lg border-gray-400 shadow mx-5 lg:mx-32 gap-2 my-3 p-5' key={index}>

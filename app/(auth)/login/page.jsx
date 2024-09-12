@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import Logo from "../../components/navbarLogoJiriKocvara.png"
+import Logo from "../logoBlack.png"
 import Image from 'next/image'
 import axios from 'axios'
 import Link from 'next/link'
@@ -40,7 +40,7 @@ function Login() {
     }
 
   return (
-    <div className='h-screen'>
+    <div className='min-h-screen'>
         {   
             !isLogged? 
         <div>
@@ -49,7 +49,8 @@ function Login() {
                   <Image 
                       alt="logo Jiri Kocvara"
                       src={Logo}
-                      height={50}
+                      height={150}
+                        width={150}
                       className='m-5'
                       >
                   </Image>
@@ -76,11 +77,11 @@ function Login() {
                                   <label htmlFor="remember" className="text-gray-500 ">Pamatuj si mě</label>
                                 </div>
                             </div>
-                            <Link className="text-sm font-medium text-orange hover:underline "href="/forgotpassword" >Zapomenuté heslo</Link>
+                            <Link className="text-sm font-medium text-black hover:underline "href="/forgotpassword" >Zapomenuté heslo</Link>
                         </div>
-                        <button onClick={handleLogin} type="submit" className="w-full text-white bg-orange hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Přihlásit se</button>
+                        <button onClick={handleLogin} type="submit" className="w-full text-black border-black border hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Přihlásit se</button>
                         <p className="text-sm font-light text-gray-500 ">
-                            Ještě nemáš účet? <Link href="register" className="font-medium text-orange hover:underline ">Registrovat se</Link>
+                            Ještě nemáš účet? <Link href="register" className="font-medium  hover:underline ">Registrovat se</Link>
                         </p>
                         <p>{msg}</p>
                     </form>
@@ -96,10 +97,11 @@ function Login() {
             <Image 
                 alt="logo Jiri Kocvara"
                 src={Logo}
-                height={50}
+                height={150}
+                width={150}
                 >
             </Image>
-      <div className="w-full bg-white rounded-lg shadow  md:mt-4 sm:max-w-md xl:p-0 ">
+      <div className="w-full text-black border-black border rounded-lg shadow  md:mt-4 sm:max-w-md xl:p-0 ">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
                   Přihlásit se

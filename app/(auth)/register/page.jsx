@@ -2,7 +2,7 @@
 
 
 import React from 'react'
-import Logo from "../../components/navbarLogoJiriKocvara.png"
+import Logo from "../logoBlack.png"
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -61,19 +61,20 @@ function Register() {
 
   return (
 
-    <div className='h-full 2xl:h-screen'>
+    <div id='register' className='min-h-screen'>
 
         {
             !registrovan? 
             <div className=''>
                 <section className="bg-gray-50">
-            <div className="flex flex-col items-center justify-center px-6 pt-20 md:pt-24 mx-autopb-16 lg:py-30 ">
+            <div className="flex flex-col items-center justify-center px-6 pt-24 md:pt-24 mx-autopb-16 lg:py-30 ">
                 
                     
                     <Image 
                         alt="logo Jiri Kocvara"
                         src={Logo}
-                        height={50}
+                        height={150}
+                        width={150}
                         className='m-5 md:mt-10'  
                         >
                     </Image>
@@ -110,9 +111,9 @@ function Register() {
                                 
                                 
                             </div>
-                            <button onClick={handleRegister} type="submit" className="w-full text-white bg-orange hover:brightness-110  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Registrovat</button>
+                            <button onClick={handleRegister} type="submit" className="w-full text-black border-black border hover:brightness-110  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Registrovat</button>
                             <p className="text-sm font-light text-gray-500 ">
-                                Už máš účet? <a href="/login" className="font-medium text-orange hover:underline ">Přihlas se tady</a>
+                                Už máš účet? <a href="/login" className="font-medium text-black hover:underline ">Přihlas se tady</a>
                             </p>
                             <p>{msg}</p>
                         </form>
@@ -128,7 +129,8 @@ function Register() {
                       <Image 
                           alt="logo Jiri Kocvara"
                           src={Logo}
-                          height={50}
+                          height={150}
+                        width={150}
                           
                           >
                       </Image>
@@ -142,7 +144,7 @@ function Register() {
                         </h1>
                         <form className="space-y-4 md:space-y-6">
                             
-                            <button type="submit" className="w-full text-white bg-orange hover:brightness-110 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center"><Link href="/login">Přihlaš se zde</Link></button>
+                            <button type="submit" className="w-full text-black border-black border hover:brightness-110 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center"><Link href="/login">Přihlaš se zde</Link></button>
                            
                             <p><strong>{msg}</strong></p>
                         </form>

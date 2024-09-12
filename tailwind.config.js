@@ -27,7 +27,8 @@ module.exports = withMT({
           "900":"#1e3a8a",
           "950":"#172554",
         },
-        "orange":"#ef5B2a",
+        "orange":"#ffffff",
+        "test":"#800e13",
       },
       backgroundImage:{
         "mainImage":"url('../public/gymBackground.jpg')",

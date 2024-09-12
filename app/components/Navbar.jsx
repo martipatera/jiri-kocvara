@@ -3,9 +3,7 @@
 
 import { Button, Navbar } from "flowbite-react";
 import Link from "next/link";
-import LogoJirka from "./navbarLogoJirkaKocvara.png"
-import LogoJiri from "./navbarLogoJiriKocvara.png"
-import LogoJK from "./navbarLogoJK.png"
+import Logo from "./logoWhite.png"
 import Image from "next/image";
 import Logout from "./Logout"
 import { useSelector } from "react-redux";
@@ -39,52 +37,52 @@ export function CustomNavbar() {
 
   return (
     <div >
-      <Navbar fluid rounded className={`fixed w-screen z-50 bg-white ${isScrolled? "bg-opacity-75 " : "bg-opacity-100"}`}>
-        <Navbar.Brand href="/">
+      <Navbar fluid rounded className={`fixed w-screen z-50 bg-gray-500 rounded-none ${isScrolled? "bg-opacity-75 " : "bg-opacity-100"}`}>
+        <Navbar.Brand  href="/">
         
-          <Image src={LogoJiri}
-              height={125}
-              width={185}
+          <Image src={Logo}
+              height={65}
+              width={65}
               alt="Logo stránky Jiřího Kočvary" 
               priority
-              className="sm:ml-10 ml-0 md:ml-0 my-5 hidden lg:block"
+              className="sm:ml-10 ml-0 md:ml-0 lg:ml-0 hidden lg:block"
           />
 
-          <Image src={LogoJK}
+          <Image src={Logo}
               height={50}
               width={50}
               alt="Logo stránky Jiřího Kočvary" 
               priority
-              className="sm:ml-10 ml-0 md:ml-0 my-5 lg:hidden"
+              className="sm:ml-10 ml-0 md:ml-0 lg:hidden"
           />
             
-      </Navbar.Brand>
+      </Navbar.Brand >
       
         <div className="flex items-center justify-center mt-0  mx-0 sm:mr-10 md:order-2 md:mt-2 lg:mt-0">
           {!isLogged?
           <div>
-            <button className="bg-orange border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all"><Link href="/register">Registrovat se</Link></button>
-            <button className="bg-orange border-2 rounded-full p-1 xl:p-3 text-white hover:brightness-110 hover:scale-105 transition-all"><Link href="/login">Přihlásit se</Link></button>
+            <button className=" border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all"><Link href="/register">Registrovat se</Link></button>
+            <button className=" border-2 rounded-full p-1 xl:p-3 text-white hover:brightness-110 hover:scale-105 transition-all"><Link href="/login">Přihlásit se</Link></button>
           </div>
           :
           <div>
             <Logout></Logout>
           </div>
           }
-        <Navbar.Toggle />
+        <Navbar.Toggle className="bg-white" />
 
         </div>
 
             
         
         <Navbar.Collapse>
-          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/" ? "text-orange" : ""}`} href="/">Domů</Link>
-          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/sluzby" ? "text-orange" : ""}`} href="/sluzby">Služby</Link>
-          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/profil" ? "text-orange" : ""}`} href="/profil">Profil</Link>
-          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/reference" ? "text-orange" : ""}`} href="/reference">Reference</Link>
-          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/cenik" ? "text-orange" : ""}`} href="/cenik">Ceník</Link>
-          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/kontakt" ? "text-orange" : ""}`} href="/kontakt">Kontakt</Link>
-          <Link  className={`text-base lg:text-xl font-semibold focus:text-orange active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/konzultace" ? "text-orange" : ""}`} href="/konzultace">Konzultace</Link>
+          <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-white  active:text-white  hover:text-white hover:scale-105 transition-all ${pathname === "/" ? "text-white border-2 rounded-full px-2" : ""}`} href="/">Domů</Link>
+          <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange  active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/sluzby" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/sluzby">Služby</Link>
+          <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange  active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/profil" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/profil">Profil</Link>
+          <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange  active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/reference" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/reference">Reference</Link>
+          <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange  active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/cenik" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/cenik">Ceník</Link>
+          <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange  active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/kontakt" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/kontakt">Kontakt</Link>
+          <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange  active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/konzultace" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/konzultace">Konzultace</Link>
             {
               isLogged && (role === "admin" || role === "trenér")? 
                 <Link  className="text-base lg:text-xl font-semibold focus:text-orange hover:text-orange hover:scale-105 transition-all" href="/moji_klienti">Moji klienti</Link>
@@ -98,7 +96,7 @@ export function CustomNavbar() {
                 <p></p>
             }
         </Navbar.Collapse>
-      </Navbar>
+      </Navbar >
     </div>
     
   );

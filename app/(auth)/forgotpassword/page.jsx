@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import React from 'react'
-import Logo from "../../components/navbarLogoJiriKocvara.png"
+import Logo from "../logoBlack.png"
 import Image from 'next/image'
 import axios from 'axios'
 import { useState } from 'react'
@@ -53,16 +53,17 @@ function ForgotPassword() {
     }
 
   return (
-    <div className='h-screen'>
+    <div className='min-h-screen'>
         {
         !hesloZmeneno? 
         <div>
             <section className="">
-        <div className="flex flex-col items-center justify-center px-6 pt-28 mx-auto md:h-screen lg:py-0">
+        <div className="flex flex-col items-center justify-center px-6 pt-28 mx-auto md:h-screen lg:pt-20">
                   <Image 
                       alt="logo Jiri Kocvara"
                       src={Logo}
-                      height={50}
+                      height={150}
+                      width={150}
                       className='m-5'
                       >
                   </Image>
@@ -101,7 +102,8 @@ function ForgotPassword() {
                   <Image 
                       alt="logo Jiri Kocvara"
                       src={Logo}
-                      height={50}
+                      height={150}
+                      width={150}
                       >
                   </Image>
             <div className="w-full bg-white rounded-lg shadow  md:mt-0 sm:max-w-md xl:p-0 ">
