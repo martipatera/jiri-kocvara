@@ -1,9 +1,9 @@
 "use client"
 import Image from "next/image"
 
-import Img1 from "../../JKFotky/1.JPG"
-import Img2 from "../../JKFotky/2.JPG"
-import Img3 from "../../JKFotky/3.JPG"
+import Img1 from "../../JKFotky/1.jpg"
+import Img2 from "../../JKFotky/2.jpg"
+import Img3 from "../../JKFotky/3.jpg"
 
 import { Carousel } from "@material-tailwind/react";
  
