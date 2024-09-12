@@ -1,14 +1,19 @@
-import Img2 from "../images/2.png"
-import Img3 from "../images/3.png"
-import Img4 from "../images/4.png"
-import Img5 from "../images/5.png"
-import Img6 from "../images/6.png"
-import Img7 from "../images/7.png"
+import Img1 from "../../JKFotky/JKdum.JPG"
+import Img2 from "../../JKFotky/JKdeadlift.jpg"
+import Img3 from "../../JKFotky/1r.jpg"
+import Img4 from "../../JKFotky/2.jpg"
+import Img5 from "../../JKFotky/3.jpg"
+
 
 
 
 const carouselData = [
    
+
+    {
+        name: Img1,
+        alt: "musim pridat"
+    },
 
     {
         name: Img2,
@@ -30,15 +35,6 @@ const carouselData = [
         alt: "musim pridat"
     },
 
-    {
-        name: Img6,
-        alt: "musim pridat"
-    },
-
-    {
-        name: Img7,
-        alt: "musim pridat"
-    },
 ]
 
 export default carouselData

@@ -3,7 +3,7 @@ import React from 'react'
 import Component from '@/app/components/Component'
 import JirkaFotom from "../../../public/JirkaKocvara.jpg"
 import JirkaPoza from "../../../public/jirkaPoza.jpg"
-
+import { GalleryWithCarousel } from '@/app/components/Carousel'
 
 export const metadata = {
   title: "Profil | Jiří Kočvara",
@@ -55,7 +55,7 @@ function Profil() {
             
               <div className=''>
               <Image src={JirkaPoza}
-                className='hidden lg:block rounded-xl w-full max-w-sm md:max-w-md lg:w-[600px] xl:w-max-w-2xl 2xl:max-w-2xl '
+                className='hidden lg:block rounded-xl w-full max-w-sm md:max-w-md lg:w-[500px] xl:w-max-w-2xl 2xl:max-w-2xl '
                 alt='Jiří Kočvara stojící u zrcadla ve Fitness Centrum TJ Lokomotiva Beroun s rukama v pažích'>
               </Image>
 
@@ -71,8 +71,8 @@ function Profil() {
 
           </div>
 
-      <div className='mx-0 lg:mx-5 py-3 md:py-14 '>
-        <Component/>
+      <div className='mx-0 lg:mx-5 py-3 md:py-10 '>
+        <GalleryWithCarousel/>
       </div>
 
 

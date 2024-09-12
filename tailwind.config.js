@@ -1,7 +1,10 @@
 import flowbite from "flowbite-react/tailwind";
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = withMT({
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -33,6 +36,8 @@ module.exports = {
         "bgMain":"url('../JKFotky/JirkaKocvara.jpg')",
         "bgMain1":"url('../JKFotky/JKresized.jpg')",
         "bgMain2":"url('../JKFotky/JirkaKocvaraR.jpg')",
+        "bgWorkout":"url('../JKFotky/workout.jpg')",
+        "bgPlates":"url('../JKFotky/plates.jpg')",
       },
       animation: {
 				fade: 'fadeIn 1s ease-in-out',
@@ -88,4 +93,4 @@ module.exports = {
     require('flowbite/plugin'),
     flowbite.plugin(), // Correctly require Flowbite plugin
   ],
-};
+});
