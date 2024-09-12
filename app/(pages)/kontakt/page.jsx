@@ -1,5 +1,6 @@
 import React from 'react'
 import JirkaKocvara from "../../../public/JirkaKocvara.jpg"
+import JirkaD from "../../../JKFotky/jirkaA.jpg"
 import Image from 'next/image'
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
@@ -46,9 +47,9 @@ function Kontakt() {
               </span>
 
               <div>
-                <Image src={JirkaKocvara}
+                <Image src={JirkaD}
                     className='block xl:hidden rounded-xl py-2'
-                    alt='Jiří Kočvara stojící u zrcadla ve Fitness Centrum TJ Lokomotiva Beroun s rukama v pažích'
+                    alt='Trenér Jiří Kočvara opírající se o osu ve Fitnes cetru TJ Lokomotiva Beroun'
                     >
                 </Image>
               </div>
@@ -74,9 +75,9 @@ function Kontakt() {
             </div>
             
 
-                <Image src={JirkaKocvara}
-                    className='hidden xl:block rounded-xl mt-5 w-full max-w-sm md:max-w-md lg:max-w-xl xl:max-w-2xl h-auto lg:ml-4'
-                    alt='Jiří Kočvara stojící u zrcadla ve Fitness Centrum TJ Lokomotiva Beroun s rukama v pažích'>
+                <Image src={JirkaD}
+                    className='hidden xl:block rounded-xl my-5 w-full max-w-sm md:max-w-md lg:max-w-xl xl:max-w-2xl h-auto lg:ml-4'
+                    alt='Trenér Jiří Kočvara opírající se o osu ve Fitnes cetru TJ Lokomotiva Beroun'>
                 </Image>
 
           </div>

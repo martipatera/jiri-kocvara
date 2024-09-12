@@ -14,7 +14,7 @@ import { CiMedal } from "react-icons/ci";
 import JirkaKocvara from "../JKFotky/jirka.jpg"
 import Video from 'next-video';
 import VideoComponent from "./components/Video";
-
+import Counter from "./components/CountUp";
 
 
 
@@ -45,7 +45,7 @@ export default function Home() {
         
 
         <div className="w-screen mt-32 sm:mt-52 md:mt-32 xl:mt-72 flex justify-center items-center">
-          <p className="text-2xl m-2 p-3  sm:text-3xl backdrop-blur-lg animate-fade rounded-xl text-center sm:p-5 lg:px-8 text-white font-semibold">&ldquo;Trénuj jinak, přemýšlěj lépe&rdquo;</p>
+          <p className="text-2xl m-2 p-3  sm:text-3xl backdrop-blur-md animate-fade rounded-xl text-center sm:p-5 lg:px-8 text-white font-semibold">&ldquo;Trénuj jinak, přemýšlěj lépe&rdquo;</p>
         </div>
 
         <div className="flex justify-center items-center my-10 md:my-5 lg:my-10"> 
@@ -56,13 +56,13 @@ export default function Home() {
 
       <div className="flex min-h-full py-5 md:py-5 lg:py-10 flex-col lg:flex-row justify-center px-3 md:px-20 lg:px-10 xl:px-32 items-center bg-bgPlates bg-center bg-cover bg-no-repeat">
         
-      <div className="mb-2 w-full lg:h-[800px] p-6 m-4 bg-gray-400 border opacity-90 border-gray-200 rounded-xl shadow">
+      <div className="mb-2 w-full lg:h-[800px] p-6 m-4 bg-blue-gray-200 border opacity-90 border-gray-200 rounded-xl shadow">
           <span className="flex justify-center items-center">
                 <Image href="/"
                  src={JirkaKocvara}
                  className="rounded-xl lg:max-h-[400px] lg:max-w-[350px]"
                  
-                 alt="Jiří Kočvara sedící u zrcadla ve Fitness Centrum TJ Lokomotiva Beroun s rukama podél těla"
+                 alt="Trenér Jiří Kočvara sedící u zrcadla ve Fitness Centrum TJ Lokomotiva Beroun s rukama podél těla"
                  >
 
               </Image>
@@ -92,6 +92,8 @@ export default function Home() {
                     <p className="text-center"><strong>Trenérská praxe již více než 10 let</strong></p>
 
                   </span>
+
+
               </div>
 
             </span>
@@ -161,6 +163,7 @@ export default function Home() {
                   <Link href="/" className='text-center text-blue-500 underline font-semibold text-lg'>To je přesně pro mě!</Link>
                 
           </div>
+
 
 
       </div>  

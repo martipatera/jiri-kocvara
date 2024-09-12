@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 import React from 'react'
 import JirkaFotom from "../../../public/JirkaKocvara.jpg"
@@ -24,7 +25,7 @@ function Profil() {
 
               <div>
                 <Image src={JirkaPoza}
-                    className='block md:max-w-lg lg:hidden rounded-xl py-2'
+                    className='block md:max-w-lg lg:hidden rounded-xl pt-0'
                     alt='Jiří Kočvara pózující s medailí'
                     >
                 </Image>
@@ -36,7 +37,7 @@ function Profil() {
               
  
 
-              <div className='flex md:px-8 lg:hidden 2xl:flex 2xl:h-full flex-row px-2 justify-start items-center text-center lg:w-[500px] xl:w-[800px] lg:text-start text-lg md:text-lg  flex-wrap break-words'>
+              <div className='flex md:px-8 lg:hidden 2xl:flex 2xl:h-full flex-row px-2 justify-start items-center text-center lg:w-[500px] xl:w-[800px] lg:text-start text-lg md:text-lg  flex-wrap break-words pt-10 xl:pt-0 pb-5'>
                 <p>Lorem ipsum, um, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametum, dolor sit ametdolor sit amet consectetur adipisicing elit. Placeat totam doloribus soluta numquam eaque voluptatibus commodi quis, dolorum aliquam labore. Alias eos itaque, voluptatum quo nemo dolorem quam eius fugiat eum animi error expedita repellendus at corrupti quos ratione exercitationem. Neque quae expedita ex itaque sunt natus fuga dolor pariatur, ea aliquid alias repellat. Voluptas sapiente eveniet laudantium nihil fuga aspernatur quibusdam harum quam? Harum, praesentium quos ratione repellat deserunt consequatur. Officiis commodi dignissimos quibusdam, vitae ad magni labore ea sunt unde est ratione obcaecati voluptas culpa incidunt at consequatur iure nam modi perspiciatis dicta delectus atque? Ducimus ab nam nihil eligendi! Assumenda sunt asperiores aliquid laborum nostrum laudantium ab placeat voluptatum tempora ad, libero necessitatibus aspernatur omnis autem, temporibus exercitationem ea quidem! Quae nulla illo quaerat consequuntur totam ea labore a voluptas unde deleniti, magni impedit reiciendis deserunt dicta reprehenderit autem. Sequi nesciunt veniam, nemo, cum vero neque quae voluptatum ipsum aspernatur aliquam, cupiditate eligendi! Id sunt dolores aspernatur corrupti provident fuga quisquam autem omnis dolorem commodi reprehenderit, magni, reiciendis nostrum esse. Eveniet eaque assumenda aliquam autem totam qui impedit, magnam dolores minima amet alias. Voluptatum aliquid molestias dolores mollitia tempore. Pariatur quas dolorem nihil, esse facilis saepe tempora.1</p>
               </div>
 
@@ -63,8 +64,8 @@ function Profil() {
                 
 
               </div>
-              
           </div>
+
 
     </div>
     
