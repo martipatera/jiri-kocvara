@@ -11,7 +11,7 @@ import gymBackground from "../public/gymBackground.jpg"
 import { IoBookOutline } from "react-icons/io5";
 import { FaMedal } from "react-icons/fa";
 import { CiMedal } from "react-icons/ci";
-import JirkaKocvara from "../public/jirkaCard.jpg"
+import JirkaKocvara from "../public/JirkaCard.jpg"
 import Video from 'next-video';
 import VideoComponent from "./components/Video";
 
