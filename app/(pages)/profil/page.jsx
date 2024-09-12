@@ -1,9 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import Component from '@/app/components/Component'
 import JirkaFotom from "../../../public/JirkaKocvara.jpg"
 import JirkaPoza from "../../../public/jirkaPoza.jpg"
-import { GalleryWithCarousel } from '@/app/components/Carousel'
 
 export const metadata = {
   title: "Profil | Jiří Kočvara",
