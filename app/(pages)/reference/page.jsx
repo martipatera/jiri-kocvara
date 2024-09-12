@@ -5,7 +5,7 @@ import reviewData from '@/app/data/reviewData'
 import Counter from '@/app/components/CountUp'
 
 export const metadata = {
-  title: "Reference | Jiří Kočvara",
+  title: "Jiří Kočvara | Reference",
   description: "Jiří Kočvara je fitness trenér a bodybuilder s dlouholetou praxí a mnoha osobními tak trenérskými úspěchy. Prozkoumejte naše fitness služby, včetně osobních tréninků, výživového poradenství a skupinových lekcí. Najděte plán, který vám vyhovuje.",
 }
 
