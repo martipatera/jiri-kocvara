@@ -64,7 +64,7 @@ function MojiKlienti() {
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/get_messages");
+      const res = await axios.get("https://asn615ddmslkndlsanido.vercel.app/api/get_messages");
       const data = await res.data
       setMessages(data.messages); // Uložení hodnot do stavu
     } catch (error) {
@@ -79,7 +79,7 @@ function MojiKlienti() {
 
     const fetchUserData = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/auth/klienti");
+        const res = await axios.get("https://asn615ddmslkndlsanido.vercel.app/api/auth/klienti");
         const data = await res.data
         await setUsers(data.users); // Uložení hodnot do stavu
       } catch (error) {

@@ -9,7 +9,7 @@ export function middleware(req) {
         'Access-Control-Allow-Origin',
         process.env.NODE_ENV === 'development'
             ? 'http://localhost:3000'
-            : 'https://tvadomena.vercel.app'
+            : 'https://asn615ddmslkndlsanido.vercel.app'
     );
     response.headers.set('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
     response.headers.set(
