@@ -73,21 +73,18 @@ function MojiKlienti() {
   };
 
   
-const deleteMessages = async (id) => {
-
-      try {
-        const res = await axios.delete("https://asn615ddmslkndlsanido.vercel.app/api/delete_message/",{
-          data: {id}
+  const deleteMessages = async (id) => {
+    try {
+        const res = await axios.delete("https://asn615ddmslkndlsanido.vercel.app/api/delete_message/", {
+            data: { id }
         });
-        console.log("Response from delete:", res.data); // Debug log
-        const data = await res.data
-      } 
-      catch (error) {
-        console.error("Error fetching data:", error);
-      }
-      await fetchMessages()
-
-    };
+        if (res.data.msg === 'Message deleted successfully') {
+            setMessages(prevMessages => prevMessages.filter(message => message.id !== id));
+        }
+    } catch (error) {
+        console.error("Error deleting message:", error);
+    }
+};
   
       
 
