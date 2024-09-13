@@ -5,6 +5,9 @@ import RegisterSchema from "@/app/models/RegisterSchema";
 
 
 export const POST = async (request) => {
+
+
+    
     try {
         // Připojení k databázi
         await connect();
