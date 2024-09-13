@@ -78,7 +78,6 @@ const deleteMessages = async (id) => {
           data: {id}
         });
         const data = await res.data
-        fetchMessages()
       } 
       catch (error) {
         console.error("Error fetching data:", error);
