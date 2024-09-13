@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import connect from "@/app/database/db";
 import MessageSchema from "@/app/models/MessageSchema";
-import { usedDynamicAPIs } from "next/dist/server/app-render/dynamic-rendering";
 
 
 export const GET = async () =>{
@@ -9,7 +8,7 @@ export const GET = async () =>{
 
         await connect()
 
-        const existingMessages = await MessageSchema.find();
+        const existingMessages = await MessageSchema.find({});
 
         const messages = existingMessages.map((message)=>({
             author: message.author,
