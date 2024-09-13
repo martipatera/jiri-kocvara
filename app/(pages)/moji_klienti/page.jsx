@@ -46,7 +46,7 @@ function MojiKlienti() {
     try {
       
 
-      const res = await axios.post("https://jiri-kocvara-d1d5d6ggl-martipateras-projects.vercel.app/api/post_messages",{
+      const res = await axios.post("https://jiri-kocvara.vercel.app/api/post_messages",{
         author,
         email,
         subject,
@@ -66,7 +66,7 @@ function MojiKlienti() {
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get("https://jiri-kocvara-d1d5d6ggl-martipateras-projects.vercel.app/api/get_messages",{
+      const res = await axios.get("https://jiri-kocvara.vercel.app/api/get_messages",{
         headers: {
           'Cache-Control': 'no-cache',
           'Pragma': 'no-cache',
@@ -85,7 +85,7 @@ function MojiKlienti() {
 const deleteMessages = async (id) => {
 
       try {
-        const res = await axios.delete("https://jiri-kocvara-d1d5d6ggl-martipateras-projects.vercel.app/api/delete_message",{
+        const res = await axios.delete("https://jiri-kocvara.vercel.app/api/delete_message",{
           data: {id}
         });
         console.log("Response from delete:", res.data); // Debug log
@@ -100,7 +100,7 @@ const deleteMessages = async (id) => {
   
     const fetchUserData = async () => {
       try {
-        const res = await axios.get("https://jiri-kocvara-d1d5d6ggl-martipateras-projects.vercel.app/api/auth/klienti");
+        const res = await axios.get("https://jiri-kocvara.vercel.app/api/auth/klienti");
         const data = await res.data
         await setUsers(data.users); // Uložení hodnot do stavu
       } catch (error) {
