@@ -4,9 +4,14 @@ import MessageSchema from "@/app/models/MessageSchema";
 
 export const GET = async () => {
     try {
+        console.log("Connecting to database...");
         await connect();
+        console.log("Connected to database.");
 
+        console.log("Fetching messages...");
         const existingMessages = await MessageSchema.find({});
+        console.log("Fetched messages:", existingMessages);
+
         const messages = existingMessages.map((message) => ({
             author: message.author,
             subject: message.subject,

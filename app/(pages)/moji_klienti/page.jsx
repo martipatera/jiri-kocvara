@@ -99,18 +99,12 @@ const deleteMessages = async (id) => {
       }
     }
 
+    
+  useEffect(() => {
 
-    useEffect(() => {
-      const interval1 = setInterval(fetchMessages, 3000);
-      
-      return () => clearInterval(interval1); // Vyčištění intervalu při unmountování
-    }, []);
-
-    useEffect(() => {
-      const interval2 = setInterval(fetchUserData, 3000);
-      
-      return () => clearInterval(interval2); // Vyčištění intervalu při unmountování
-    }, []);
+    fetchMessages();
+    fetchUserData();
+  }, []); // useEffect bez závislostí spustí fetchData pouze jednou při mountnutí komponenty
 
   return (
     <div id='container' className='min-h-screen'>
