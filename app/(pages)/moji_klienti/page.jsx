@@ -58,13 +58,18 @@ function MojiKlienti() {
     } catch (error) {
       console.error("Error fetching data:", error);
     }
-    fetchMessages()
 
   };
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get("https://asn615ddmslkndlsanido.vercel.app/api/get_messages");
+      const res = await axios.get("https://asn615ddmslkndlsanido.vercel.app/api/get_messages",{
+        headers: {
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache',
+          'Expires': '0'
+        }
+      });
       const data = await res.data
       await setMessages(data.messages);
     } catch (error) {
