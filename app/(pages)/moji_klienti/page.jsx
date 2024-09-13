@@ -73,6 +73,7 @@ function MojiKlienti() {
           'Expires': '0'
         }
       });
+      console.log('Data:', response.data);
       const data = await res.data
       await setMessages(data.messages);
     } catch (error) {
