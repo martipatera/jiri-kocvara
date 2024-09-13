@@ -24,7 +24,7 @@ function MujTrenink() {
       console.error("Error fetching data:", error);
     }
   };
-  fet
+  
 
   useEffect(()=>{
     fetchMessages()
