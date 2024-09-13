@@ -3,11 +3,11 @@ import connect from "@/app/database/db";
 import MessageSchema from "@/app/models/MessageSchema";
 
 
-export const DELETE = async (request) =>{
+export const DELETE = async (request, { params }) =>{
     try{
 
         await connect()
-        const {id} = await request.json()
+        const {id} = params
 
         const existingMessages = await MessageSchema.findByIdAndDelete(id);
 
