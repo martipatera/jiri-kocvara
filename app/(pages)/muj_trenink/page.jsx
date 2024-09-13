@@ -11,12 +11,11 @@ function MujTrenink() {
   const [messages, setMessages] = useState([])
 
 
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get(apiUrl+"/api/get_messages");
+      const res = await axios.get("/api/get_messages");
       const data = await res.data
       
       setMessages(data.messages); // Uložení hodnot do stavu
