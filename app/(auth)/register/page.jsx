@@ -30,7 +30,7 @@ function Register() {
 
         try{
             if(registerCode === code ){
-                const res = await axios.post("/api/auth/register",{
+                const res = await axios.post("https://jiri-kocvara-d1d5d6ggl-martipateras-projects.vercel.app/api/auth/register",{
                     name,
                     email,
                     password,
