@@ -91,6 +91,7 @@ const deleteMessages = async (id) => {
       
 
   useEffect(() => {
+    fetchMessages();
 
     const fetchUserData = async () => {
       try {
