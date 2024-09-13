@@ -54,7 +54,7 @@ export default function Home() {
       
       </div>
 
-      <div className="flex min-h-full py-5 md:py-5 lg:py-10 flex-col lg:flex-row justify-center px-3 md:px-20 lg:px-10 xl:px-32 items-center bg-bgPlates bg-center bg-cover bg-no-repeat">
+      <div className="flex min-h-screen flex-col lg:flex-row justify-center px-3 md:px-20 lg:px-10 xl:px-32 items-center bg-bgPlates bg-center bg-cover bg-no-repeat">
         
       <div className="mb-2 w-full lg:h-[800px] p-6 m-4 bg-gray-500 border opacity-90 border-gray-200 rounded-xl shadow">
           <span className="flex justify-center items-center">
