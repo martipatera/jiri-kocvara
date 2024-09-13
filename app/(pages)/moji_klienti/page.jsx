@@ -73,6 +73,17 @@ function MojiKlienti() {
   };
 
   
+const deleteMessages = async (id) => {
+      try {
+        const res = await axios.delete("https://asn615ddmslkndlsanido.vercel.app/api/delete_message",{
+          data: {id}
+        });
+        const data = await res.data
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+  
       
 
   useEffect(() => {
@@ -87,6 +98,8 @@ function MojiKlienti() {
       }
     };
 
+
+    
     
 
     fetchMessages()
@@ -161,6 +174,7 @@ function MojiKlienti() {
                 <p className="text-base border-2  break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg"><strong>Předmět: </strong> {message.subject}</p>
                 <p className="text-base border-2  break-words overflow-auto rounded-xl md:text-base lg:text-base xl:text-lg"><strong>Zpráva: </strong> {message.message}</p>
                 <p className="text-sm border-2  break-words overflow-auto rounded-xl md:text-sm lg:text-sm xl:text-sm"><strong>Vytvořeno: </strong> {message.created}</p>
+                <button onClick={()=>deleteMessages(message.id)} className="text-black w-52 border-black border-2 rounded-full p-1 xl:p-3 whitespace-nowrap  hover:brightness-110 hover:scale-105 transition-all">Odstranit zprávu</button>
                 </div>
             })}
           </div>

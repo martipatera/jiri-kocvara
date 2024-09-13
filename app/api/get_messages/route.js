@@ -15,7 +15,8 @@ export const GET = async () =>{
             author: message.author,
             subject: message.subject,
             message: message.message,
-            created: message.createdAt
+            created: message.createdAt,
+            id: message._id
         }))
 
         return new NextResponse(JSON.stringify({ 
