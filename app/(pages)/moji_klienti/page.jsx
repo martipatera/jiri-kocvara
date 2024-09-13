@@ -13,6 +13,7 @@ import { TextInput } from "flowbite-react";
 function MojiKlienti() {
 
 
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
   const { email, isLogged, role } = useSelector(state =>state.login) //takto muzu cist z reduceru hodnotu kterou chci
 
@@ -45,7 +46,7 @@ function MojiKlienti() {
     try {
       
 
-      const res = await axios.post("/api/post_messages",{
+      const res = await axios.post(apiUrl+"/api/post_messages",{
         author,
         email,
         subject,
@@ -65,7 +66,7 @@ function MojiKlienti() {
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get("/api/get_messages",{
+      const res = await axios.get(apiUrl+"/api/get_messages",{
         headers: {
           'Cache-Control': 'no-cache',
           'Pragma': 'no-cache',
@@ -84,7 +85,7 @@ function MojiKlienti() {
 const deleteMessages = async (id) => {
 
       try {
-        const res = await axios.delete("/api/delete_message/",{
+        const res = await axios.delete(apiUrl+"/api/delete_message",{
           data: {id}
         });
         console.log("Response from delete:", res.data); // Debug log
@@ -99,7 +100,7 @@ const deleteMessages = async (id) => {
   
     const fetchUserData = async () => {
       try {
-        const res = await axios.get("/api/auth/klienti");
+        const res = await axios.get(apiUrl+"/api/auth/klienti");
         const data = await res.data
         await setUsers(data.users); // Uložení hodnot do stavu
       } catch (error) {
