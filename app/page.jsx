@@ -26,9 +26,9 @@ export default function Home() {
 
 
   return (
-    <div id="main" className=''>
+    <div id="main" className='min-h-screen w-screen'>
 
-<div id="background-cointainer-main" className="bg-bgMain bg-cover bg-top md:bg-bottom mt-12 lg:bg-center md:mt-20 lg:mt-28 xl:mt-20 bg-no-repeat w-full" style={{ aspectRatio: '16/9' }}>
+<div id="background-cointainer-main" className=" min-h-screen w-screen bg-bgMain bg-cover bg-top md:bg-bottom mt-12 lg:bg-center md:mt-20 lg:mt-28 xl:mt-20 bg-no-repeat" style={{ aspectRatio: '16/9' }}>
 
 
         <div className="flex justify-start items-start">
