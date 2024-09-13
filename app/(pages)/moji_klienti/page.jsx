@@ -43,7 +43,7 @@ function MojiKlienti() {
     try {
       
 
-      const res = await axios.post("https://asn615ddmslkndlsanido.vercel.app/api/post_messages",{
+      const res = await axios.post("/api/post_messages",{
         author,
         email,
         subject,
@@ -63,7 +63,7 @@ function MojiKlienti() {
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get("https://asn615ddmslkndlsanido.vercel.app/api/get_messages",{
+      const res = await axios.get("/api/get_messages",{
         headers: {
           'Cache-Control': 'no-cache',
           'Pragma': 'no-cache',
@@ -81,7 +81,7 @@ function MojiKlienti() {
 const deleteMessages = async (id) => {
 
       try {
-        const res = await axios.delete("https://asn615ddmslkndlsanido.vercel.app/api/delete_message/",{
+        const res = await axios.delete("/api/delete_message/",{
           data: {id}
         });
         console.log("Response from delete:", res.data); // Debug log
@@ -96,7 +96,7 @@ const deleteMessages = async (id) => {
   
     const fetchUserData = async () => {
       try {
-        const res = await axios.get("https://asn615ddmslkndlsanido.vercel.app/api/auth/klienti");
+        const res = await axios.get("/api/auth/klienti");
         const data = await res.data
         await setUsers(data.users); // Uložení hodnot do stavu
       } catch (error) {
