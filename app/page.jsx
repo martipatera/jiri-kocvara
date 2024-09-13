@@ -48,7 +48,7 @@ export default function Home() {
           <p className="text-2xl m-2 p-3  sm:text-3xl backdrop-blur-md animate-fade rounded-xl text-center sm:p-5 lg:px-8 text-white font-semibold">&ldquo;Trénuj jinak, přemýšlěj lépe&rdquo;</p>
         </div>
 
-        <div className="flex justify-center items-center py-10 md:my-5 lg:my-10"> 
+        <div className="flex justify-center items-center py-10 md:py-5 lg:py-10"> 
           <p className="text-5xl text-white animate-bounce"><FaChevronDown></FaChevronDown></p>
         </div>
       
