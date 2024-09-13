@@ -11,6 +11,7 @@ function MujTrenink() {
   const [messages, setMessages] = useState([])
 
 
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
 
 
   
@@ -18,7 +19,7 @@ function MujTrenink() {
   useEffect(()=>{
     const fetchMessages = async () => {
       try {
-        const res = await axios.get("https://asn615ddmslkndlsanido.vercel.app/api/get_messages");
+        const res = await axios.get(apiUrl+"/api/get_messages");
         const data = await res.data
         
         setMessages(data.messages); // Uložení hodnot do stavu
