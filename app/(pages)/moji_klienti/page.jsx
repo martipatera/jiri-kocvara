@@ -54,6 +54,7 @@ function MojiKlienti() {
         message,
 
       });
+      console.log("Response from post:", res.data); // Debug log
       setMsg(res.data.message)
       setSubject("")
       setMessage("")
@@ -67,7 +68,7 @@ function MojiKlienti() {
     try {
       const res = await axios.get("https://asn615ddmslkndlsanido.vercel.app/api/get_messages");
       const data = await res.data
-      setMessages(data.messages);
+      await setMessages(data.messages);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -79,6 +80,7 @@ const deleteMessages = async (id) => {
         const res = await axios.delete("https://asn615ddmslkndlsanido.vercel.app/api/delete_message/",{
           data: {id}
         });
+        console.log("Response from delete:", res.data); // Debug log
         const data = await res.data
         await fetchMessages()
       } 
