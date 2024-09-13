@@ -27,7 +27,7 @@ function MujTrenink() {
   fet
 
   useEffect(()=>{
-    chMessages()
+    fetchMessages()
 
   },[fetchMessages])
 
