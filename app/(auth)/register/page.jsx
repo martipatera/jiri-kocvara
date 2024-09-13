@@ -25,12 +25,13 @@ function Register() {
     const handleRegister = async (e) =>{
         e.preventDefault()
 
-        
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL
+
        
 
         try{
             if(registerCode === code ){
-                const res = await axios.post("https://jiri-kocvara.vercel.app/api/auth/register",{
+                const res = await axios.post(apiUrl+"/api/auth/register",{
                     name,
                     email,
                     password,

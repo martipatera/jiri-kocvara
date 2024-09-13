@@ -16,7 +16,7 @@ function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [msg, setMsg] = useState("")
-
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
     const {isLogged} = useSelector(state => state.login) //takto muzu cist z reduceru hodnotu kterou chci, MUJ LOGIN REDUCER Z STORE.JS
     const dispatch = useDispatch() // diky tomu muzu pouzivat vsechny akce kteru mam v reduceru
@@ -25,7 +25,7 @@ function Login() {
         e.preventDefault()
         
         try{
-            const res = await axios.post("https://jiri-kocvara.vercel.app/api/auth/login",{
+            const res = await axios.post(apiUrl+"/api/auth/login",{
                 email,
                 password
             })

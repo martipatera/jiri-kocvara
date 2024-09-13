@@ -20,6 +20,7 @@ function ForgotPassword() {
     const [msg, setMsg] = useState("")
     const [hesloZmeneno, setHesloZmeneno] = useState(false)
 
+    const apiUrl = process.env.EXT_PUBLIC_API_URL
 
     const {isLogged} = useSelector(state => state.login) //takto muzu cist z reduceru hodnotu kterou chci, MUJ LOGIN REDUCER Z STORE.JS
     const dispatch = useDispatch() // diky tomu muzu pouzivat vsechny akce kteru mam v reduceru
@@ -29,7 +30,7 @@ function ForgotPassword() {
         
         try{
             if(password === passwordConfirm){
-                const res = await axios.post("https://jiri-kocvara.vercel.app/api/auth/forgotpassword",{
+                const res = await axios.post(apiUrl+"/api/auth/forgotpassword",{
                     email,
                     password,
                     
