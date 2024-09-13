@@ -14,21 +14,22 @@ function MujTrenink() {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 
-  
+  const fetchMessages = async () => {
+    try {
+      const res = await axios.get(apiUrl+"/api/get_messages");
+      const data = await res.data
+      
+      setMessages(data.messages); // Uložení hodnot do stavu
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+  fet
 
   useEffect(()=>{
-    const fetchMessages = async () => {
-      try {
-        const res = await axios.get(apiUrl+"/api/get_messages");
-        const data = await res.data
-        
-        setMessages(data.messages); // Uložení hodnot do stavu
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-    fetchMessages()
-  },[])
+    chMessages()
+
+  },[fetchMessages])
 
   const { isLogged, role } = useSelector(state =>state.login) //takto muzu cist z reduceru hodnotu kterou chci
 
