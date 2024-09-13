@@ -34,7 +34,6 @@ function MojiKlienti() {
   const sendMessages = async (e) => {
 
     e.preventDefault()
-    fetchMessages()
 
 
     
@@ -58,7 +57,7 @@ function MojiKlienti() {
       setMsg(res.data.message)
       setSubject("")
       setMessage("")
-      fetchMessages()
+      await fetchMessages()
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -81,7 +80,7 @@ const deleteMessages = async (id) => {
           data: {id}
         });
         const data = await res.data
-        fetchMessages()
+        await fetchMessages()
       } 
       catch (error) {
         console.error("Error fetching data:", error);
