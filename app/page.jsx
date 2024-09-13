@@ -48,13 +48,13 @@ export default function Home() {
           <p className="text-2xl m-2 p-3  sm:text-3xl backdrop-blur-md animate-fade rounded-xl text-center sm:p-5 lg:px-8 text-white font-semibold">&ldquo;Trénuj jinak, přemýšlěj lépe&rdquo;</p>
         </div>
 
-        <div className="flex justify-center items-center my-10 md:my-5 lg:my-10"> 
+        <div className="flex justify-center items-center py-10 md:my-5 lg:my-10"> 
           <p className="text-5xl text-white animate-bounce"><FaChevronDown></FaChevronDown></p>
         </div>
       
       </div>
 
-      <div className="flex min-h-screen flex-col lg:flex-row justify-center px-3 md:px-20 lg:px-10 xl:px-32 items-center bg-bgPlates bg-center bg-cover bg-no-repeat">
+      <div className="flex min-h-screen py-5 md:py-5 lg:py-10 flex-col lg:flex-row justify-center px-3 md:px-20 lg:px-10 xl:px-32 items-center bg-bgPlates bg-center bg-cover bg-no-repeat">
         
       <div className="mb-2 w-full lg:h-[800px] p-6 m-4 bg-gray-500 border opacity-90 border-gray-200 rounded-xl shadow">
           <span className="flex justify-center items-center">
@@ -106,7 +106,7 @@ export default function Home() {
 
       
 
-      <div id="mainPage2" className="text-white h-3/4 bg-mainImage md:pb-10 bg-cover bg-no-repeat bg-left-bottom sm:bg-center">
+      <div id="mainPage2" className="text-white h-3/4 bg-mainImage bg-cover bg-no-repeat bg-left-bottom sm:bg-center">
 
         <div className="flex justify-center flex-col items-center ">
 
