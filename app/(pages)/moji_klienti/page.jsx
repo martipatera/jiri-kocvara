@@ -12,7 +12,7 @@ import { TextInput } from "flowbite-react";
 
 function MojiKlienti() {
 
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 
   const { email, isLogged, role } = useSelector(state =>state.login) //takto muzu cist z reduceru hodnotu kterou chci
