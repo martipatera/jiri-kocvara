@@ -17,7 +17,7 @@ export const GET = async () =>{
             id: user._id
         }))
 
-        const response = NextResponse(JSON.stringify({ 
+        const response = new NextResponse(JSON.stringify({ 
             message: "Nalezeno",
             users
             
