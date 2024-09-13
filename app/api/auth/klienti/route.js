@@ -31,7 +31,7 @@ export const GET = async () =>{
         response.headers.set("Pragma", "no-cache");
         response.headers.set("Surrogate-Control", "no-store");;
 
-        
+        return response
     }
     catch(err){
         return NextResponse.error(); // Vrátí chybu 500
