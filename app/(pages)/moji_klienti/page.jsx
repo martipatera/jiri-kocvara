@@ -53,7 +53,6 @@ function MojiKlienti() {
         message,
 
       });
-      console.log("Response from post:", res.data); // Debug log
       setMsg(res.data.message)
       setSubject("")
       setMessage("")
@@ -73,7 +72,6 @@ function MojiKlienti() {
           'Expires': '0'
         }
       });
-      console.log('Data:', res.data);
       const data = await res.data
       await setMessages(data.messages);
     } catch (error) {
@@ -88,7 +86,6 @@ const deleteMessages = async (id) => {
         const res = await axios.delete(apiUrl+"/api/delete_message",{
           data: {id}
         });
-        console.log("Response from delete:", res.data); // Debug log
         const data = await res.data
       } 
       catch (error) {
