@@ -46,7 +46,7 @@ function MojiKlienti() {
     try {
       
 
-      const res = await axios.post("http://localhost:3000/api/post_messages",{
+      const res = await axios.post("https://asn615ddmslkndlsanido.vercel.app/api/post_messages",{
         author,
         email,
         subject,
