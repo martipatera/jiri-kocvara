@@ -54,11 +54,11 @@ function MojiKlienti() {
       setMsg(res.data.message)
       setSubject("")
       setMessage("")
-      await fetchMessages()
+      fetchMessages()
     } catch (error) {
       console.error("Error fetching data:", error);
     }
-    await fetchMessages()
+    fetchMessages()
 
   };
 
@@ -73,23 +73,22 @@ function MojiKlienti() {
   };
 
   
-  const deleteMessages = async (id) => {
-    try {
-        const res = await axios.delete("https://asn615ddmslkndlsanido.vercel.app/api/delete_message/", {
-            data: { id }
+const deleteMessages = async (id) => {
+
+      try {
+        const res = await axios.delete("https://asn615ddmslkndlsanido.vercel.app/api/delete_message/",{
+          data: {id}
         });
-        if (res.data.msg === 'Message deleted successfully') {
-            setMessages(prevMessages => prevMessages.filter(message => message.id !== id));
-        }
-    } catch (error) {
-        console.error("Error deleting message:", error);
-    }
-};
+        console.log("Response from delete:", res.data); // Debug log
+        const data = await res.data
+      } 
+      catch (error) {
+        console.error("Error fetching data:", error);
+      }
+      fetchMessages()
+
+    };
   
-      
-
-  useEffect(() => {
-
     const fetchUserData = async () => {
       try {
         const res = await axios.get("https://asn615ddmslkndlsanido.vercel.app/api/auth/klienti");
@@ -98,11 +97,16 @@ function MojiKlienti() {
       } catch (error) {
         console.error("Error fetching data:", error);
       }
-    };
+    }
 
-    fetchMessages();
-    fetchUserData();
-  }, []); // useEffect bez závislostí spustí fetchData pouze jednou při mountnutí komponenty
+
+    const interval1 = setInterval(fetchMessages, 3000);
+    clearInterval(interval1)
+
+    const interval2 = setInterval(fetchUserData, 3000);
+    clearInterval(interval2)
+    
+; // useEffect bez závislostí spustí fetchData pouze jednou při mountnutí komponenty
 
   return (
     <div id='container' className='min-h-screen'>
