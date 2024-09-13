@@ -35,10 +35,6 @@ function MojiKlienti() {
 
     e.preventDefault()
 
-
-    
-
-
     if (!author || !subject || !message) {
       console.error("Všechna pole musí být vyplněna.");
       return;
@@ -62,6 +58,8 @@ function MojiKlienti() {
     } catch (error) {
       console.error("Error fetching data:", error);
     }
+    fetchMessages()
+
   };
 
   const fetchMessages = async () => {
@@ -76,17 +74,19 @@ function MojiKlienti() {
 
   
 const deleteMessages = async (id) => {
+
       try {
         const res = await axios.delete("https://asn615ddmslkndlsanido.vercel.app/api/delete_message/",{
           data: {id}
         });
         console.log("Response from delete:", res.data); // Debug log
         const data = await res.data
-        fetchMessages()
       } 
       catch (error) {
         console.error("Error fetching data:", error);
       }
+      fetchMessages()
+
     };
   
       
