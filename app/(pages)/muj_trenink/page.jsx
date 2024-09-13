@@ -15,7 +15,7 @@ function MujTrenink() {
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get("https://jiri-kocvara-d1d5d6ggl-martipateras-projects.vercel.app//api/get_messages");
+      const res = await axios.get("https://jiri-kocvara-d1d5d6ggl-martipateras-projects.vercel.app/api/get_messages");
       const data = await res.data
       
       setMessages(data.messages); // Uložení hodnot do stavu
