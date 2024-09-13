@@ -101,11 +101,9 @@ const deleteMessages = async (id) => {
 
 
     const interval1 = setInterval(fetchMessages, 3000);
-    clearInterval(interval1)
 
     const interval2 = setInterval(fetchUserData, 3000);
-    clearInterval(interval2)
-    
+
 ; // useEffect bez závislostí spustí fetchData pouze jednou při mountnutí komponenty
 
   return (
