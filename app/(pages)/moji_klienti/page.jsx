@@ -77,6 +77,7 @@ const deleteMessages = async (id) => {
       try {
         const res = await axios.delete("https://asn615ddmslkndlsanido.vercel.app/api/delete_message/"+id);
         const data = await res.data
+        fetchMessages()
       } catch (error) {
         console.error("Error fetching data:", error);
       }
