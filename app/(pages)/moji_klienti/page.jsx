@@ -34,6 +34,8 @@ function MojiKlienti() {
   const sendMessages = async (e) => {
 
     e.preventDefault()
+    fetchMessages()
+
 
     
 
@@ -56,6 +58,7 @@ function MojiKlienti() {
       setMsg(res.data.message)
       setSubject("")
       setMessage("")
+      fetchMessages()
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -78,6 +81,7 @@ const deleteMessages = async (id) => {
           data: {id}
         });
         const data = await res.data
+        fetchMessages()
       } 
       catch (error) {
         console.error("Error fetching data:", error);
@@ -102,7 +106,6 @@ const deleteMessages = async (id) => {
     
     
 
-    fetchMessages()
     fetchUserData();
   }, []); // useEffect bez závislostí spustí fetchData pouze jednou při mountnutí komponenty
 
