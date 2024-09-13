@@ -29,7 +29,7 @@ function ForgotPassword() {
         
         try{
             if(password === passwordConfirm){
-                const res = await axios.post("https://jiri-kocvara-d1d5d6ggl-martipateras-projects.vercel.app/api/auth/forgotpassword",{
+                const res = await axios.post("/api/auth/forgotpassword",{
                     email,
                     password,
                     
