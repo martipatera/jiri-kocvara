@@ -27,7 +27,7 @@ function Reference() {
 
           {
             reviewData.map((data, index)=>{
-              return <div key={index} className=' flex flex-col items-center justify-center lg:flex-row border-2 lg:max-w-[850px] lg:h-[450px] border-gray-300 rounded-xl shadow gap-4'>
+              return <div key={index} className='flex flex-col items-center justify-center lg:flex-row border-2 md:max-w-lg lg:max-w-2xl xl:max-w-2xl lg:h-[450px]  border-gray-300 rounded-xl shadow gap-4'>
 
                 <span className='flex justify-center items-center lg:px-4'>
                   <Image className='hidden lg:block lg:max-w-xs rounded-xl lg:h-[425px] ' src={data.img} alt={data.alt}></Image>

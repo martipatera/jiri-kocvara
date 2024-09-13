@@ -30,7 +30,7 @@ function Sluzby() {
               <span className='flex flex-col justify-between h-full '>
 
                   <span className='flex justify-center items-center '>
-                    <Image src={data.icon} className='md:max-w-md'></Image>
+                    <Image src={data.icon} alt={data.alt} className='md:max-w-md'></Image>
                   </span>
 
                   <span className='flex flex-col break-words overflow-auto h-full'>

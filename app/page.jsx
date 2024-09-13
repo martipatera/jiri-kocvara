@@ -3,6 +3,7 @@ import Image from "next/image";
 import Restaurant from "./restaurant.png"
 import Task from "./task.png"
 import Coach from "./trainer.png"
+import OnlineCoaching from "./data/OnlineCoaching.png"
 import { CgGym } from "react-icons/cg";
 import { CiCircleChevDown } from "react-icons/ci";
 import { FaChevronDown } from "react-icons/fa";
@@ -26,7 +27,7 @@ export default function Home() {
 
 
   return (
-    <div id="main" className='min-h-screen w-screen'>
+    <div id="main" className='min-h-screen'>
 
 <div id="background-cointainer-main" className=" min-h-screen w-screen bg-bgMain bg-cover bg-top md:bg-bottom mt-12 lg:bg-center md:mt-20 lg:mt-28 xl:mt-20 bg-no-repeat" style={{ aspectRatio: '16/9' }}>
 
@@ -106,7 +107,7 @@ export default function Home() {
 
       
 
-      <div id="mainPage2" className="text-white h-3/4 bg-mainImage bg-cover bg-no-repeat bg-left-bottom sm:bg-center">
+      <div id="mainPage2" className="text-white h-3/4 pb-10 bg-mainImage bg-cover bg-no-repeat bg-left-bottom sm:bg-center">
 
         <div className="flex justify-center flex-col items-center ">
 
@@ -118,7 +119,7 @@ export default function Home() {
      
       <div className="flex flex-col flex-1 md:items-stretch animate-fade lg:flex-row justify-center items-center gap-8 mx-2 md:mx-5 p-3 md:p-5 backdrop-blur-md rounded-lg">
 
-          <div className="min-h-[325px] lg:w-1/3 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border rounded-lg shadow">
+          <div className="min-h-[325px] lg:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border rounded-lg shadow">
               <span className="flex justify-center items-center">
                 <Image href="/"
                  src={Coach}
@@ -133,7 +134,7 @@ export default function Home() {
 
           </div>
 
-          <div className=" min-h-[325px]  lg:w-1/3 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border border-gray-200 rounded-lg shadow">
+          <div className=" min-h-[325px]  lg:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border border-gray-200 rounded-lg shadow">
           <span className="flex justify-center items-center">
                 <Image href="/"
                  src={Task}
@@ -142,13 +143,15 @@ export default function Home() {
 
               </Image>
               </span>
+
+
               <h5 className=" mb-2  text-2xl text-center font-semibold tracking-tight text-gray-900 ">Tréninkový plán</h5>
               <p className="mb-3 font-normal text-gray-900 text-center min-h-[120px]">Tréninkový plán je klíčem k dosažení vašich fitness cílů s maximální efektivitou a podporou. Tréninkové programy jsou navrženy tak, aby odpovídaly vašim individuálním potřebám a cílům, ať už se snažíte zhubnout, nabrat svaly nebo zlepšit svou kondici.</p>
               <Link href="/" className='text-center text-blue-500 underline font-semibold text-lg'>Chci vědět víc!</Link>
-              
+
           </div>
 
-          <div className=" min-h-[325px] lg:w-1/3 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border border-gray-200 rounded-lg shadow  ">
+          <div className=" min-h-[325px] lg:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border border-gray-200 rounded-lg shadow  ">
           <span className="flex justify-center items-center">
                 <Image href="/"
                  src={Restaurant}
@@ -158,8 +161,24 @@ export default function Home() {
               </Image>
               </span>
 
-                  <h5 className="mb-2 text-2xl text-center font-semibold tracking-tight text-gray-900  ">Stravovací plán</h5>
-                  <p className="mb-3 font-normal text-gray-900 text-center min-h-[120px]">Stravovací plán je základním kamenem úspěchu na cestě za vašimi fitness cíli. Kvalitní výživa je klíčová nejen pro optimalizaci výkonu během tréninků, ale i pro celkové zdraví a pohodu. </p>
+                    <h5 className="mb-2 text-2xl text-center font-semibold tracking-tight text-gray-900  ">Stravovací plán</h5>
+                    <p className="mb-3 font-normal text-gray-900 text-center min-h-[120px]">Stravovací plán je základním kamenem úspěchu na cestě za vašimi fitness cíli. Kvalitní výživa je klíčová nejen pro optimalizaci výkonu během tréninků, ale i pro podporu celkového zdraví a pohody.</p>
+                    <Link href="/" className='text-center text-blue-500 underline font-semibold text-lg '>To je přesně pro mě!</Link>
+                  
+          </div>
+
+          <div className=" min-h-[325px] lg:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border border-gray-200 rounded-lg shadow  ">
+          <span className="flex justify-center items-center">
+                <Image href="/"
+                 src={OnlineCoaching}
+                 alt="Ikona Online Coaching"
+                 >
+
+              </Image>
+              </span>
+
+                  <h5 className="mb-2 text-2xl text-center font-semibold tracking-tight text-gray-900  ">Online Coaching</h5>
+                  <p className="mb-3 font-normal text-gray-900 text-center min-h-[120px]">Online coaching je klíčovým nástrojem pro dosažení vašich fitness cílů na míru. Flexibilita online tréninků vám umožňuje pracovat na své kondici a zlepšení výkonu podle vlastního tempa a rozvrhu, přičemž získáte osobní podporu a odborné rady k dosažení optimálních výsledků.</p>
                   <Link href="/" className='text-center text-blue-500 underline font-semibold text-lg'>To je přesně pro mě!</Link>
                 
           </div>

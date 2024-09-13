@@ -20,7 +20,7 @@ function MujTrenink() {
       try {
         const res = await axios.get("https://asn615ddmslkndlsanido.vercel.app/api/get_messages");
         const data = await res.data
-        console.log(data.messages)
+        
         setMessages(data.messages); // Uložení hodnot do stavu
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -60,8 +60,8 @@ function MujTrenink() {
             <h1 className=''>Musíš se přihlásit nebo registrovat abys mohl pokračovat</h1>
 
             <span className='flex'>
-              <button className="bg-orange border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-black hover:brightness-110 hover:scale-105 transition-all"><Link href="/register">Registrovat se</Link></button>
-              <button className="bg-orange border-2 rounded-full p-1 xl:p-3 text-black hover:brightness-110 hover:scale-105 transition-all"><Link href="/login">Přihlásit se</Link></button>
+              <button className="bg-orange border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-black hover:brightness-110 border-black hover:scale-105 transition-all"><Link href="/register">Registrovat se</Link></button>
+              <button className="bg-orange border-2 rounded-full p-1 xl:p-3 text-black hover:brightness-110 hover:scale-105 border-black transition-all"><Link href="/login">Přihlásit se</Link></button>
             </span>
             
           </div>
