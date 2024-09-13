@@ -54,7 +54,6 @@ function MojiKlienti() {
 
       });
       setMsg(res.data.message)
-      fetchMessages()
       setSubject("")
       setMessage("")
     } catch (error) {
@@ -66,7 +65,7 @@ function MojiKlienti() {
     try {
       const res = await axios.get("https://asn615ddmslkndlsanido.vercel.app/api/get_messages");
       const data = await res.data
-      setMessages(data.messages); // Uložení hodnot do stavu
+      setMessages(data.messages);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -79,8 +78,9 @@ const deleteMessages = async (id) => {
           data: {id}
         });
         const data = await res.data
-        console.log(data); // Pro debugování
-      } catch (error) {
+        fetchMessages()
+      } 
+      catch (error) {
         console.error("Error fetching data:", error);
       }
     };
