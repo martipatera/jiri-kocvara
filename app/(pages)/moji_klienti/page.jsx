@@ -34,85 +34,80 @@ function MojiKlienti() {
 
 
   const sendMessages = async () => {
-
     if (!author || !subject || !message) {
       console.error("Všechna pole musí být vyplněna.");
       return;
-    }    
-
+    }
+  
     try {
-      
-
-      const res = await axios.post("/api/post_messages",{
+      // Odeslání zprávy
+      const res = await axios.post("/api/post_messages", {
         author,
         email,
         subject,
-        message,
-
-      },{
+        message
+      }, {
         cache: "no-store"
       });
-      setMsg(res.data.message)
-      setSubject("")
-      setMessage("")
+  
+      // Zpracování odpovědi
+      setMsg(res.data.message);
+      setSubject("");
+      setMessage("");
+  
+      // Načtení nových zpráv po úspěšném odeslání
+      await fetchMessages();
+  
     } catch (error) {
-      console.error("Error fetching data:", error);
+      console.error("Error sending message:", error);
     }
-
   };
-
+  
   const fetchMessages = async () => {
-
     try {
-      const res = await axios.get(`/api/get_messages`,{
+      const res = await axios.get(`/api/get_messages`, {
         cache: "no-store"
       });
-      const data = await res.data
-      console.log("Fetched messages:", res.data); // Logování pro kontrolu
-      await setMessages(data.messages);
+      const data = await res.data;
+      console.log("Fetched messages:", data); // Logování pro kontrolu
+      setMessages(data.messages);
     } catch (error) {
-      console.error("Error fetching data:", error);
+      console.error("Error fetching messages:", error);
     }
   };
-
   
-const deleteMessages = async (id) => {
-
-      try {
-        const res = await axios.delete("/api/delete_message",{
-          data: {id}
-        },{
-          cache: "no-store"
-        });
-        const data = await res.data
-      } 
-      catch (error) {
-        console.error("Error fetching data:", error);
-      }
-      
-
-    };
-  
-    const fetchUserData = async () => {
-
-      try {
-        const res = await axios.get("/api/auth/klienti",{
-          cache: "no-store"
-        });
-        const data = await res.data
-        await setUsers(data.users); // Uložení hodnot do stavu
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
+  const deleteMessages = async (id) => {
+    try {
+      const res = await axios.delete("/api/delete_message", {
+        data: { id }
+      }, {
+        cache: "no-store"
+      });
+      const data = await res.data;
+      // Možná budeš chtít nějakým způsobem aktualizovat seznam zpráv po smazání
+      console.log("Message deleted:", data);
+    } catch (error) {
+      console.error("Error deleting message:", error);
     }
-
-    
+  };
+  
+  const fetchUserData = async () => {
+    try {
+      const res = await axios.get("/api/auth/klienti", {
+        cache: "no-store"
+      });
+      const data = await res.data;
+      setUsers(data.users); // Uložení hodnot do stavu
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+  };
+  
   useEffect(() => {
-
     fetchMessages();
     fetchUserData();
-  },[]); // useEffect bez závislostí spustí fetchData pouze jednou při mountnutí komponenty
-
+  }, []); // useEffect bez závislostí spustí fetchData pouze jednou při mountnutí komponenty
+  
   return (
     <div id='container' className='min-h-screen'>
 
