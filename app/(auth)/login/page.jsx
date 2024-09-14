@@ -31,6 +31,7 @@ function Login() {
                 password
             })
             const data = res.data
+            console.log(data)
             dispatch(logIn({ email: email, role: data.user.role }));//posilam aktualni login email do reduceru posilam to jako objekt
             setMsg(res.data.message)
             
