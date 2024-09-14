@@ -51,7 +51,12 @@ function MojiKlienti() {
         subject,
         message,
 
-      });
+      }, {
+        headers: {
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Pragma': 'no-cache',
+          'Expires': '0'
+        }});
       setMsg(res.data.message)
       setSubject("")
       setMessage("")
@@ -64,13 +69,16 @@ function MojiKlienti() {
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get("/api/get_messages",{
+      const res = await axios.get("/api/get_messages", {
         headers: {
-          'Cache-Control': 'no-cache',
+          'Cache-Control': 'no-store', // Zajištění, že se nebudou data kešovat
+        }
+      }, {
+        headers: {
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
           'Pragma': 'no-cache',
           'Expires': '0'
-        }
-      });
+        }});
       const data = await res.data
       await setMessages(data.messages);
     } catch (error) {
@@ -84,7 +92,12 @@ const deleteMessages = async (id) => {
       try {
         const res = await axios.delete("/api/delete_message",{
           data: {id}
-        });
+        }, {
+          headers: {
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
+          }});
         const data = await res.data
         await fetchMessages()
       } 
@@ -97,7 +110,12 @@ const deleteMessages = async (id) => {
   
     const fetchUserData = async () => {
       try {
-        const res = await axios.get("/api/auth/klienti");
+        const res = await axios.get("/api/auth/klienti", {
+          headers: {
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
+          }});
         const data = await res.data
         await setUsers(data.users); // Uložení hodnot do stavu
       } catch (error) {
@@ -201,28 +219,5 @@ const deleteMessages = async (id) => {
   );
 }
 
-export async function getServerSideProps(context) {
-  try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/get_messages`, {
-      headers: {
-        'Cache-Control': 'no-store', // Zajištění, že se nebudou data kešovat
-      }
-    });
-    const data = await res.json();
-
-    return {
-      props: {
-        messages: data.messages, // Předání načtených zpráv do komponenty
-      }
-    };
-  } catch (error) {
-    console.error("Error fetching messages:", error);
-    return {
-      props: {
-        messages: [], // V případě chyby vrátí prázdný seznam
-      }
-    };
-  }
-}
 
 export default MojiKlienti;
