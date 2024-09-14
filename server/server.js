@@ -14,10 +14,15 @@ const klienti = require("./routes/klienti.js")
 const login = require("./routes/login.js")
 const register = require("./routes/register.js")
 
+app.use(cors({
+    origin: 'https://jiri-kocvara-production.vercel.app', // Umožněte přístup z této domény
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  }));
 app.use(express.json())
 
 dotenv.config();
-app.use(cors({ origin: true, credentials: true }))
+
 app.use(express.urlencoded({ extended: true }))
 
 app.use("/api", deleteMessages);
