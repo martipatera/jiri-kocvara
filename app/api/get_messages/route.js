@@ -1,20 +1,15 @@
-import { NextResponse } from "next/server";
-import connect from "@/app/database/db";
-import MessageSchema from "@/app/models/MessageSchema";
-
 export const GET = async () => {
     try {
         console.log("GET request received");
 
         await connect();
+        console.log("Connected to database");
 
         console.log("Fetching messages...");
-
-        const existingMessages = await MessageSchema.find({})
-
+        const existingMessages = await MessageSchema.find({});
         console.log("Messages fetched:", existingMessages);
 
-        const messages = await existingMessages.map((message) => ({
+        const messages = existingMessages.map((message) => ({
             author: message.author,
             subject: message.subject,
             message: message.message,
@@ -22,7 +17,7 @@ export const GET = async () => {
             id: message._id
         }));
 
-        const response = await new NextResponse(JSON.stringify({ messages }), { status: 200 });
+        const response = new NextResponse(JSON.stringify({ messages }), { status: 200 });
 
         // Zakázání cache v hlavičkách
         response.headers.set("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
@@ -32,6 +27,7 @@ export const GET = async () => {
 
         return response;
     } catch (err) {
+        console.error("Error in GET:", err);
         return NextResponse.error(); // Vrátí chybu 500
     }
 };
