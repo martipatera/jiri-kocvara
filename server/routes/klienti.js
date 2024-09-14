@@ -10,8 +10,6 @@ require("dotenv").config(); // Pro načtení proměnných z .env souboru
 // GET Route pro načtení uživatelů
 klienti.get("/klienti/", async (req, res) => {
   try {
-    // Připojení k databázi
-    await connectDB();
 
     // Nalezení všech uživatelů s rolí "klient"
     const existingUsers = await RegisterSchema.find({ role: "klient" });
