@@ -10,14 +10,14 @@ require("dotenv").config(); // Pro načtení proměnných z .env souboru
 
 
 // POST Route pro přihlášení
-login.post("/login/", async (req, res) => {
+login.post("/login/", async (request, response) => {
   try {
     // Najdeme uživatele podle emailu
     const user = await RegisterSchema.findOne({ email: request.body.email });
     
     // Pokud uživatel neexistuje, vrátíme chybu
     if (!user) {
-        return response.status(401).json({ msg: "User not found" });
+        return request.status(401).json({ msg: "User not found" });
     }
 
     // Porovnáme heslo s hashovaným heslem v databázi
