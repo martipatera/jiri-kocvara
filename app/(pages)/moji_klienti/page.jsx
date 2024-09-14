@@ -110,7 +110,7 @@ const deleteMessages = async (id) => {
 
     fetchMessages();
     fetchUserData();
-  },[]); // useEffect bez závislostí spustí fetchData pouze jednou při mountnutí komponenty
+  },[[fetchMessages, fetchUserData]]); // useEffect bez závislostí spustí fetchData pouze jednou při mountnutí komponenty
 
   return (
     <div id='container' className='min-h-screen'>
