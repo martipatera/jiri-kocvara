@@ -1,7 +1,12 @@
 {
-    "build": {
-      "ignore": [
-        "server/**"
-      ]
-    }
+    "builds": [
+      {
+        "src": "app/package.json",
+        "use": "@vercel/next"
+      }
+    ],
+    "ignore": [
+      "server/**"
+    ]
   }
+  
