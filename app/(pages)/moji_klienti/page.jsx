@@ -82,7 +82,7 @@ function MojiKlienti() {
           'Expires': '0'
         }});
       const data = await res.data
-      await console.log(data)
+      console.log("Fetched messages:", res.data); // Logování pro kontrolu
       await setMessages(data.messages);
     } catch (error) {
       console.error("Error fetching data:", error);
