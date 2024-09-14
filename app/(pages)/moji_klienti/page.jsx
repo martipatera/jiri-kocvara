@@ -64,8 +64,10 @@ function MojiKlienti() {
   const fetchMessages = async () => {
 
     try {
-      const res = await axios.get(`/api/get_messages`,{
-        cache: "no-store"
+      const res = await axios.get(`/api/get_messages`, {
+        headers: {
+          'Cache-Control': 'no-store'
+        }
       });
       const data = await res.data
       console.log("Fetched messages:", res.data); // Logování pro kontrolu
@@ -108,6 +110,7 @@ const deleteMessages = async (id) => {
 
     
     const refresh = async () =>{
+      console.log("Refreshing data...");
       fetchUserData()
       fetchMessages()
     }
