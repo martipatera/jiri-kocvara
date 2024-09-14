@@ -17,7 +17,7 @@ login.post("/login/", async (request, response) => {
     
     // Pokud uživatel neexistuje, vrátíme chybu
     if (!user) {
-        return request.status(401).json({ msg: "User not found" });
+        return response.status(401).json({ msg: "User not found" });
     }
 
     // Porovnáme heslo s hashovaným heslem v databázi
