@@ -4,7 +4,7 @@ import MessageSchema from "@/app/models/MessageSchema";
 
 export const GET = async () => {
     try {
-        console.log("Connecting to database...");
+        console.log("GET request received");
 
         await connect();
 

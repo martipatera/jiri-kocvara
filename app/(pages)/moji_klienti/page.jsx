@@ -71,7 +71,7 @@ function MojiKlienti() {
   const fetchMessages = async () => {
 
     try {
-      const res = await axios.get(`/api/get_messages?_=${new Date().getTime()}`, {
+      const res = await axios.get(`/api/get_messages`, {
         headers: {
           'Cache-Control': 'no-store', // Zajištění, že se nebudou data kešovat
         }
