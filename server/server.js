@@ -14,9 +14,10 @@ const klienti = require("./routes/klienti.js")
 const login = require("./routes/login.js")
 const register = require("./routes/register.js")
 
+app.use(express.json())
+
 dotenv.config();
 app.use(cors({ origin: true, credentials: true }))
-app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.use("/api", deleteMessages);

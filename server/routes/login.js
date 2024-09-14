@@ -21,7 +21,7 @@ login.post("/login/", async (req, res) => {
     }
 
     // Ověření hesla pomocí bcrypt
-    const isPasswordValid = await bcrypt.compare(password, existingUser.password);
+    const isPasswordValid = await compare(password, existingUser.password);
     if (!isPasswordValid) {
       return res.status(400).json({ message: "Nesprávné heslo" });
     }
