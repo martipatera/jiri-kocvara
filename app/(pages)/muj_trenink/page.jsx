@@ -1,4 +1,5 @@
 "use client"
+
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
@@ -14,14 +15,8 @@ function MujTrenink() {
 
 
   const fetchMessages = async () => {
-    
     try {
-      const res = await axios.get("/api/get_messages", {
-        headers: {
-          'Cache-Control': 'no-cache, no-store, must-revalidate',
-          'Pragma': 'no-cache',
-          'Expires': '0'
-        }});
+      const res = await axios.get("/api/get_messages");
       const data = await res.data
       
       setMessages(data.messages); // Uložení hodnot do stavu
@@ -79,6 +74,5 @@ function MujTrenink() {
     </div>
   )
 }
-
 
 export default MujTrenink
