@@ -13,19 +13,19 @@ export const GET = async () => {
             subject: message.subject,
             message: message.message,
             created: message.createdAt,
-            id: message._id
+            id: message._id.toString() // Ujisti se, že ID je ve správném formátu
         }));
 
         const response = new NextResponse(JSON.stringify({ messages }), { status: 200 });
 
         // Zakázání cache v hlavičkách
-        response.headers.set("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
+        response.headers.set("Cache-Control", "no-store, no-cache, must-revalidate");
         response.headers.set("Expires", "0");
         response.headers.set("Pragma", "no-cache");
-        response.headers.set("Surrogate-Control", "no-store");
 
         return response;
     } catch (err) {
-        return NextResponse.error(); // Vrátí chybu 500
+        console.error("Error fetching messages:", err); // Loguj chyby pro lepší diagnostiku
+        return new NextResponse("Internal Server Error", { status: 500 }); // Vrátí chybu 500 s textem
     }
 };
