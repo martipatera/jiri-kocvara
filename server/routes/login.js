@@ -2,7 +2,7 @@
 const express = require("express")
 const login = express.Router()
 const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const bodyParser = require("body-parser");
 const RegisterSchema = require("../models/RegisterSchema"); // Ujisti se, že máš správnou cestu k modelu
 require("dotenv").config(); // Pro načtení proměnných z .env souboru
