@@ -14,7 +14,7 @@ const login = require("./routes/login.js")
 const register = require("./routes/register.js")
 
 app.use(cors({
-    origin: 'https://jiri-kocvara-production.vercel.app', // Umožněte přístup z této domény
+    origin: 'jiri-kocvara-production-eds8y5p2m-martipateras-projects.vercel.app', // Umožněte přístup z této domény
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
   }));
