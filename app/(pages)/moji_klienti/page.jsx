@@ -102,7 +102,7 @@ const deleteMessages = async (id) => {
     const fetchUserData = async () => {
 
       try {
-        const res = await axios.get("https://jiri-kocvara.onrender.com/api/auth/klienti",{
+        const res = await axios.get("https://jiri-kocvara.onrender.com/api/klienti",{
           cache: "no-store"
         });
         const data = await res.data
