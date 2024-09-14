@@ -18,7 +18,7 @@ function Login() {
     const [msg, setMsg] = useState("")
     const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
-    const {isLogged} = useSelector(state => state.login) //takto muzu cist z reduceru hodnotu kterou chci, MUJ LOGIN REDUCER Z STORE.JS
+    const {isLogged, role} = useSelector(state => state.login) //takto muzu cist z reduceru hodnotu kterou chci, MUJ LOGIN REDUCER Z STORE.JS
     const dispatch = useDispatch() // diky tomu muzu pouzivat vsechny akce kteru mam v reduceru
 
     const handleLogin = async(e) =>{
@@ -31,7 +31,6 @@ function Login() {
                 password
             })
             const data = res.data
-            console.log(data)
             dispatch(logIn({ email: email, role: data.user.role }));//posilam aktualni login email do reduceru posilam to jako objekt
             setMsg(res.data.message)
             
@@ -109,7 +108,14 @@ function Login() {
                   Přihlásit se
               </h1>
               <form className="space-y-4 md:space-y-6 text-center" action="#">
-                  
+                  {
+                    role == "admin" || data.user.role == "trenér"?
+
+                    <Link href="/moji_klienti" className="w-52 text-black border-black border hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Moji klienti</Link>
+                    :
+                    <Link href="/muj_trenink" className="w-52 text-black border-black border hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Muj trénink</Link>
+
+                  }
 
                   <p><strong>{msg}</strong></p>
               </form>
