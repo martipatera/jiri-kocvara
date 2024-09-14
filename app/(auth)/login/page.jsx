@@ -109,7 +109,7 @@ function Login() {
               </h1>
               <form className="space-y-4 md:space-y-6 text-center" action="#">
                   {
-                    role == "admin" || data.user.role == "trenér"?
+                    role == "admin" || role == "trenér"?
 
                     <Link href="/moji_klienti" className="w-52 text-black border-black border hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Moji klienti</Link>
                     :
