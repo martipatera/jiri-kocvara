@@ -4,28 +4,34 @@ import MessageSchema from "@/app/models/MessageSchema";
 
 export const GET = async () => {
     try {
+        console.log("Connecting to database...");
+
         await connect();
+
+        console.log("Fetching messages...");
 
         const existingMessages = await MessageSchema.find({})
 
-        const messages = existingMessages.map((message) => ({
+        console.log("Messages fetched:", existingMessages);
+
+        const messages = await existingMessages.map((message) => ({
             author: message.author,
             subject: message.subject,
             message: message.message,
             created: message.createdAt,
-            id: message._id.toString() // Ujisti se, že ID je ve správném formátu
+            id: message._id
         }));
 
-        const response = new NextResponse(JSON.stringify({ messages }), { status: 200 });
+        const response = await new NextResponse(JSON.stringify({ messages }), { status: 200 });
 
         // Zakázání cache v hlavičkách
-        response.headers.set("Cache-Control", "no-store, no-cache, must-revalidate");
+        response.headers.set("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
         response.headers.set("Expires", "0");
         response.headers.set("Pragma", "no-cache");
+        response.headers.set("Surrogate-Control", "no-store");
 
         return response;
     } catch (err) {
-        console.error("Error fetching messages:", err); // Loguj chyby pro lepší diagnostiku
-        return new NextResponse("Internal Server Error", { status: 500 }); // Vrátí chybu 500 s textem
+        return NextResponse.error(); // Vrátí chybu 500
     }
 };
