@@ -18,6 +18,7 @@ function MujTrenink() {
     try {
       const res = await axios.get("/api/get_messages");
       const data = await res.data
+      console.log(data)
       
       setMessages(data.messages); // Uložení hodnot do stavu
     } catch (error) {

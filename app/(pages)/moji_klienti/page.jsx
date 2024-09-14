@@ -33,10 +33,10 @@ function MojiKlienti() {
   }
 
 
-  const sendMessages = async (e) => {
+  const sendMessages = async () => {
 
 
-    e.preventDefault()
+    
 
     if (!author || !subject || !message) {
       console.error("Všechna pole musí být vyplněna.");
@@ -82,6 +82,7 @@ function MojiKlienti() {
           'Expires': '0'
         }});
       const data = await res.data
+      await console.log(data)
       await setMessages(data.messages);
     } catch (error) {
       console.error("Error fetching data:", error);
