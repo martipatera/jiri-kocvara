@@ -75,4 +75,28 @@ function MujTrenink() {
   )
 }
 
+export async function getServerSideProps(context) {
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/get_messages`, {
+      headers: {
+        'Cache-Control': 'no-store', // Zajištění, že se nebudou data kešovat
+      }
+    });
+    const data = await res.json();
+
+    return {
+      props: {
+        messages: data.messages, // Předání načtených zpráv do komponenty
+      }
+    };
+  } catch (error) {
+    console.error("Error fetching messages:", error);
+    return {
+      props: {
+        messages: [], // V případě chyby vrátí prázdný seznam
+      }
+    };
+  }
+}
+
 export default MujTrenink
