@@ -17,7 +17,7 @@ login.post("/login/", async (request, response) => {
     
     // Pokud uživatel neexistuje, vrátíme chybu
     if (!user) {
-        return response.status(401).json({ msg: "User not found" });
+        return response.status(401).json({ message: "Uživatel nenalezen" });
     }
 
     // Porovnáme heslo s hashovaným heslem v databázi
@@ -25,23 +25,24 @@ login.post("/login/", async (request, response) => {
     
     // Pokud heslo nesouhlasí, vrátíme chybu
     if (request.body.password !== user.password) {
-        return response.status(401).json({ msg: "Invalid credentials" });
+        return response.status(401).json({ message: "Špatné heslo" });
     }
 
     // Pokud je vše v pořádku, přihlášení je úspěšné
     return response.status(200).json({
-        msg: "Logged in successfully",
+        message: "Přihlášení bylo úspěšné",
         user: {
             id: user._id,
-            email: user.email
+            email: user.email,
+            role: user.role
         }
     });
 } catch (err) {
     // Logování chyby
-    console.error("Error during login:", err);
+    console.error("Error při přihlášení:", err);
     
     // Vrátíme odpověď se statusem 500 v případě chyby serveru
-    return response.status(500).json({ msg: "Server error" });
+    return response.status(500).json({ message: "Server error" });
 }
 });
 

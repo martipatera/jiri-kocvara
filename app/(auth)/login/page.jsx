@@ -32,7 +32,7 @@ function Login() {
             })
             const data = res.data
             dispatch(logIn({ email: email, role: data.user.role }));//posilam aktualni login email do reduceru posilam to jako objekt
-            setMsg(data.message)
+            setMsg(res.data.message)
             
         }
         catch(err){
