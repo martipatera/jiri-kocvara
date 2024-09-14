@@ -125,25 +125,6 @@ const MojiKlienti = ({ initialMessages, initialUsers }) => {
   );
 };
 
-export async function getServerSideProps() {
-  try {
-    const messagesRes = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/get_messages`);
-    const usersRes = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/klienti`);
-    return {
-      props: {
-        initialMessages: messagesRes.data.messages,
-        initialUsers: usersRes.data.users
-      }
-    };
-  } catch (error) {
-    console.error("Error fetching initial data:", error);
-    return {
-      props: {
-        initialMessages: [],
-        initialUsers: []
-      }
-    };
-  }
-}
+
 
 export default MojiKlienti;
