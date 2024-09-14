@@ -12,34 +12,37 @@ require("dotenv").config(); // Pro načtení proměnných z .env souboru
 // POST Route pro přihlášení
 login.post("/login/", async (req, res) => {
   try {
-    const { email, password } = req.body;
-
-    // Kontrola, zda uživatel existuje
-    const existingUser = await RegisterSchema.findOne({ email });
-    if (!existingUser) {
-      return res.status(404).json({ message: "Uživatel nenalezen" });
+    // Najdeme uživatele podle emailu
+    const user = await RegisterSchema.findOne({ email: request.body.email });
+    
+    // Pokud uživatel neexistuje, vrátíme chybu
+    if (!user) {
+        return response.status(401).json({ msg: "User not found" });
     }
 
-    // Ověření hesla pomocí bcrypt
-    const isPasswordValid = await compare(password, existingUser.password);
-    if (!isPasswordValid) {
-      return res.status(400).json({ message: "Nesprávné heslo" });
+    // Porovnáme heslo s hashovaným heslem v databázi
+    const isMatch = await compare(request.body.password, user.password);
+    
+    // Pokud heslo nesouhlasí, vrátíme chybu
+    if (request.body.password !== user.password) {
+        return response.status(401).json({ msg: "Invalid credentials" });
     }
 
-    // Úspěšná odpověď s údaji o uživateli
-    return res.status(200).json({
-      message: "Přihlášení bylo úspěšné",
-      user: {
-        role: existingUser.role,
-      },
+    // Pokud je vše v pořádku, přihlášení je úspěšné
+    return response.status(200).json({
+        msg: "Logged in successfully",
+        user: {
+            id: user._id,
+            email: user.email
+        }
     });
-  } catch (err) {
-    console.error("Chyba při přihlášení:", err);
-    return res.status(500).json({ message: "Přihlášení selhalo" });
-  }
+} catch (err) {
+    // Logování chyby
+    console.error("Error during login:", err);
+    
+    // Vrátíme odpověď se statusem 500 v případě chyby serveru
+    return response.status(500).json({ msg: "Server error" });
+}
 });
-
-// Server
-
 
 module.exports = login

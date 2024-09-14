@@ -14,7 +14,7 @@ register.post("/register/", async (req, res) => {
     const { name, email, password, registerCode, role } = req.body;
 
     // Kontrola, zda uživatel již existuje
-    const existingUser = await RegisterSchema.findOne({ email });
+    const existingUser = await RegisterSchema.findOne({ email: request.body.email });
     if (existingUser) {
       return res.status(400).json({ message: "Uživatel již existuje" });
     }
