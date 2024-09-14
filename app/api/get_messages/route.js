@@ -1,3 +1,7 @@
+import { NextResponse } from "next/server";
+import connect from "@/app/database/db";
+import MessageSchema from "@/app/models/MessageSchema";
+
 export const GET = async () => {
     try {
         console.log("GET request received");
