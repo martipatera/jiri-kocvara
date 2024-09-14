@@ -107,11 +107,10 @@ const deleteMessages = async (id) => {
     }
 
     
-  useEffect(() => {
-
-    fetchMessages();
-    fetchUserData();
-  },[]); // useEffect bez závislostí spustí fetchData pouze jednou při mountnutí komponenty
+    const refresh = async () =>{
+      fetchUserData()
+      fetchMessages()
+    }
 
   return (
     <div id='container' className='min-h-screen'>
@@ -143,6 +142,8 @@ const deleteMessages = async (id) => {
                 )}
 
             </div>
+            <button onClick={refresh} className='border-2 p-3 rounded-full'>Fetch</button>
+
 
             <div className='flex flex-col border-2 rounded-lg border-gray-400 shadow lg:mx-32 gap-2 my-3 p-5'>
               <h2 className='font-bold text-lg'>Nová zpráva všem</h2>
