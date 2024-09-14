@@ -6,7 +6,7 @@ export const GET = async () => {
     try {
         await connect();
 
-        const existingMessages = await MessageSchema.find({}).pretty();
+        const existingMessages = await MessageSchema.find({})
 
         const messages = existingMessages.map((message) => ({
             author: message.author,
