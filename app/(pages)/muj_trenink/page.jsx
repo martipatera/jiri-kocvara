@@ -1,4 +1,3 @@
-"use client"
 
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
@@ -15,6 +14,7 @@ function MujTrenink() {
 
 
   const fetchMessages = async () => {
+    
     try {
       const res = await axios.get("/api/get_messages", {
         headers: {
