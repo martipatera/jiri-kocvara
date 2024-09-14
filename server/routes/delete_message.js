@@ -1,6 +1,6 @@
 // server.js (nebo app.js)
 const express = require("express")
-const delete_messages = express.Router()
+const delete_message = express.Router()
 const mongoose = require("mongoose");
 const MessageSchema = require("../models/MessageSchema"); // Ujisti se, že máš správnou cestu k modelu
 require("dotenv").config(); // Pro načtení proměnných z .env souboru
@@ -8,7 +8,7 @@ require("dotenv").config(); // Pro načtení proměnných z .env souboru
 
 
 // DELETE Route pro smazání zprávy podle ID
-delete_messages.delete("/delete_messages/", async (req, res) => {
+delete_message.delete("/delete_message/", async (req, res) => {
   try {
     const { id } = req.body; // Získání ID z těla požadavku
 
@@ -33,4 +33,4 @@ delete_messages.delete("/delete_messages/", async (req, res) => {
 // Server
 
 
-module.exports = delete_messages
+module.exports = delete_message

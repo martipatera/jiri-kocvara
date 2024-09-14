@@ -5,8 +5,7 @@ const cors = require("cors")
 const connectDB = require("./connectDB/connectDB")
 const dotenv = require("dotenv")
 
-
-const deleteMessages = require("./routes/delete_messages")
+const delete_message = require("./routes/delete_message")
 const forgotpassword = require("./routes/forgotpassword.js")
 const get_messages = require("./routes/get_messages.js")
 const post_messages = require("./routes/post_messages.js")
@@ -25,13 +24,13 @@ dotenv.config();
 
 app.use(express.urlencoded({ extended: true }))
 
-app.use("/api", deleteMessages);
 app.use("/api", forgotpassword);
 app.use("/api", get_messages);
 app.use("/api", post_messages);
 app.use("/api", klienti);
 app.use("/api", login);
 app.use("/api", register);
+app.use("/api", delete_message)
 
 
 app.get('/api', function (req, res) {
