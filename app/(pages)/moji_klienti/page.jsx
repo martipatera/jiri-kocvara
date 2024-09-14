@@ -64,20 +64,17 @@ function MojiKlienti() {
   };
 
   const fetchMessages = async () => {
-
     try {
-      const res = await axios.get(`https://jiri-kocvara.onrender.com/api/get_messages`, {
-        headers: {
-          'Cache-Control': 'no-store'
-        }
-      });
+      const res = await axios.get("https://jiri-kocvara.onrender.com/api/get_messages");
       const data = await res.data
-      console.log("Fetched messages:", res.data); // Logování pro kontrolu
-      await setMessages(data.messages);
+      console.log(data)
+      
+      setMessages(data.messages); // Uložení hodnot do stavu
     } catch (error) {
       console.error("Error fetching data:", error);
     }
   };
+  
 
   
 const deleteMessages = async (id) => {
@@ -114,6 +111,7 @@ const deleteMessages = async (id) => {
 
     
     useEffect(()=>{
+
       fetchUserData()
       fetchMessages()
     },[])
