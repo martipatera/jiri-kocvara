@@ -35,7 +35,6 @@ function MojiKlienti() {
 
   const sendMessages = async (e) => {
 
-    "use server"
 
     e.preventDefault()
 
@@ -70,7 +69,6 @@ function MojiKlienti() {
   };
 
   const fetchMessages = async () => {
-    "use server"
 
     try {
       const res = await axios.get("/api/get_messages", {
@@ -92,7 +90,6 @@ function MojiKlienti() {
 
   
 const deleteMessages = async (id) => {
-  "use server"
 
       try {
         const res = await axios.delete("/api/delete_message",{
@@ -114,7 +111,6 @@ const deleteMessages = async (id) => {
     };
   
     const fetchUserData = async () => {
-      "use server"
 
       try {
         const res = await axios.get("/api/auth/klienti", {

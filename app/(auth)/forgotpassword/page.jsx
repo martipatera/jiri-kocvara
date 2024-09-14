@@ -26,8 +26,9 @@ function ForgotPassword() {
     const dispatch = useDispatch() // diky tomu muzu pouzivat vsechny akce kteru mam v reduceru
 
     const handlePasswordChange = async(e) =>{
+
         e.preventDefault()
-        
+
         try{
             if(password === passwordConfirm){
                 const res = await axios.post("/api/auth/forgotpassword",{

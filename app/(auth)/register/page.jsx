@@ -25,6 +25,7 @@ function Register() {
     const handleRegister = async (e) =>{
         e.preventDefault()
 
+
         const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
        

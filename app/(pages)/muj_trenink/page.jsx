@@ -15,7 +15,6 @@ function MujTrenink() {
 
 
   const fetchMessages = async () => {
-    "use server"
     try {
       const res = await axios.get("/api/get_messages", {
         headers: {
