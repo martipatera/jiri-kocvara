@@ -16,7 +16,7 @@ function MujTrenink() {
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get(apiUrl+"/api/get_messages");
+      const res = await axios.get("/api/get_messages");
       const data = await res.data
       
       setMessages(data.messages); // Uložení hodnot do stavu
@@ -29,7 +29,7 @@ function MujTrenink() {
   useEffect(()=>{
     fetchMessages()
 
-  },[fetchMessages])
+  },[])
 
   const { isLogged, role } = useSelector(state =>state.login) //takto muzu cist z reduceru hodnotu kterou chci
 

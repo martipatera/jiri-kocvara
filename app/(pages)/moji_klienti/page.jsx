@@ -23,7 +23,6 @@ function MojiKlienti() {
   const [msg, setMsg] = useState("")
   const [users, setUsers] = useState([]); // Stav pro uchovávání emailů
 
-  console.log(apiUrl)
   let author = ""
 
   if(role === "admin"){
@@ -46,7 +45,7 @@ function MojiKlienti() {
     try {
       
 
-      const res = await axios.post(apiUrl+"/api/post_messages",{
+      const res = await axios.post("/api/post_messages",{
         author,
         email,
         subject,
@@ -56,7 +55,7 @@ function MojiKlienti() {
       setMsg(res.data.message)
       setSubject("")
       setMessage("")
-      fetchMessages()
+      await fetchMessages()
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -65,7 +64,7 @@ function MojiKlienti() {
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get(apiUrl+"/api/get_messages",{
+      const res = await axios.get("/api/get_messages",{
         headers: {
           'Cache-Control': 'no-cache',
           'Pragma': 'no-cache',
@@ -83,21 +82,22 @@ function MojiKlienti() {
 const deleteMessages = async (id) => {
 
       try {
-        const res = await axios.delete(apiUrl+"/api/delete_message",{
+        const res = await axios.delete("/api/delete_message",{
           data: {id}
         });
         const data = await res.data
+        await fetchMessages()
       } 
       catch (error) {
         console.error("Error fetching data:", error);
       }
-      fetchMessages()
+      
 
     };
   
     const fetchUserData = async () => {
       try {
-        const res = await axios.get(apiUrl+"/api/auth/klienti");
+        const res = await axios.get("/api/auth/klienti");
         const data = await res.data
         await setUsers(data.users); // Uložení hodnot do stavu
       } catch (error) {
@@ -110,7 +110,7 @@ const deleteMessages = async (id) => {
 
     fetchMessages();
     fetchUserData();
-  }, [[fetchMessages, fetchUserData]]); // useEffect bez závislostí spustí fetchData pouze jednou při mountnutí komponenty
+  },[]); // useEffect bez závislostí spustí fetchData pouze jednou při mountnutí komponenty
 
   return (
     <div id='container' className='min-h-screen'>

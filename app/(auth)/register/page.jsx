@@ -31,7 +31,7 @@ function Register() {
 
         try{
             if(registerCode === code ){
-                const res = await axios.post(apiUrl+"/api/auth/register",{
+                const res = await axios.post("/api/auth/register",{
                     name,
                     email,
                     password,

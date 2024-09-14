@@ -30,7 +30,7 @@ function ForgotPassword() {
         
         try{
             if(password === passwordConfirm){
-                const res = await axios.post(apiUrl+"/api/auth/forgotpassword",{
+                const res = await axios.post("/api/auth/forgotpassword",{
                     email,
                     password,
                     
