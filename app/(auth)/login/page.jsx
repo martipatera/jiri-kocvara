@@ -108,14 +108,7 @@ function Login() {
                   Přihlásit se
               </h1>
               <form className="space-y-4 md:space-y-6 text-center" action="#">
-                  {
-                    data.user.role == "admin" || data.user.role == "trenér"?
-
-                    <Link href="/moji_klienti" className="w-52 text-black border-black border hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Moji klienti</Link>
-                    :
-                    <Link href="/muj_trenink" className="w-52 text-black border-black border hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Muj trénink</Link>
-
-                  }
+                  
 
                   <p><strong>{msg}</strong></p>
               </form>
