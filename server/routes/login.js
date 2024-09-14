@@ -21,7 +21,7 @@ login.post("/login/", async (request, response) => {
     }
 
     // Porovnáme heslo s hashovaným heslem v databázi
-    const isMatch = await compare(request.body.password, user.password);
+    const isMatch = await bcrypt.compare(request.body.password, user.password);
     
     // Pokud heslo nesouhlasí, vrátíme chybu
     if (request.body.password !== user.password) {
