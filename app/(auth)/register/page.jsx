@@ -32,7 +32,7 @@ function Register() {
 
         try{
             if(registerCode === code ){
-                const res = await axios.post("/api/auth/register",{
+                const res = await axios.post("https://jiri-kocvara.onrender.com/api/auth/register",{
                     name,
                     email,
                     password,

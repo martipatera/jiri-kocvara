@@ -26,7 +26,7 @@ function Login() {
 
         
         try{
-            const res = await axios.post("/api/auth/login",{
+            const res = await axios.post("https://jiri-kocvara.onrender.com/api/auth/login",{
                 email,
                 password
             })

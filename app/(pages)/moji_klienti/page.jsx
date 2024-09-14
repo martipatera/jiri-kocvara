@@ -43,7 +43,7 @@ function MojiKlienti() {
     try {
       
 
-      const res = await axios.post("/api/post_messages",{
+      const res = await axios.post("https://jiri-kocvara.onrender.com/api/post_messages",{
         author,
         email,
         subject,
@@ -55,6 +55,8 @@ function MojiKlienti() {
       setMsg(res.data.message)
       setSubject("")
       setMessage("")
+      await fetchMessages()
+
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -64,7 +66,7 @@ function MojiKlienti() {
   const fetchMessages = async () => {
 
     try {
-      const res = await axios.get(`/api/get_messages`, {
+      const res = await axios.get(`https://jiri-kocvara.onrender.com/api/get_messages`, {
         headers: {
           'Cache-Control': 'no-store'
         }
@@ -81,12 +83,14 @@ function MojiKlienti() {
 const deleteMessages = async (id) => {
 
       try {
-        const res = await axios.delete("/api/delete_message",{
+        const res = await axios.delete("https://jiri-kocvara.onrender.com/api/delete_message",{
           data: {id}
         },{
           cache: "no-store"
         });
         const data = await res.data
+        await fetchMessages()
+
       } 
       catch (error) {
         console.error("Error fetching data:", error);
@@ -98,7 +102,7 @@ const deleteMessages = async (id) => {
     const fetchUserData = async () => {
 
       try {
-        const res = await axios.get("/api/auth/klienti",{
+        const res = await axios.get("https://jiri-kocvara.onrender.com/api/auth/klienti",{
           cache: "no-store"
         });
         const data = await res.data
@@ -109,11 +113,12 @@ const deleteMessages = async (id) => {
     }
 
     
-    const refresh = async () =>{
-      console.log("Refreshing data...");
+    useEffect(()=>{
       fetchUserData()
       fetchMessages()
-    }
+    },[])
+      
+    
 
   return (
     <div id='container' className='min-h-screen'>
@@ -145,7 +150,6 @@ const deleteMessages = async (id) => {
                 )}
 
             </div>
-            <button onClick={refresh} className='border-2 p-3 rounded-full'>Fetch</button>
 
 
             <div className='flex flex-col border-2 rounded-lg border-gray-400 shadow lg:mx-32 gap-2 my-3 p-5'>
