@@ -35,9 +35,6 @@ function MojiKlienti() {
 
   const sendMessages = async () => {
 
-
-    
-
     if (!author || !subject || !message) {
       console.error("Všechna pole musí být vyplněna.");
       return;
@@ -52,12 +49,9 @@ function MojiKlienti() {
         subject,
         message,
 
-      }, {
-        headers: {
-          'Cache-Control': 'no-cache, no-store, must-revalidate',
-          'Pragma': 'no-cache',
-          'Expires': '0'
-        }});
+      },{
+        cache: "no-store"
+      });
       setMsg(res.data.message)
       setSubject("")
       setMessage("")
@@ -71,16 +65,9 @@ function MojiKlienti() {
   const fetchMessages = async () => {
 
     try {
-      const res = await axios.get(`/api/get_messages`, {
-        headers: {
-          'Cache-Control': 'no-store', // Zajištění, že se nebudou data kešovat
-        }
-      }, {
-        headers: {
-          'Cache-Control': 'no-cache, no-store, must-revalidate',
-          'Pragma': 'no-cache',
-          'Expires': '0'
-        }});
+      const res = await axios.get(`/api/get_messages`,{
+        cache: "no-store"
+      });
       const data = await res.data
       console.log("Fetched messages:", res.data); // Logování pro kontrolu
       await setMessages(data.messages);
@@ -95,12 +82,9 @@ const deleteMessages = async (id) => {
       try {
         const res = await axios.delete("/api/delete_message",{
           data: {id}
-        }, {
-          headers: {
-            'Cache-Control': 'no-cache, no-store, must-revalidate',
-            'Pragma': 'no-cache',
-            'Expires': '0'
-          }});
+        },{
+          cache: "no-store"
+        });
         const data = await res.data
         await fetchMessages()
       } 
@@ -114,12 +98,9 @@ const deleteMessages = async (id) => {
     const fetchUserData = async () => {
 
       try {
-        const res = await axios.get("/api/auth/klienti", {
-          headers: {
-            'Cache-Control': 'no-cache, no-store, must-revalidate',
-            'Pragma': 'no-cache',
-            'Expires': '0'
-          }});
+        const res = await axios.get("/api/auth/klienti",{
+          cache: "no-store"
+        });
         const data = await res.data
         await setUsers(data.users); // Uložení hodnot do stavu
       } catch (error) {
