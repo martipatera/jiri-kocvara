@@ -16,7 +16,7 @@ import JirkaKocvara from "../JKFotky/jirka.jpg"
 import Video from 'next-video';
 import VideoComponent from "./components/Video";
 import Counter from "./components/CountUp";
-
+import CarouselComponent from "./components/CarouselComponent";
 
 
 
@@ -52,10 +52,13 @@ export default function Home() {
         <div className="flex justify-center items-center py-10 md:py-5 lg:py-10"> 
           <p className="text-5xl text-white animate-bounce"><FaChevronDown></FaChevronDown></p>
         </div>
-      
+
       </div>
+      
+      <CarouselComponent/>
 
       <div className="flex min-h-screen py-5 md:py-5 lg:py-10 flex-col lg:flex-row justify-center px-3 md:px-20 lg:px-10 xl:px-32 items-center bg-bgPlates bg-center bg-cover bg-no-repeat">
+       
         
       <div className="mb-2 w-full lg:h-[800px] p-6 m-4 bg-gray-500 border opacity-90 border-gray-200 rounded-xl shadow">
           <span className="flex justify-center items-center">
@@ -107,7 +110,7 @@ export default function Home() {
 
       
 
-      <div id="mainPage2" className="text-white h-3/4 pb-10 bg-mainImage bg-cover bg-no-repeat bg-left-bottom sm:bg-center">
+      <div id="mainPage2" className="text-white h-3/4 pb-10 bg-mainImage bg-cover bg-no-repeat bg-center">
 
         <div className="flex justify-center flex-col items-center ">
 
@@ -179,7 +182,7 @@ export default function Home() {
 
                   <h5 className="mb-2 text-2xl text-center font-semibold tracking-tight text-gray-900  ">Online Coaching</h5>
                   <p className="mb-3 font-normal text-gray-900 text-center min-h-[120px]">Online coaching je klíčovým nástrojem pro dosažení vašich fitness cílů na míru. Flexibilita online tréninků vám umožňuje pracovat na své kondici a zlepšení výkonu podle vlastního tempa a rozvrhu, přičemž získáte osobní podporu a odborné rady k dosažení optimálních výsledků.</p>
-                  <Link href="/" className='text-center text-blue-500 underline font-semibold text-lg'>To je přesně pro mě!</Link>
+                  <Link href="/" className='text-center text-blue-500 underline font-semibold text-lg'>Tohle je pro mě úplně ideální!</Link>
                 
           </div>
 

@@ -31,7 +31,7 @@ module.exports = withMT({
         "test":"#800e13",
       },
       backgroundImage:{
-        "mainImage":"url('../public/gymBackground.jpg')",
+        "mainImage":"url('../public/gymBackground1.jpg')",
         "JKDum":"url('../JKFotky/JKDum.jpg')",
         "JKDeadlift":"url('../JKFotky/JKdeadlift.jpg')",
         "bgMain":"url('../JKFotky/JirkaKocvara.jpg')",
