@@ -8,14 +8,14 @@ import Counter from "./CountUp"
 function CarouselComponent() {
   return (
     
-    <div className="h-40 sm:h-64 xl:h-80 2xl:h-28 my-auto text-white bg-blue-gray-400 opacity-90 flex flex-col justify-center items-center  lg:px-36">
+    <div className="h-[275px]  md:h-44 lg:h-44 xl:h-80 2xl:h-44 my-0 text-white bg-blue-gray-400 opacity-90 lg:px-0">
       <Carousel slideInterval={4000}>
         
             {
                 carouselData.map((data, index)=>{
-                    return <div key={index} className="text-center border-2 shadow rounded-xl 2xl:h-24 2xl:pt-3">
+                    return <div key={index} className="text-center px-10 md:px-14 2xl:h-24 lg:w-3/4">
                         <p>{data.name}</p>
-                        <p className="italic">&ldquo;{data.review}&rdquo;</p>
+                        <p className="italic 2xl:px-0">&ldquo;{data.review}&rdquo;</p>
                     </div>
                 })
             }
