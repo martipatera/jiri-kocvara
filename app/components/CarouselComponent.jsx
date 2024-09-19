@@ -8,7 +8,7 @@ import Counter from "./CountUp"
 function CarouselComponent() {
   return (
     
-    <div className="h-[275px]  md:h-44 lg:h-44 xl:h-80 2xl:h-44 my-0 text-white bg-blue-gray-400 opacity-90 lg:px-0">
+    <div className="h-[275px]  md:h-44 lg:h-44 xl:h-80 2xl:h-44 my-0 text-white bg-gray-500 opacity-90 lg:px-0">
       <Carousel slideInterval={4000}>
         
             {
