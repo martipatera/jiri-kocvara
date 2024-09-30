@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import axios from 'axios'
+import Loading from '@/app/components/Loading'
 
 
 
@@ -19,11 +20,13 @@ function Register() {
     const [registerCode, setRegisterCode] = useState("")
     const [msg, setMsg] = useState("")
     const [registrovan, setRegistrovan] = useState(false)
+    const [loading, setLoading] = useState(false)
     const role = "klient"
     const code = process.env.NEXT_PUBLIC_REGISTER_CODE
 
     const handleRegister = async (e) =>{
         e.preventDefault()
+        setLoading(true)
 
 
         const apiUrl = process.env.NEXT_PUBLIC_API_URL
@@ -51,6 +54,9 @@ function Register() {
         catch(err){
             setMsg(err.res?.data?.message || "Uživatel je již registrován")
             setRegistrovan(false)
+        }
+        finally{
+            setLoading(false)
         }
         
 
@@ -113,7 +119,9 @@ function Register() {
                                 
                                 
                             </div>
-                            <button onClick={handleRegister} type="submit" className="w-full text-black border-black border hover:brightness-110  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Registrovat</button>
+                            <button onClick={handleRegister} type="submit" className="w-full text-black border-black border hover:brightness-110  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">{
+                            loading? <Loading/> : "Registrovat"}
+                            </button>
                             <p className="text-sm font-light text-gray-500 ">
                                 Už máš účet? <a href="/login" className="font-medium text-black hover:underline ">Přihlas se tady</a>
                             </p>

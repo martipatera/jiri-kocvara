@@ -8,6 +8,8 @@ import axios from 'axios'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { logIn } from '@/app/store/loginStore'
+import Loading from '@/app/components/Loading'
+import { FaBullseye } from 'react-icons/fa6'
 
 
 
@@ -19,6 +21,8 @@ function ForgotPassword() {
     const [passwordConfirm, setPasswordConfirm] = useState("")
     const [msg, setMsg] = useState("")
     const [hesloZmeneno, setHesloZmeneno] = useState(false)
+    const [loading, setLoading] = useState(false)
+
 
     const apiUrl = process.env.EXT_PUBLIC_API_URL
 
@@ -28,6 +32,7 @@ function ForgotPassword() {
     const handlePasswordChange = async(e) =>{
 
         e.preventDefault()
+        setLoading(true)
 
         try{
             if(password === passwordConfirm){
@@ -51,6 +56,10 @@ function ForgotPassword() {
         catch(err){
             setMsg(err.res?.data?.message || "Email nenalezen")
             setHesloZmeneno(false)
+        }
+        finally{
+            setLoading(false)
+
         }
     }
 
@@ -89,7 +98,8 @@ function ForgotPassword() {
                         </div>
                         
                         
-                        <button onClick={handlePasswordChange} type="submit" className="w-full text-white bg-orange hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center  ">Změnit heslo</button>
+                        <button onClick={handlePasswordChange} type="submit" className="w-full text-white bg-orange hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center  ">{
+                            loading? <Loading/> : "Změnit heslo"}</button>
                         
                         <p>{msg}</p>
                     </form>
