@@ -30,8 +30,8 @@ function Login() {
         
         try{
             const res = await axios.post("https://jiri-kocvara.onrender.com/api/login",{
-                email,
-                password
+                email: email.trim(),
+                password: password.trim()
             })
             const data = res.data
             dispatch(logIn({ email: email, role: data.user.role }));//posilam aktualni login email do reduceru posilam to jako objekt

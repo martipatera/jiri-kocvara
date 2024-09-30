@@ -37,8 +37,8 @@ function ForgotPassword() {
         try{
             if(password === passwordConfirm){
                 const res = await axios.post("https://jiri-kocvara.onrender.com/api/forgotpassword",{
-                    email,
-                    password,
+                    email: email.trim(),
+                    password: password.trim(),
                     
                 })
                 const data = await res.data
