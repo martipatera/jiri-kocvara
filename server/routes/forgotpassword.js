@@ -11,8 +11,6 @@ require("dotenv").config(); // Pro načtení proměnných z .env souboru
 // POST Route pro změnu hesla uživatele
 forgotpassword.post("/forgotpassword/", async (req, res) => {
   try {
-    // Připojení k databázi
-    await connectDB();
 
     // Získání dat z požadavku
     const { email, password } = req.body;
