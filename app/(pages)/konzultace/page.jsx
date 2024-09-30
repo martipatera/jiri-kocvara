@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
 
-
 export const metadata = {
   title: "Jiří Kočvara | Konzultace",
   description: 'Rezervujte si konzultaci s naším certifikovaným fitness trenérem. Probereme vaše cíle a vytvoříme plán na míru vašim potřebám. Začněte svou cestu k lepšímu zdraví!',
@@ -21,6 +20,7 @@ function Konzultace() {
 
             <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Konzultace</h1>
             <hr className="w-2/3 h-1 mx-auto my-4 bg-red-500 border-0 rounded md:my-10 animate-fade"></hr>
+
 
             <p className='animate-fade mb-5 font-medium bg-slate-100 rounded-xl p-2 text-center'>Chceš udělat první krok k lepšímu zdraví, kondici a spokojenosti? Rezervuj si osobní konzultaci, kde společně probereme tvoje cíle, současný stav a vytvoříme plán na míru tvým potřebám. Ať už jsi úplný začátečník, nebo zkušený sportovec, spolu dosáhneme toho nejlepšího výsledku.</p>
         

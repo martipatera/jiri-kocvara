@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { logIn } from '@/app/store/loginStore'
+import Loading from '@/app/components/Loading';
 
 
 
@@ -16,6 +17,7 @@ function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [msg, setMsg] = useState("")
+    const [loading, setLoading] = useState(false)
     const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
     const {isLogged, role} = useSelector(state => state.login) //takto muzu cist z reduceru hodnotu kterou chci, MUJ LOGIN REDUCER Z STORE.JS
@@ -23,6 +25,7 @@ function Login() {
 
     const handleLogin = async(e) =>{
         e.preventDefault()
+        setLoading(true)
 
         
         try{
@@ -37,6 +40,9 @@ function Login() {
         }
         catch(err){
             setMsg(err.res?.data?.message || "Přihlášení se nezdařilo, zkus jiné heslo") 
+        }
+        finally{
+            setLoading(false)
         }
     }
 
@@ -80,7 +86,10 @@ function Login() {
                             </div>
                             <Link className="text-sm font-medium text-black hover:underline "href="/forgotpassword" >Zapomenuté heslo</Link>
                         </div>
-                        <button onClick={handleLogin} type="submit" className="w-full text-black border-black border hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Přihlásit se</button>
+                        <button onClick={handleLogin} disabled={loading} type="submit" className="w-full text-black border-black border hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Přihlásit se</button>
+                        {
+                            loading? <Loading/> : ""
+                        }
                         <p className="text-sm font-light text-gray-500 ">
                             Ještě nemáš účet? <Link href="/register" className="font-medium  hover:underline ">Registrovat se</Link>
                         </p>
