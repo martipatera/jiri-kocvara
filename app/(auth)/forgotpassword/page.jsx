@@ -98,7 +98,7 @@ function ForgotPassword() {
                         </div>
                         
                         
-                        <button onClick={handlePasswordChange} type="submit" className="w-full text-white bg-orange hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center  ">{
+                        <button onClick={handlePasswordChange} type="submit" className="w-full text-white bg-orange hover:brightness-110 font-medium rounded-lg text-sm px-5 py-2.5 text-center flex justify-center items-center">{
                             loading? <Loading/> : "Změnit heslo"}</button>
                         
                         <p>{msg}</p>

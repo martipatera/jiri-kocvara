@@ -119,8 +119,8 @@ function Register() {
                                 
                                 
                             </div>
-                            <button onClick={handleRegister} type="submit" className="w-full text-black border-black border hover:brightness-110  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">{
-                            loading? <Loading/> : "Registrovat"}
+                            <button onClick={handleRegister} type="submit" className="w-full text-black border-black border hover:brightness-110  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center flex justify-center items-center">{
+                            loading? <Loading/> : "Registrovat se"}
                             </button>
                             <p className="text-sm font-light text-gray-500 ">
                                 Už máš účet? <a href="/login" className="font-medium text-black hover:underline ">Přihlas se tady</a>
