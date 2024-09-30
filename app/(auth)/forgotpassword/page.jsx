@@ -127,7 +127,7 @@ function ForgotPassword() {
                         
                         
                         
-                        <button type="submit" className="w-full text-black border-black bg-orange hover:brightness-110   font-medium rounded-lg text-sm px-5 py-2.5 text-center  "><Link href="/login">Přihlásit se zde</Link></button>
+                        <button type="submit" className="w-full text-black border-black border hover:brightness-110 font-medium rounded-lg text-sm px-5 py-2.5 text-center flex justify-center items-center"><Link href="/login">Přihlásit se zde</Link></button>
                         
                         <p><strong>{msg}</strong></p>
                     </form>
