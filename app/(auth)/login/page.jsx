@@ -84,7 +84,7 @@ function Login() {
                                   <label htmlFor="remember" className="text-gray-500 ">Pamatuj si mě</label>
                                 </div>
                             </div>
-                            <Link className="text-sm font-medium text-black hover:underline "href="/forgotpassword" >Zapomenuté heslo</Link>
+                            <Link className="text-sm font-medium text-black hover:underline" href="/forgotpassword" >Zapomenuté heslo</Link>
                         </div>
                         <button onClick={handleLogin} disabled={loading} type="submit" className="w-full text-black border-black border hover:brightness-110 font-medium rounded-lg text-sm px-5 py-2.5 text-center flex justify-center items-center">{
                             loading? <Loading/> : "Přihlásit se"
