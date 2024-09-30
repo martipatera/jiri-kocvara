@@ -36,10 +36,10 @@ function Register() {
         try{
             if(registerCode === code ){
                 const res = await axios.post("https://jiri-kocvara.onrender.com/api/register",{
-                    name,
-                    email,
-                    password,
-                    registerCode,
+                    name: name.trim(),
+                    email: email.trim(),
+                    password :password.trim(),
+                    registerCode: registerCode.trim(),
                     role
                 })
                 setMsg(res.data.message)
