@@ -43,7 +43,7 @@ function MojiKlienti() {
     try {
       
 
-      const res = await axios.post("https://jiri-kocvara.onrender.com/api/post_messages",{
+      const res = await axios.post("https://1934amokge421fsa42191fsklam.vercel.app/api/post_messages",{
         author,
         email,
         subject,
@@ -65,7 +65,7 @@ function MojiKlienti() {
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get("https://jiri-kocvara.onrender.com/api/get_messages");
+      const res = await axios.get("https://1934amokge421fsa42191fsklam.vercel.app/api/get_messages");
       const data = await res.data
       console.log(data)
       
@@ -80,7 +80,7 @@ function MojiKlienti() {
 const deleteMessages = async (id) => {
 
       try {
-        const res = await axios.delete("https://jiri-kocvara.onrender.com/api/delete_message",{
+        const res = await axios.delete("https://1934amokge421fsa42191fsklam.vercel.app/api/delete_message",{
           data: {id}
         },{
           cache: "no-store"
@@ -99,7 +99,7 @@ const deleteMessages = async (id) => {
     const fetchUserData = async () => {
 
       try {
-        const res = await axios.get("https://jiri-kocvara.onrender.com/api/klienti",{
+        const res = await axios.get("https://1934amokge421fsa42191fsklam.vercel.app/api/klienti",{
           cache: "no-store"
         });
         const data = await res.data

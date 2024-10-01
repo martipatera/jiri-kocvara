@@ -16,7 +16,7 @@ function MujTrenink() {
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get("https://jiri-kocvara.onrender.com/api/get_messages");
+      const res = await axios.get("https://1934amokge421fsa42191fsklam.vercel.app/api/get_messages");
       const data = await res.data
       console.log(data)
       

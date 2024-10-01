@@ -12,7 +12,7 @@ delete_message.delete("/delete_message/", async (req, res) => {
   try {
     const { id } = req.body; // Získání ID z těla požadavku
 
-    // Zkontrolujte, zda ID je platné
+    // Zkontrolujte, zda ID je platn0
     if (!id) {
       return res.status(400).json({ msg: "ID je povinné" });
     }
