@@ -12,8 +12,8 @@ function Cenik() {
 
 
   return (
-    <div className='min-h-screen bg-blue-gray-50 overflow-hidden'>
-      <div className='pt-28 md:pt-36 xl:pt-28'>
+    <div className='min-h-screen bg-blue-gray-50 overflow-hidden bg-none lg:bg-bgLogo75 bg-center bg-no-repeat '>
+      <div className='pt-28 md:pt-36 xl:pt-28 bg-no-repeat'>
 
         <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Ceník</h1>
         <hr className="w-2/3 h-1 mx-auto mt-4 bg-red-500 border-0 rounded animate-fade"></hr>
@@ -23,7 +23,7 @@ function Cenik() {
         
           {
           cenikData.map((data,index)=>{
-            return <div key={index} className="min-h-[325px] xl:w-1/3 p-4 md:pt-9 lg:hover:scale-105 transition-all text-center bg-white border  rounded-lg shadow ">
+            return <div key={index} className="min-h-[325px] opacity-95 hover:opacity-100 xl:w-1/3 p-4 md:pt-9 lg:hover:scale-105 transition-all text-center bg-gray-200 border border-gray-300  rounded-lg shadow ">
               <span className='flex flex-col justify-between h-full '>
 
                   <span className='flex justify-center items-center '>

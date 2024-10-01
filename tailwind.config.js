@@ -39,6 +39,9 @@ module.exports = withMT({
         "bgMain2":"url('../JKFotky/JirkaKocvaraR.jpg')",
         "bgWorkout":"url('../JKFotky/workout.jpg')",
         "bgPlates":"url('../JKFotky/plates.jpg')",
+        "bgLogo75":"url('../JKFotky/logo75.png')",
+        "bgLogo45":"url('../JKFotky/logo45.png')",
+        "bgLogo30":"url('../JKFotky/logo30.png')"
       },
       animation: {
 				fade: 'fadeIn 1s ease-in-out',

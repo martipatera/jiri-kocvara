@@ -20,14 +20,14 @@ export const metadata = {
 function Kontakt() {
   return (
     <div id='container' className='min-h-screen overflow-x-hidden bg-blue-gray-50'>
-      <div className=' pt-28 md:pt-40  px-5 lg:px-10 pb-5'>
+      <div className=' pt-28 md:pt-40  px-5 lg:px-10 pb-5 '>
 
           <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Kontakt</h1>
           <hr className="w-2/3 h-1 mx-auto my-4 bg-red-500 border-0 rounded md:my-10 animate-fade"></hr>
 
-          <div className='bg-slate-50 border-2 border-gray-300 rounded-lg shadow flex flex-col lg:flex-row justify-around p-3 mb-3 md:p-5'>
+          <div className='bg-gray-200 border opacity-95 border-gray-300 rounded-lg shadow flex flex-col lg:flex-row justify-around p-3 mb-3 md:p-5'>
 
-            <div className='flex flex-col flex-wrap gap-3 md:gap-4'>
+            <div className='flex flex-col flex-wrap gap-3 md:gap-4 '>
 
               <p className='text-2xl md:text-4xl flex-wrap break-words font-semibold'>Jiří Kočvara</p>
 
@@ -89,7 +89,7 @@ function Kontakt() {
           
 
 
-          <div className=' bg-slate-50 border-2 border-gray-300 rounded-lg items-center shadow flex flex-grow flex-col md:flex-row justify-around gap-5 p-3 md:p-3'>
+          <div className='bg-gray-200 border opacity-95 border-gray-300 rounded-lg items-center shadow flex flex-grow flex-col md:flex-row justify-around gap-5 p-3 md:p-3'>
 
             <span className='text-center'>
               <h3 className='text-xl font-semibold lg:text-2xl py-4'>TJ Lokomotiva Beroun</h3> 

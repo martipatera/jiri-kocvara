@@ -15,7 +15,7 @@ function Sluzby() {
 
 
   return (
-    <div className='min-h-screen bg-blue-gray-50 overflow-hidden'>
+    <div className='min-h-screen bg-blue-gray-50 overflow-hidden bg-none lg:bg-bgLogo75 bg-center bg-no-repeat '>
       <div className='pt-28 md:pt-36 xl:pt-28'>
 
         <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Služby</h1>
@@ -26,7 +26,7 @@ function Sluzby() {
         
           {
           cenikData.map((data,index)=>{
-            return <div key={index} className="min-h-[325px] xl:w-1/3 p-4 lg:p-3 md:pt-9 lg:hover:scale-105 transition-all text-center bg-white border  rounded-lg shadow ">
+            return <div key={index} className="min-h-[325px] opacity-95 hover:opacity-100 xl:w-1/3 p-4 lg:p-3 md:pt-9 lg:hover:scale-105 transition-all text-center bg-gray-200 border border-gray-300  rounded-lg shadow ">
               <span className='flex flex-col justify-between h-full '>
 
                   <span className='flex justify-center items-center '>
@@ -52,7 +52,7 @@ function Sluzby() {
           }
           </div>
 
-          <p className='text-center text-blue-500 pb-8 pt-5 px-5 text-lg'>Máš zájem o některý z programů? <Link href="/konzultace" className='underline font-semibold'>Objednej se!</Link></p>
+          <p className='text-center text-blue-500 pb-8 pt-8 px-5 text-lg'>Máš zájem o některý z programů? <Link href="/konzultace" className='underline font-semibold'>Objednej se!</Link></p>
 
 
       </div>
