@@ -12,7 +12,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 export const metadata = {
   title: "Jiří Kočvara | Kontakt",
-  description: 'Máte dotazy nebo potřebujete více informací? Kontaktujte nás prostřednictvím našeho kontaktního formuláře nebo nás navštivte osobně.',
+  description: "Máte dotazy nebo potřebujete více informací? Kontaktujte nás přes formulář nebo nás navštivte osobně. Těšíme se na vaši zprávu."
 };
 
 

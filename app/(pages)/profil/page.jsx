@@ -6,7 +6,7 @@ import JirkaPoza from "../../../public/jirkaPoza.jpg"
 
 export const metadata = {
   title: "Jiří Kočvara | Profil",
-  description: "Jiří Kočvara je fitness trenér a bodybuilder s dlouholetou praxí a mnoha osobními tak trenérskými úspěchy. Prozkoumejte naše fitness služby, včetně osobních tréninků, výživového poradenství a skupinových lekcí. Najděte plán, který vám vyhovuje.",
+  description: "Jiří Kočvara je certifikovaný fitness trenér a bodybuilder s dlouholetou praxí. Zjistěte více o jeho úspěších, přístupu k tréninku a nabízených fitness službách."
 }
 
 function Profil() {

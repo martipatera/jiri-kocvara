@@ -3,7 +3,7 @@ import React from 'react'
 
 export const metadata = {
   title: "Jiří Kočvara | Konzultace",
-  description: 'Rezervujte si konzultaci s naším certifikovaným fitness trenérem. Probereme vaše cíle a vytvoříme plán na míru vašim potřebám. Začněte svou cestu k lepšímu zdraví!',
+  description: "Rezervujte si konzultaci s certifikovaným fitness trenérem a výživovým poradcem. Probereme vaše cíle a připravíme individuální plán. Začněte svou cestu k lepšímu zdraví ještě dnes!"
 };
 
 function Konzultace() {

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Jiří Kočvara | Služby',
-  description: 'Prozkoumejte naše fitness služby, včetně osobních tréninků, výživového poradenství a skupinových lekcí. Najděte plán, který vám vyhovuje.'
+  description: "Objevte naše fitness služby, včetně osobních tréninků, výživového poradenství a skupinových lekcí. Najděte si plán na míru a začněte svou cestu ke zdravějšímu životnímu stylu ještě dnes!"
 };
 
 
