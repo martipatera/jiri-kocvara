@@ -1,13 +1,13 @@
 
 /// TODO ///
-
-email, password VALIDATION
+texty 
 cenik a sluzby do 1 ??? zalezi jak moc jsou ceny rozdelene
 upravit vsechny <a> aby bylo videt ze to jsou linky
-vsechny <img> a <Image> musi mit alt ! 
 
 
 /// DONE ///
 .trim() do DB se ulozi bez jakychkoliv mezer
 kazda stranka max 1x <h1> !!!
+vsechny <img> a <Image> musi mit alt ! 
+
 

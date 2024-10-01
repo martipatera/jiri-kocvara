@@ -92,12 +92,12 @@ function Kontakt() {
           <div className=' bg-slate-50 border-2 border-gray-300 rounded-lg items-center shadow flex flex-grow flex-col md:flex-row justify-around gap-5 p-3 md:p-3'>
 
             <span className='text-center'>
-              <h3 className='text-xl font-semibold lg:text-2xl'>TJ Lokomotiva Beroun</h3> 
+              <h3 className='text-xl font-semibold lg:text-2xl py-4'>TJ Lokomotiva Beroun</h3> 
               <iframe className='w-full h-auto lg:h-[250px] lg:w-[350px] xl:h-[350px] xl:w-[500px]' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.779333457431!2d14.069963512308655!3d49.95924177138367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ba512d3e133fd%3A0x3cd487c4abce4f7c!2sTJ%20Lokomotiva%20Beroun!5e0!3m2!1scs!2scz!4v1725450640272!5m2!1scs!2scz"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>            
             </span>
 
             <span className='text-center'>
-              <h3 className='text-xl font-semibold lg:text-2xl'>Fitness Tyran</h3> 
+              <h3 className='text-xl font-semibold lg:text-2xl py-4'>Fitness Tyran</h3> 
               <iframe className='w-full  h-auto lg:h-[250px] lg:w-[350px] xl:h-[350px] xl:w-[500px]' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.5777338435123!2d14.07391581230878!3d49.96302317138436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ba514940f2017%3A0xfd025ebad539d4fb!2sFITNESS%20TYRAN!5e0!3m2!1scs!2scz!4v1725450587904!5m2!1scs!2scz"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </span>
           </div>
