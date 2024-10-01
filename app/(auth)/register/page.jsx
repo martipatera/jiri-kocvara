@@ -74,7 +74,7 @@ function Register() {
         {
             !registrovan? 
             <div className=''>
-                <section className="bg-gray-50">
+                <section className="">
             <div className="flex flex-col items-center justify-center px-6 pt-24 md:pt-24 mx-autopb-16 lg:py-30 ">
                 
                     
