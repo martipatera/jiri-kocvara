@@ -69,7 +69,7 @@ function Register() {
 
   return (
 
-    <div id='register' className='min-h-screen'>
+    <div id='register' className='min-h-screen bg-blue-gray-50'>
 
         {
             !registrovan? 

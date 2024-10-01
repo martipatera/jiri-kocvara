@@ -11,7 +11,7 @@ export const metadata = {
 
 function Reference() {
   return (
-    <div className='min-h-screen bg-slate-200 overflow-hidden'>
+    <div className='min-h-screen bg-blue-gray-50 overflow-hidden'>
 
       <div className='pt-28 md:pt-36 pb-5'>
 

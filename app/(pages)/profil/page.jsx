@@ -11,7 +11,7 @@ export const metadata = {
 
 function Profil() {
   return (
-    <div className='min-h-screen bg-slate-200'>
+    <div className='min-h-screen bg-blue-gray-50'>
 
       <div className='pt-28 md:pt-40  px-5 lg:px-10 pb-5 2xl:pb-0 '>
         <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Jiří Kočvara</h1>

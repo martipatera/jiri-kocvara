@@ -13,7 +13,7 @@ function Konzultace() {
 
 
   return (
-    <div className='min-h-screen overflow-hidden bg-slate-200'>
+    <div className='min-h-screen overflow-hidden bg-blue-gray-50'>
 
 
         <span className='md:pt-36 mx-8 xl:mx-20 pt-40 sm:pt-32 px-5 lg:px-10 animate-fade h-full flex flex-col pb-5 flex-grow justify-center items-center '>

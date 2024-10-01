@@ -47,7 +47,7 @@ function Login() {
     }
 
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen bg-blue-gray-50'>
         {   
             !isLogged? 
         <div>

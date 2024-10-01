@@ -15,7 +15,7 @@ function Sluzby() {
 
 
   return (
-    <div className='min-h-screen bg-slate-200 overflow-hidden'>
+    <div className='min-h-screen bg-blue-gray-50 overflow-hidden'>
       <div className='pt-28 md:pt-36 xl:pt-28'>
 
         <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Služby</h1>

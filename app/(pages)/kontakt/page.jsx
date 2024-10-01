@@ -19,7 +19,7 @@ export const metadata = {
 
 function Kontakt() {
   return (
-    <div id='container' className='min-h-screen overflow-x-hidden bg-slate-200'>
+    <div id='container' className='min-h-screen overflow-x-hidden bg-blue-gray-50'>
       <div className=' pt-28 md:pt-40  px-5 lg:px-10 pb-5'>
 
           <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Kontakt</h1>

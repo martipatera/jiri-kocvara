@@ -119,7 +119,7 @@ const deleteMessages = async (id) => {
     
 
   return (
-    <div id='container' className='min-h-screen'>
+    <div id='container' className='min-h-screen bg-blue-gray-50'>
 
       {
           isLogged && (role === "admin") || (role === "trenér")?

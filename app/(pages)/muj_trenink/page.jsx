@@ -35,7 +35,7 @@ function MujTrenink() {
   const { isLogged, role } = useSelector(state =>state.login) //takto muzu cist z reduceru hodnotu kterou chci
 
   return (
-    <div id='container' className='min-h-screen w-screen overflow-hidden'>
+    <div id='container' className='min-h-screen w-screen overflow-hidden bg-blue-gray-50'>
 
       {
           isLogged && (role === "klient") || (role === "admin")?
