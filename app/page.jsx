@@ -134,7 +134,7 @@ export default function Home() {
               </span>
               <h5 className=" mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">Osobní trénink</h5>
               <p className="mb-3 font-normal text-gray-900 text-center min-h-[120px]">Osobní individuální trénink je klíčem k maximálnímu dosažení vašich fitness cílů s maximální efektivitou. S našimi odbornými trenéry získáte osobní přístup, který vám pomůže překonat překážky a dosáhnout výsledků, které jste si vždy přáli.</p>
-              <Link href="/" className='text-center text-blue-500 underline font-semibold text-lg'>To mě zajímá!</Link>
+              <Link href="/sluzby" className='text-center text-blue-500 underline font-semibold text-lg'>To mě zajímá!</Link>
 
           </div>
 
@@ -151,7 +151,7 @@ export default function Home() {
 
               <h5 className=" mb-2  text-2xl text-center font-semibold tracking-tight text-gray-900 ">Tréninkový plán</h5>
               <p className="mb-3 font-normal text-gray-900 text-center min-h-[120px]">Tréninkový plán je klíčem k dosažení vašich fitness cílů s maximální efektivitou a podporou. Tréninkové programy jsou navrženy tak, aby odpovídaly vašim individuálním potřebám a cílům, ať už se snažíte zhubnout, nabrat svaly nebo zlepšit svou kondici.</p>
-              <Link href="/" className='text-center text-blue-500 underline font-semibold text-lg'>Chci vědět víc!</Link>
+              <Link href="/sluzby" className='text-center text-blue-500 underline font-semibold text-lg'>Chci vědět víc!</Link>
 
           </div>
 
@@ -167,7 +167,7 @@ export default function Home() {
 
                     <h5 className="mb-2 text-2xl text-center font-semibold tracking-tight text-gray-900  ">Stravovací plán</h5>
                     <p className="mb-3 font-normal text-gray-900 text-center min-h-[120px]">Stravovací plán je základním kamenem úspěchu na cestě za vašimi fitness cíli. Kvalitní výživa je klíčová nejen pro optimalizaci výkonu během tréninků, ale i pro podporu celkového zdraví a pohody.</p>
-                    <Link href="/" className='text-center text-blue-500 underline font-semibold text-lg '>To je přesně pro mě!</Link>
+                    <Link href="/sluzby" className='text-center text-blue-500 underline font-semibold text-lg '>To je přesně pro mě!</Link>
                   
           </div>
 
@@ -183,7 +183,7 @@ export default function Home() {
 
                   <h5 className="mb-2 text-2xl text-center font-semibold tracking-tight text-gray-900  ">Online Coaching</h5>
                   <p className="mb-3 font-normal text-gray-900 text-center min-h-[120px]">Online coaching je klíčovým nástrojem pro dosažení vašich fitness cílů na míru. Flexibilita online tréninků vám umožňuje pracovat na své kondici a zlepšení výkonu podle vlastního tempa a rozvrhu, přičemž získáte osobní podporu a odborné rady k dosažení optimálních výsledků.</p>
-                  <Link href="/" className='text-center text-blue-500 underline font-semibold text-lg'>Tohle je pro mě úplně ideální!</Link>
+                  <Link href="/sluzby" className='text-center text-blue-500 underline font-semibold text-lg'>Tohle je pro mě úplně ideální!</Link>
                 
           </div>
 
