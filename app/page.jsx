@@ -123,7 +123,7 @@ export default function Home() {
      
       <div className="flex flex-col flex-1 md:items-stretch animate-fade lg:flex-row justify-center items-center gap-8 mx-2 md:mx-5 p-3 md:p-5 backdrop-blur-md rounded-lg">
 
-          <div className="min-h-[325px] lg:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border rounded-lg shadow">
+          <div className="min-h-[325px] lg:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-gray-100 border border-gray-300 rounded-lg shadow">
               <span className="flex justify-center items-center">
                 <Image href="/"
                  src={Coach}
@@ -138,7 +138,7 @@ export default function Home() {
 
           </div>
 
-          <div className=" min-h-[325px]  lg:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border border-gray-200 rounded-lg shadow">
+          <div className=" min-h-[325px]  lg:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-gray-100 border border-gray-300 rounded-lg shadow">
           <span className="flex justify-center items-center">
                 <Image href="/"
                  src={Task}
@@ -155,7 +155,7 @@ export default function Home() {
 
           </div>
 
-          <div className=" min-h-[325px] lg:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border border-gray-200 rounded-lg shadow  ">
+          <div className=" min-h-[325px] lg:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-gray-100 border border-gray-300 rounded-lg shadow  ">
           <span className="flex justify-center items-center">
                 <Image href="/"
                  src={Restaurant}
@@ -171,7 +171,7 @@ export default function Home() {
                   
           </div>
 
-          <div className=" min-h-[325px] lg:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-white border border-gray-200 rounded-lg shadow  ">
+          <div className=" min-h-[325px] lg:w-1/4 p-6 md:pt-9 hover:scale-105 transition-all text-center bg-gray-100 border border-gray-300 rounded-lg shadow  ">
           <span className="flex justify-center items-center">
                 <Image href="/"
                  src={OnlineCoaching}
