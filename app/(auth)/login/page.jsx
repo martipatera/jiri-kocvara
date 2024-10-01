@@ -29,7 +29,7 @@ function Login() {
 
         
         try{
-            const res = await axios.post("https://jiri-kocvara.onrender.com/api/login",{
+            const res = await axios.post("https://jiri-kocvara-ow4m.onrender.com/api/login",{
                 email: email.trim(),
                 password: password.trim()
             })
