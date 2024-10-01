@@ -49,7 +49,8 @@ function Kontakt() {
               <div>
                 <Image src={JirkaD}
                     className='block xl:hidden rounded-xl py-2'
-                    alt='Trenér Jiří Kočvara opírající se o osu ve Fitnes cetru TJ Lokomotiva Beroun'
+                    alt='Trenér Jiří Kočvara opírající se o osu ve fitness centru TJ Lokomotiva Beroun.'
+
                     >
                 </Image>
               </div>
@@ -77,7 +78,9 @@ function Kontakt() {
 
                 <Image src={JirkaD}
                     className='hidden xl:block rounded-xl my-5 w-full max-w-sm md:max-w-md lg:max-w-xl xl:max-w-2xl h-auto lg:ml-4'
-                    alt='Trenér Jiří Kočvara opírající se o osu ve Fitnes cetru TJ Lokomotiva Beroun'>
+                    alt='Trenér Jiří Kočvara opírající se o osu ve fitness centru TJ Lokomotiva Beroun.'
+
+                    >
                 </Image>
 
           </div>

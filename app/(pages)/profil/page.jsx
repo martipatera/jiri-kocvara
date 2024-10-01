@@ -26,7 +26,8 @@ function Profil() {
               <div>
                 <Image src={JirkaPoza}
                     className='block md:max-w-lg lg:hidden rounded-xl pt-0'
-                    alt='Jiří Kočvara pózující s medailí'
+                    alt='Jiří Kočvara pózující s medailí za vítězství v soutěži'
+
                     >
                 </Image>
 
@@ -55,7 +56,9 @@ function Profil() {
               <div className=''>
               <Image src={JirkaPoza}
                 className='hidden lg:block rounded-xl w-full max-w-sm md:max-w-md lg:w-[500px] xl:w-max-w-2xl 2xl:max-w-2xl '
-                alt='Jiří Kočvara pózující s medailí'>
+                alt='Jiří Kočvara pózující s medailí za vítězství v soutěži'
+
+                >
               </Image>
 
               <span className='hidden lg:block xl:hidden 2xl:hidden pt-4'>
