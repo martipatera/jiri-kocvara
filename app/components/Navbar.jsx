@@ -58,7 +58,7 @@ export function CustomNavbar() {
             
       </Navbar.Brand >
       
-        <div className="flex items-center justify-center mt-0  mx-0 sm:mr-5 md:order-2 md:mt-2 lg:mt-0">
+        <div className="flex items-center justify-center mt-0  mx-0 sm:mr-1 md:order-2 md:mt-2 lg:mt-0">
           {!isLogged?
           <div>
             <button className=" border-2 rounded-full p-1 xl:p-3 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all"><Link href="/register">Registrovat se</Link></button>
