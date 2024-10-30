@@ -16,8 +16,8 @@ function Logout() {
 
   return (
     <div className='flex flex-col md:flex-row lg:flex-col gap-1 mr-2 md:mr-2'>
-      <p className='text-center text-xs border-2 md:text-sm rounded-full p-2 sm:p-3 text-white'>{email} <small>{role}</small></p>
-      <button className='text-center text-white hover:brightness-110 hover:scale-105 transition-all border-2 p-2 sm:p-3 rounded-full  whitespace-nowrap' onClick={handleLogout}>Odhlásit se</button>
+      <p className='text-center text-xs border-2 md:text-sm rounded-full p-1 xl:p-1 text-white'>{email} <small>{role}</small></p>
+      <button className='text-center text-white hover:brightness-110 hover:scale-105 transition-all border-2 p-1 xl:p-1 rounded-full  whitespace-nowrap' onClick={handleLogout}>Odhlásit se</button>
     </div>
     
   )
