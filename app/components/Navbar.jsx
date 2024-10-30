@@ -60,7 +60,7 @@ export function CustomNavbar() {
       
         <div className="flex mt-0  mx-0 sm:mr-0 md:order-2 md:mt-2 lg:mt-0">
           {!isLogged?
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col md:flex-row lg:flex-col gap-1">
             <button className=" border-2 rounded-full p-1 xl:p-1 whitespace-nowrap text-white hover:brightness-110 hover:scale-105 transition-all"><Link href="/register">Registrovat se</Link></button>
             <button className=" border-2 rounded-full p-1 xl:p-1 text-white hover:brightness-110 hover:scale-105 transition-all"><Link href="/login">Přihlásit se</Link></button>
           </div>
