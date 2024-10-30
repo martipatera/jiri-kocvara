@@ -65,7 +65,7 @@ export function CustomNavbar() {
             <button className=" border-2 rounded-full p-1 xl:p-1 text-white hover:brightness-110 hover:scale-105 transition-all"><Link href="/login">Přihlásit se</Link></button>
           </div>
           :
-          <div className="sm:mr-0 md:mt-2">
+          <div className="">
             <Logout></Logout>
           </div>
           }
