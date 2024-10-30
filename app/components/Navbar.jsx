@@ -85,13 +85,13 @@ export function CustomNavbar() {
           <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange  active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/konzultace" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/konzultace">Konzultace</Link>
             {
               isLogged && (role === "admin" || role === "trenér")? 
-                <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange whitespace-nowrap active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/moji_klienti" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/moji_klienti">Moji klienti</Link>
+                <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange whitespace-nowrap active:text-orange hover:text-orange hover:scale-105 transition-all mr-10 ${pathname === "/moji_klienti" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/moji_klienti">Moji klienti</Link>
               : 
                 <p></p>
             }
             {
               isLogged && (role === "klient")? 
-                <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange whitespace-nowrap active:text-orange hover:text-orange hover:scale-105 transition-all${pathname === "/muj_trenink" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/muj_trenink">Můj trénink</Link>
+                <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange whitespace-nowrap active:text-orange hover:text-orange hover:scale-105 transition-all mr-10${pathname === "/muj_trenink" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/muj_trenink">Můj trénink</Link>
               : 
                 <p></p>
             }
