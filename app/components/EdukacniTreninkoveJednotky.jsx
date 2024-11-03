@@ -38,21 +38,21 @@ function EdukacniTreninkoveJednotky() {
                         <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
-                        <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0">úplné začátečníky, kteří si chtějí již od prvního tréninku osvojit základní návyky a dovednosti potřebné pro bezpečné a efektivní silové cvičení</span>
+                        <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0 mb-5 md:mb-0">úplné začátečníky, kteří si chtějí již od prvního tréninku osvojit základní návyky a dovednosti potřebné pro bezpečné a efektivní silové cvičení</span>
                     </li>
 
                     <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
                         <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
-                        <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0">středně pokročilé, zkušené a profesionální sportovce, kteří chtějí konzultovat např. problém s konkrétními cviky, stagnací v tréninku, trénink po zranění, nebo cokoli dalšího v čem vidí prostor pro zlepšení</span>
+                        <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0 mb-5 md:mb-0">středně pokročilé, zkušené a profesionální sportovce, kteří chtějí konzultovat např. problém s konkrétními cviky, stagnací v tréninku, trénink po zranění, nebo cokoli dalšího v čem vidí prostor pro zlepšení</span>
                     </li>
 
                     <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
                         <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
-                        <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0">kondiční / hobby cvičence/ky, kteří se třeba chtějí ujistit, že je to co dělají v posilovně efektivní a vhodné přesně pro ně, jejich aktuální situaci a pokročilost</span>
+                        <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0 mb-5 md:mb-0">kondiční / hobby cvičence/ky, kteří se třeba chtějí ujistit, že je to co dělají v posilovně efektivní a vhodné přesně pro ně, jejich aktuální situaci a pokročilost</span>
                     </li>
 
                     
@@ -61,7 +61,7 @@ function EdukacniTreninkoveJednotky() {
                         <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
-                        <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0">všechny, kteří aktuálně nedisponují prostředky pro pravidelné tréninkové jednotky, ale chtějí svoje snažení konzultovat, naučit se něco nového a aplikovat to hned v posilovně</span>
+                        <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0 mb-5 md:mb-0">všechny, kteří aktuálně nedisponují prostředky pro pravidelné tréninkové jednotky, ale chtějí svoje snažení konzultovat, naučit se něco nového a aplikovat to hned v posilovně</span>
                     </li>
 
                     <div class="flex items-center flex-col md:flex-row p-4 mb-4  text-sm text-red-800 border border-red-300 rounded-lg bg-red-100 " role="alert">
