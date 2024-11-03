@@ -34,22 +34,22 @@ function EdukacniTreninkoveJednotky() {
 
                 <ul class="space-y-4 text-left md:px-10 md:pt-5 ">
 
-                    <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md">
-                        <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
+                        <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
                         <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0">úplné začátečníky, kteří si chtějí již od prvního tréninku osvojit základní návyky a dovednosti potřebné pro bezpečné a efektivní silové cvičení</span>
                     </li>
 
-                    <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md">
-                        <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
+                        <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
                         <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0">středně pokročilé, zkušené a profesionální sportovce, kteří chtějí konzultovat např. problém s konkrétními cviky, stagnací v tréninku, trénink po zranění, nebo cokoli dalšího v čem vidí prostor pro zlepšení</span>
                     </li>
 
-                    <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md">
-                        <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
+                        <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
                         <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0">kondiční / hobby cvičence/ky, kteří se třeba chtějí ujistit, že je to co dělají v posilovně efektivní a vhodné přesně pro ně, jejich aktuální situaci a pokročilost</span>
@@ -57,14 +57,14 @@ function EdukacniTreninkoveJednotky() {
 
                     
 
-                    <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md">
-                        <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
+                        <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
                         <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0">všechny, kteří aktuálně nedisponují prostředky pro pravidelné tréninkové jednotky, ale chtějí svoje snažení konzultovat, naučit se něco nového a aplikovat to hned v posilovně</span>
                     </li>
 
-                    <div class="flex items-center flex-col md:flex-row p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-100 " role="alert">
+                    <div class="flex items-center flex-col md:flex-row p-4 mb-4  text-sm text-red-800 border border-red-300 rounded-lg bg-red-100 " role="alert">
                         <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                         </svg>
