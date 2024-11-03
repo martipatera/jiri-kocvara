@@ -17,7 +17,7 @@ function OnlineCoaching() {
 
         <div className="flex justify-center items-center 2xl:py-20">
         <Image src={online}
-            className="w-full h-full rounded-md md:max-w-sm md:h-auto lg:w-auto lg:h-[650px]  xl:h-full"
+            className="w-full h-full rounded-md md:max-w-sm md:h-auto lg:w-auto lg:h-[650px]  xl:max-w-max xl:h-[550px] xl:w-auto"
 
             alt="Trenér Jiří Kočvara vysvětlující své klientce tréninkový plán"></Image>
             
