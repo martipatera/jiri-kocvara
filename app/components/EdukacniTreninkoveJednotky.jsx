@@ -4,8 +4,16 @@ import Image from "next/image";
 import { Card } from "flowbite-react";
 import PricingCard from "./PricingCard";
 import Foto1 from "./1.jpg"
+import { useState } from "react";
 
 function EdukacniTreninkoveJednotky() {
+
+    const [isExpanded, setIsExpanded] = useState(false);
+
+
+    const toggleText = () => {
+        setIsExpanded(!isExpanded);
+      };
 
     
 
@@ -68,14 +76,20 @@ function EdukacniTreninkoveJednotky() {
                         <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0 mb-5 md:mb-0">všechny, kteří aktuálně nedisponují prostředky pro pravidelné tréninkové jednotky, ale chtějí svoje snažení konzultovat, naučit se něco nového a aplikovat to hned v posilovně</span>
                     </li>
 
+
                     <div class="flex items-center flex-col md:flex-row p-4 mb-4  text-sm text-red-800 border border-red-300 rounded-lg bg-red-100 " role="alert">
                         <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                         </svg>
                         <span class="sr-only">Info</span>
-                        <div className="pt-3 md:pt-0 text-center md:text-start">
-                            <span class="font-medium"><strong>UPOZORNĚNÍ! </strong></span>První věc, kterou je nutné říci a vždy ji zmiňuji i lidem v posilovně. Dnešní zrychlená doba vytváří v lidech pocit, že lze tak komplexní téma jako silový trénink / fitness / výživu celé nacpat a shrnout do jedné nebo dvou tréninkových jednotek či konzultací, po kterých je člověk schopen vše dělat a chápat vhodným efektivním způsobem na první pokus. V reálném světě to bohužel tak nebývá, proto si prosím uvědom, že některé informace, technické prvky cviků, návyky a prvky tréninku vyžadují, abys je prováděl a opakoval delší dobu a dobře sis je v praxi osvojil/a a zafixoval.
+                        <div className="pt-3 md:pt-0 text-center md:text-start flex flex-col">
+                            {isExpanded? <span class="font-medium"><strong>UPOZORNĚNÍ! </strong> První věc, kterou je nutné říci a vždy ji zmiňuji i lidem v posilovně. Dnešní zrychlená doba vytváří v lidech pocit, že lze tak komplexní téma jako silový trénink / fitness / výživu celé nacpat a shrnout do jedné nebo dvou tréninkových jednotek či konzultací, po kterých je člověk schopen vše dělat a chápat vhodným efektivním způsobem na první pokus. V reálném světě to bohužel tak nebývá, proto si prosím uvědom, že některé informace, technické prvky cviků, návyky a prvky tréninku vyžadují, abys je prováděl a opakoval delší dobu a dobře sis je v praxi osvojil/a a zafixoval.</span>
+                             : ""}
+                            <span class="font-medium"><strong>{isExpanded? "" : "UPOZORNĚNÍ!"} </strong></span>
+                            <button id="toggleButton" className="underline mt-2 decoration-deep-orange-500/80 text-center md:text-start" onClick={toggleText}>{isExpanded ? 'Zobrazit méně' : 'Zobrazit více'}</button>
+
                         </div>
+
                     </div>
 
                     
