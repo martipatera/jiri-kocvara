@@ -132,7 +132,7 @@ function OnlineCoaching() {
                 
 
                 <span className="flex flex-col xl:flex-row items-center justify-between pt-5 md:px-10 md:pt-10 ">
-                <span className="flex flex-col  justify-center items-center ">
+                <span className="flex flex-col  justify-center items-center 2xl:items-start">
                         <p className="text-xl font-bold underline whitespace-nowrap decoration-deep-orange-500/50">Cena: 3.500 Kč </p>
                         <p className="text-sm text-gray-900 italic text-center">(minimální délka spolupráce 16 týdnů)</p>
                     </span>
