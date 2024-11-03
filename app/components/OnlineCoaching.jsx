@@ -110,7 +110,7 @@ function OnlineCoaching() {
                             </div> 
                             :
                             ""}
-                            <button id="toggleButton" className="underline mt-2 decoration-deep-orange-500/80 text-center md:text-start" onClick={toggleText}>{isExpanded ? 'Zobrazit méně' : 'Zobrazit více'}</button>
+                            <button id="toggleButton" className="underline mt-2 decoration-yellow-300 text-center md:text-start" onClick={toggleText}>{isExpanded ? 'Zobrazit méně' : 'Zobrazit více'}</button>
 
                         </div>
 

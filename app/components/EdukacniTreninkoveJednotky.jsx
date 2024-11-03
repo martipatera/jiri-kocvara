@@ -86,7 +86,7 @@ function EdukacniTreninkoveJednotky() {
                             {isExpanded? <span class="font-medium"><strong>UPOZORNĚNÍ! </strong> První věc, kterou je nutné říci a vždy ji zmiňuji i lidem v posilovně. Dnešní zrychlená doba vytváří v lidech pocit, že lze tak komplexní téma jako silový trénink / fitness / výživu celé nacpat a shrnout do jedné nebo dvou tréninkových jednotek či konzultací, po kterých je člověk schopen vše dělat a chápat vhodným efektivním způsobem na první pokus. V reálném světě to bohužel tak nebývá, proto si prosím uvědom, že některé informace, technické prvky cviků, návyky a prvky tréninku vyžadují, abys je prováděl a opakoval delší dobu a dobře sis je v praxi osvojil/a a zafixoval.</span>
                              : ""}
                             <span class="font-medium"><strong>{isExpanded? "" : "UPOZORNĚNÍ!"} </strong></span>
-                            <button id="toggleButton" className="underline mt-2 decoration-deep-orange-500/80 text-center md:text-start" onClick={toggleText}>{isExpanded ? 'Zobrazit méně' : 'Zobrazit více'}</button>
+                            <button id="toggleButton" className="underline mt-2 decoration-red-500 text-center md:text-start" onClick={toggleText}>{isExpanded ? 'Zobrazit méně' : 'Zobrazit více'}</button>
 
                         </div>
 
