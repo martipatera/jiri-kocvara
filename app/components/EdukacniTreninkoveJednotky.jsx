@@ -27,7 +27,7 @@ function EdukacniTreninkoveJednotky() {
                 Edukační tréninkové jednotky
                 </h2>
             
-                <p id="text" className="md:px-10 px-0 text-center xl:text-start pt-5 overflow-hidden max-h-16 text-ellipsis">
+                <p id="text" className="md:px-10 px-0 text-center xl:text-start pt-5">
                     Tréninková jednotka, kde tě učíme vhodnou techniku jednotlivých cviků, jak celkově přistupovat k tréninku vhledem k tvému cíli, jak progresovat jednotlivé cviky, nebo jak zjistit a hodnotit proměnné, které jsou pro tvůj trénink podstatné. Tréninkové jednotce vždy předchází komunikace přes WhatsApp nebo email a osobní diagnostika pohybového aparátu, kde společně probereme co od tréninku očekáváš, jaký je tvůj aktuální fyzický stav a možnosti. Podle toho pak připravím tréninkovou jednotku, která pro tebe bude maximálně přínosná.
                 </p>
 
