@@ -24,7 +24,7 @@ function EdukacniTreninkoveJednotky() {
                 Edukační tréninkové jednotky
                 </h2>
             
-                <p className="md:px-10 px-0 text-center lg:text-start pt-5 md:pt-10">
+                <p className="md:px-10 px-0 text-center xl:text-start pt-5">
                     Tréninková jednotka, kde tě učíme vhodnou techniku jednotlivých cviků, jak celkově přistupovat k tréninku vhledem k tvému cíli, jak progresovat jednotlivé cviky, nebo jak zjistit a hodnotit proměnné, které jsou pro tvůj trénink podstatné. Tréninkové jednotce vždy předchází komunikace přes WhatsApp nebo email a osobní diagnostika pohybového aparátu, kde společně probereme co od tréninku očekáváš, jaký je tvůj aktuální fyzický stav a možnosti. Podle toho pak připravím tréninkovou jednotku, která pro tebe bude maximálně přínosná.
                 </p>
 
@@ -81,7 +81,7 @@ function EdukacniTreninkoveJednotky() {
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                         </svg>
                         <span class="sr-only">Info</span>
-                        <div>
+                        <div className="pt-3 md:pt-0 text-center md:text-start">
                             <span class="font-medium"> V případě zájmu je možnost domluvit v omezených termínech i soukromé fitko se základním vybavením.</span>
                         </div>
                     </div>
@@ -91,9 +91,9 @@ function EdukacniTreninkoveJednotky() {
                 </ul>
 
                 <span className="flex flex-col xl:flex-row items-center justify-between pt-5 md:px-10 md:pt-10 ">
-                    <span className="flex flex-col md:flex-row justify-center items-center ">
+                    <span className="flex flex-col xl:flex-row justify-center items-center ">
                         <p className="text-xl font-bold underline whitespace-nowrap decoration-deep-orange-500/50">Cena: 1.800 Kč </p>
-                        <p className="text-sm text-gray-900 italic"> (zahrnuje diagnostiku pohybového aparátu)</p>
+                        <p className="text-sm text-gray-900 italic text-center"> (zahrnuje diagnostiku pohybového aparátu)</p>
                     </span>
                     <button type="button" class="mt-5 xl:mt-0 w-full md:w-[200px] focus:outline-none text-white bg-deep-orange-500  hover:bg-deep-orange-700 focus:ring-4 focus:ring-deep-orange-300 font-medium rounded-lg text-md px-5 py-2.5 me-2 mb-2 ">Mám zájem</button>
                     </span>
