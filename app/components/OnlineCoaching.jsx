@@ -27,7 +27,9 @@ function OnlineCoaching() {
         <Image src={online}
             className="w-full h-full rounded-md md:max-w-sm md:h-auto lg:w-auto lg:h-[650px]  xl:max-w-max xl:h-[550px] xl:w-auto"
 
-            alt="Trenér Jiří Kočvara vysvětlující své klientce tréninkový plán"></Image>
+            alt="Jiří Kočvara pracuje na počítači, kde připravuje obsah pro Online Coaching">
+
+            </Image>
             
             </div>
             
@@ -108,7 +110,7 @@ function OnlineCoaching() {
                             </div> 
                             :
                             ""}
-                            <button id="toggleButton" className="underline mt-2 decoration-deep-orange-500/50 text-center md:text-start" onClick={toggleText}>{isExpanded ? 'Zobrazit méně' : 'Zobrazit více'}</button>
+                            <button id="toggleButton" className="underline mt-2 decoration-deep-orange-500/80 text-center md:text-start" onClick={toggleText}>{isExpanded ? 'Zobrazit méně' : 'Zobrazit více'}</button>
 
                         </div>
 
