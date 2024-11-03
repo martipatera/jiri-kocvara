@@ -6,9 +6,17 @@ import PricingCard from "./PricingCard";
 import pravidelne from "./pravidelnejednotky.jpg"
 import online from "./online.jpg"
 import online1 from "./online1.jpg"
-
+import { useState } from "react";
 
 function OnlineCoaching() {
+
+    const [isExpanded, setIsExpanded] = useState(false);
+
+
+    const toggleText = () => {
+        setIsExpanded(!isExpanded);
+      };
+
   return (
     <Card className="m-3 md:m-10 opacity-95 animate-fade">
         
@@ -77,10 +85,12 @@ function OnlineCoaching() {
                     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                         </svg>
                         <span class="sr-only">Info</span>
-                        <div>
+                        <div id="text" className="text-center md:text-start">
                             <p class="pt-3 md:pt-0 font-medium text-center md:text-start">POKUD JE JEN TROCHU MOŽNÉ, BUDE SPOLUPRÁCI PŘEDCHÁZET ALESPOŇ PRVNÍ OSOBNÍ SETKÁNÍ, KDE SI PROJDEME DIAGNOSTIKU POHYBOVÉHO APARÁTU a celá spolupráce tak bude ještě efektivnější. Budu tedy rád, když si i přes větší vzdálenost naplánuješ výlet k nám do Berouna. Věřím, že to stojí za to!</p>
-                            
-                            <p className="font-semibold pt-5 text-center md:text-start">Takže pokud:</p>
+
+
+                            {isExpanded ? <div id="text">
+                            <p className={`font-semibold pt-5 text-center md:text-start `}>Takže pokud:</p>
                             <ul class="mt-1.5 list-disc list-inside">
                                 <li>jsi ochotný/á investovat čas a energii</li>
                                 <li>jsi připravený/á udělat nezbytné změny a úpravy svého tréninku a životního stylu</li>
@@ -95,8 +105,13 @@ function OnlineCoaching() {
                             </ul>
 
                             <p className="font-semibold pt-5">Je pro tebe spolupráce on-line správnou volbou!</p>
+                            </div> 
+                            :
+                            ""}
+                            <button id="toggleButton" className="underline mt-2 decoration-deep-orange-500/50 text-center md:text-start" onClick={toggleText}>{isExpanded ? 'Zobrazit méně' : 'Zobrazit více'}</button>
 
                         </div>
+
                         </div>
                     
 
