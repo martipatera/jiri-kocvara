@@ -20,15 +20,15 @@ function Footer() {
               width={120}
               alt="Logo stránky Jiřího Kočvary" 
               priority
-              className="hidden lg:block"
+              className="hidden md:block"
           />
 
           <Image src={Logo}
-              height={75}
-              width={75}
+              height={95}
+              width={85}
               alt="Logo stránky Jiřího Kočvary" 
               priority
-              className="lg:hidden"
+              className="block md:hidden"
           />
 
              
