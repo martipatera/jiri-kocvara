@@ -128,49 +128,45 @@ const deleteMessages = async (id) => {
             <div className='flex flex-wrap  gap-4 lg:mx-32'>
 
               {users.length > 0 ? (
-                  users.map((user, index) => {
-                    return <div className='flex flex-col border-2 rounded-lg border-gray-400 shadow  gap-2 p-5 md:p-3 lg:p-4 xl-p-5' key={index}>
-                      <h2 className='font-bold text-lg'>Klient</h2>
-                      <hr className="w-full h-1 mx-auto bg-red-500 border-0 rounded  animate-fade"></hr>
-
-                      <p><strong>Jméno:</strong> {user.name}</p>
-                      <p><strong>Email:</strong> {user.email}</p>
-                      <span className='flex'>
-                        <a href={`mailto:${user.email}`} target='_blank' className="text-black border-black  text-center text-sm md:text-base border-2 rounded-full p-2 xl:p-3 max-w-40  hover:brightness-110 hover:scale-105 transition-all"  >Poslat trénink mailem</a>
-                        <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="text-black border-black text-center md:text-base text-sm max-w-40  border-2 rounded-full p-2 xl:p-3  hover:brightness-110 hover:scale-105 transition-all">Poslat trénink na disk</a>
-                      </span>
-                      
-                    </div> // Přidání klíče při mapování
-                    })
-                  (users.map((user, index) => {
-                      return <div key={index} className="overflow-x-auto">
-                      <Table>
-                        <Table.Head>
-                          <Table.HeadCell>Jméno:</Table.HeadCell>
-                          <Table.HeadCell>Email:</Table.HeadCell>
-                            
-                        </Table.Head>
-
-                        <Table.Body className="divide-y">
-                          <Table.Row className="bg-white">
-                            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 ">
-                            {user.name}
-                            </Table.Cell>
-                            <Table.Cell>{user.email}</Table.Cell>
-                            <Table.Cell>
-                                    <a href={`mailto:${user.email}`} target='_blank' className="text-black border-black  text-center text-sm md:text-base  rounded-full "  >Poslat trénink mailem</a>
-                            </Table.Cell>
-                            <Table.Cell>
-                                    <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="text-black border-black text-center md:text-base text-sm ">Poslat trénink na disk</a>
-                                    </Table.Cell>
-                            
-                          </Table.Row>
-                        </Table.Body>
-                      </Table>
-                    </div> // Přidání klíče při mapování
-                      })
-
-                  )
+                  <table className="table-auto w-full border-collapse border border-gray-400 shadow-lg">
+                  <thead>
+                    <tr className="bg-gray-200">
+                      <th className="border border-gray-400 px-4 py-2 text-left">Jméno</th>
+                      <th className="border border-gray-400 px-4 py-2 text-left">Email</th>
+                      <th className="border border-gray-400 px-4 py-2 text-center">Poslat na email</th>
+                      <th className="border border-gray-400 px-4 py-2 text-center">Poslat na disk</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {users.map((user, index) => (
+                      <tr key={index} className="hover:bg-gray-100">
+                        <td className="border border-gray-400 px-4 py-2">{user.name}</td>
+                        <td className="border border-gray-400 px-4 py-2">{user.email}</td>
+                        <td className="border border-gray-400 px-4 py-2 text-center">
+                          <a
+                            href={`mailto:${user.email}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            Poslat trénink mailem
+                          </a>
+                        </td>
+                        <td className="border border-gray-400 px-4 py-2 text-center">
+                          <a
+                            href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            Poslat trénink na disk
+                          </a>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                  
                   )
                   : 
                 (
