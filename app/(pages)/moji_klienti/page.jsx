@@ -152,46 +152,18 @@ const deleteMessages = async (id) => {
                         </Table.Head>
 
                         <Table.Body className="divide-y">
-                          <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                          <Table.Row className="bg-white ">
+                            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 ">
                             {user.name}
                             </Table.Cell>
                             <Table.Cell>{user.email}</Table.Cell>
                             <Table.Cell>
-                                    <a href={`mailto:${user.email}`} target='_blank' className="text-black border-black  text-center text-sm md:text-base border-2 rounded-full p-2 xl:p-3 max-w-40  hover:brightness-110 hover:scale-105 transition-all"  >Poslat trénink mailem</a>
+                                    <a href={`mailto:${user.email}`} target='_blank' className="text-black border-black  text-center text-sm md:text-base  rounded-full "  >Poslat trénink mailem</a>
                             </Table.Cell>
                             <Table.Cell>
-                                    <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="text-black border-black text-center md:text-base text-sm max-w-40  border-2 rounded-full p-2 xl:p-3  hover:brightness-110 hover:scale-105 transition-all">Poslat trénink na disk</a>
+                                    <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="text-black border-black text-center md:text-base text-sm ">Poslat trénink na disk</a>
                                     </Table.Cell>
-                            <Table.Cell>
-                              <a href="#" className="font-medium text-cyan-600 hover:underline dark:text-cyan-500">
-                                Edit
-                              </a>
-                            </Table.Cell>
-                          </Table.Row>
-                          <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-                              Microsoft Surface Pro
-                            </Table.Cell>
-                            <Table.Cell>White</Table.Cell>
-                            <Table.Cell>Laptop PC</Table.Cell>
-                            <Table.Cell>$1999</Table.Cell>
-                            <Table.Cell>
-                              <a href="#" className="font-medium text-cyan-600 hover:underline dark:text-cyan-500">
-                                Edit
-                              </a>
-                            </Table.Cell>
-                          </Table.Row>
-                          <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">Magic Mouse 2</Table.Cell>
-                            <Table.Cell>Black</Table.Cell>
-                            <Table.Cell>Accessories</Table.Cell>
-                            <Table.Cell>$99</Table.Cell>
-                            <Table.Cell>
-                              <a href="#" className="font-medium text-cyan-600 hover:underline dark:text-cyan-500">
-                                Edit
-                              </a>
-                            </Table.Cell>
+                            
                           </Table.Row>
                         </Table.Body>
                       </Table>
