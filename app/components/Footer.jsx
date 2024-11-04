@@ -12,7 +12,7 @@ import Image from 'next/image';
 
 function Footer() {
   return (
-    <footer className='flex flex-col md:flex-row justify-between items-center gap-5 h-max px-3 font-bold bg-gray-500 '>
+    <footer className='flex flex-col md:flex-row justify-between items-center h-max font-bold bg-gray-500 '>
 
         <div className='flex pb-5 md:pb-0 order-3 mr-0 md:mr-2 lg:mr-5'>
         <Image src={Logo}
@@ -42,7 +42,7 @@ function Footer() {
           </div> 
       
 
-      <div className='flex flex-row items-center justify-center mx-auto order-2 '>
+      <div className='order-2 '>
         <a href="https://martinpatera.cz/" target='_blank' className='text-sm'>Copyright ©2024 Martin Patera</a>
         
       </div>
