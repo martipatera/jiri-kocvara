@@ -62,7 +62,7 @@ function PravidelneTreninkoveJednotky() {
                         <p className="text-sm text-gray-900 italic text-center xl:w-3/4">(formou předplatného, vždy na 4 týdny dopředu - např. tréninková jednotka s frekvencí 1x týdně, tedy předplatné 4 tréninky na 4 týdny - 4400Kč)</p>
                     </span>
 
-                    <span className="flex justify-center whitespace-nowrap items-center mt-5 xl:mt-0 w-full md:w-[200px] focus:outline-none text-white bg-deep-orange-500  hover:bg-deep-orange-700 focus:ring-4 focus:ring-deep-orange-300 font-medium rounded-lg text-md px-5 py-2 me-2 mb-2 ">
+                    <span className="flex justify-center items-center mt-5 xl:mt-0 w-full md:w-[200px] focus:outline-none text-white bg-deep-orange-500  hover:bg-deep-orange-700 focus:ring-4 focus:ring-deep-orange-300 font-medium rounded-lg text-md px-5 py-2 me-2 mb-2 ">
                         <button type="button" >Mám zájem </button>
                         <Popover></Popover>
                     </span>
