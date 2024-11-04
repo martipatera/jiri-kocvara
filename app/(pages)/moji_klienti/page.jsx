@@ -143,7 +143,7 @@ const deleteMessages = async (id) => {
                     </div> // Přidání klíče při mapování
                     })
                   (users.map((user, index) => {
-                      return <div className="overflow-x-auto">
+                      return <div key={index} className="overflow-x-auto">
                       <Table>
                         <Table.Head>
                           <Table.HeadCell>Jméno:</Table.HeadCell>
