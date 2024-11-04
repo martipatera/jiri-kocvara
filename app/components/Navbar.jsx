@@ -75,7 +75,7 @@ export function CustomNavbar() {
 
             
         
-        <Navbar.Collapse className="">
+        <Navbar.Collapse className="mx-auto">
           <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-white  active:text-white  hover:text-white hover:scale-105 transition-all ${pathname === "/" ? "text-white border-2 rounded-full px-2" : ""}`} href="/">Domů</Link>
           <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange  active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/sluzby" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/sluzby">Služby</Link>
           <Link  className={`text-base lg:text-xl text-white font-semibold focus:text-orange  active:text-orange hover:text-orange hover:scale-105 transition-all ${pathname === "/profil" ? "text-orange border-2 rounded-full px-2" : ""}`} href="/profil">Profil</Link>
