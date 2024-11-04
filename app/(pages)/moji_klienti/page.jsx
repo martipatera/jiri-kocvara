@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import Link from 'next/link';
 import { Label, Textarea } from "flowbite-react";
 import { TextInput } from "flowbite-react";
-
+import { Table } from "flowbite-react"
 
 
 
@@ -142,7 +142,65 @@ const deleteMessages = async (id) => {
                       
                     </div> // Přidání klíče při mapování
                     })
-                  ) : 
+                  (users.map((user, index) => {
+                      return <div className="overflow-x-auto">
+                      <Table>
+                        <Table.Head>
+                          <Table.HeadCell>Jméno:</Table.HeadCell>
+                          <Table.HeadCell>Email:</Table.HeadCell>
+                            
+                        </Table.Head>
+
+                        <Table.Body className="divide-y">
+                          <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+                            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                            {user.name}
+                            </Table.Cell>
+                            <Table.Cell>{user.email}</Table.Cell>
+                            <Table.Cell>
+                                    <a href={`mailto:${user.email}`} target='_blank' className="text-black border-black  text-center text-sm md:text-base border-2 rounded-full p-2 xl:p-3 max-w-40  hover:brightness-110 hover:scale-105 transition-all"  >Poslat trénink mailem</a>
+                            </Table.Cell>
+                            <Table.Cell>
+                                    <a href="https://drive.google.com/drive/folders/1jlAP3qufHYeumCYXEkvbOb_ca4ZnO4LV?usp=sharing" target='_blank' className="text-black border-black text-center md:text-base text-sm max-w-40  border-2 rounded-full p-2 xl:p-3  hover:brightness-110 hover:scale-105 transition-all">Poslat trénink na disk</a>
+                                    </Table.Cell>
+                            <Table.Cell>
+                              <a href="#" className="font-medium text-cyan-600 hover:underline dark:text-cyan-500">
+                                Edit
+                              </a>
+                            </Table.Cell>
+                          </Table.Row>
+                          <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+                            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                              Microsoft Surface Pro
+                            </Table.Cell>
+                            <Table.Cell>White</Table.Cell>
+                            <Table.Cell>Laptop PC</Table.Cell>
+                            <Table.Cell>$1999</Table.Cell>
+                            <Table.Cell>
+                              <a href="#" className="font-medium text-cyan-600 hover:underline dark:text-cyan-500">
+                                Edit
+                              </a>
+                            </Table.Cell>
+                          </Table.Row>
+                          <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+                            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">Magic Mouse 2</Table.Cell>
+                            <Table.Cell>Black</Table.Cell>
+                            <Table.Cell>Accessories</Table.Cell>
+                            <Table.Cell>$99</Table.Cell>
+                            <Table.Cell>
+                              <a href="#" className="font-medium text-cyan-600 hover:underline dark:text-cyan-500">
+                                Edit
+                              </a>
+                            </Table.Cell>
+                          </Table.Row>
+                        </Table.Body>
+                      </Table>
+                    </div> // Přidání klíče při mapování
+                      })
+
+                  )
+                  )
+                  : 
                 (
                   <p>Načítání emailů...</p>
                 )}
@@ -190,6 +248,8 @@ const deleteMessages = async (id) => {
                 <button onClick={()=>deleteMessages(message.id)} className="text-black w-52 border-black border-2 rounded-full p-1 xl:p-3 whitespace-nowrap  hover:brightness-110 hover:scale-105 transition-all">Odstranit zprávu</button>
                 </div>
             })}
+
+            
           </div>
           :
           <div className='pt-32 flex flex-col justify-center items-center gap-10'>
