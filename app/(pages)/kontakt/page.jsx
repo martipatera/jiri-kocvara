@@ -31,7 +31,7 @@ function Kontakt() {
 
             <div className='flex flex-col flex-wrap gap-3 md:gap-4 '>
 
-              <p className='text-2xl md:text-4xl flex-wrap break-words font-semibold'>Jiří Kočvara</p>
+              <p className='text-2xl md:text-4xl flex-wrap break-words font-semibold underline decoration-red-500'>Jiří Kočvara</p>
 
               <span className='flex flex-row justify-start items-center text-base md:text-lg flex-wrap break-words pt-5'>
                 <FaPhone></FaPhone>
