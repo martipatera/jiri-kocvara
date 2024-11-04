@@ -24,7 +24,7 @@ function Footer() {
           />
 
           <Image src={Logo}
-              height={65}
+              height={75}
               width={75}
               alt="Logo stránky Jiřího Kočvary" 
               priority
@@ -35,7 +35,7 @@ function Footer() {
         </div>
         
         <div className='order-1 text-sm text-center md:text-left pt-5 md:py-5  '>
-              <p>Jiří Kočvara - Coach</p>
+              <p className='whitespace-nowrap' >Jiří Kočvara - Coach</p>
               <p>IČO: 05430402</p>
               <p>U Trati 57</p>
               <p>267 12, Loděnice </p>
