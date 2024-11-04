@@ -128,6 +128,7 @@ const deleteMessages = async (id) => {
             <div className='flex flex-wrap  gap-4 lg:mx-32'>
 
               {users.length > 0 ? (
+                <div className='overflow-x-auto'>
                   <table className="table-auto w-full border-collapse border border-gray-400 shadow-lg">
                   <thead>
                     <tr className="bg-gray-200">
@@ -166,6 +167,7 @@ const deleteMessages = async (id) => {
                     ))}
                   </tbody>
                 </table>
+                </div>
                   
                   )
                   : 
