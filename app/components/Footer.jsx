@@ -42,7 +42,7 @@ function Footer() {
           </div> 
       
 
-      <div className='order-2 '>
+      <div className='order-2 text-center'>
         <a href="https://martinpatera.cz/" target='_blank' className='text-sm'>Copyright ©2024 Martin Patera</a>
         
       </div>
