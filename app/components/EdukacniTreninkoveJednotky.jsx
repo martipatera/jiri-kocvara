@@ -5,6 +5,7 @@ import { Card } from "flowbite-react";
 import PricingCard from "./PricingCard";
 import Foto1 from "./1.jpg"
 import { useState } from "react";
+import Popover from "./Popover";
 
 function EdukacniTreninkoveJednotky() {
 
@@ -44,24 +45,24 @@ function EdukacniTreninkoveJednotky() {
                     Je 100% přínosná pro:
                 </p>
 
-                <ul class="space-y-4 text-left md:px-10 md:pt-5 ">
+                <ul className="space-y-4 text-left md:px-10 md:pt-5 ">
 
-                    <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
-                        <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <li className="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
+                        <svg className="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
                         <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0 mb-5 md:mb-0">úplné začátečníky, kteří si chtějí již od prvního tréninku osvojit základní návyky a dovednosti potřebné pro bezpečné a efektivní silové cvičení</span>
                     </li>
 
-                    <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
-                        <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <li className="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
+                        <svg className="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
                         <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0 mb-5 md:mb-0">středně pokročilé, zkušené a profesionální sportovce, kteří chtějí konzultovat např. problém s konkrétními cviky, stagnací v tréninku, trénink po zranění, nebo cokoli dalšího v čem vidí prostor pro zlepšení</span>
                     </li>
 
-                    <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
-                        <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <li className="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
+                        <svg className="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
                         <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0 mb-5 md:mb-0">kondiční / hobby cvičence/ky, kteří se třeba chtějí ujistit, že je to co dělají v posilovně efektivní a vhodné přesně pro ně, jejich aktuální situaci a pokročilost</span>
@@ -69,23 +70,23 @@ function EdukacniTreninkoveJednotky() {
 
                     
 
-                    <li class="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
-                        <svg class="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <li className="flex items-center flex-col md:flex-row space-x-3 rtl:space-x-reverse border md:border-0 border-gray-200 rounded-md shadow-lg md:shadow-none">
+                        <svg className="flex-shrink-0 w-8 h-8 md:w-3.5 md:h-3.5 text-green-500 mt-5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
                         <span className="font-medium text-center md:text-start pt-3 md:pt-0 px-2 md:px-0 mb-5 md:mb-0">všechny, kteří aktuálně nedisponují prostředky pro pravidelné tréninkové jednotky, ale chtějí svoje snažení konzultovat, naučit se něco nového a aplikovat to hned v posilovně</span>
                     </li>
 
 
-                    <div class="flex items-center flex-col md:flex-row p-4 mb-4  text-sm text-red-800 border border-red-300 rounded-lg bg-red-100 " role="alert">
-                        <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="flex items-center flex-col md:flex-row p-4 mb-4  text-sm text-red-800 border border-red-300 rounded-lg bg-red-100 " role="alert">
+                        <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                         </svg>
-                        <span class="sr-only">Info</span>
+                        <span className="sr-only">Info</span>
                         <div className="pt-3 md:pt-0 text-center md:text-start flex flex-col">
-                            {isExpanded? <span class="font-medium"><strong>UPOZORNĚNÍ! </strong> První věc, kterou je nutné říci a vždy ji zmiňuji i lidem v posilovně. Dnešní zrychlená doba vytváří v lidech pocit, že lze tak komplexní téma jako silový trénink / fitness / výživu celé nacpat a shrnout do jedné nebo dvou tréninkových jednotek či konzultací, po kterých je člověk schopen vše dělat a chápat vhodným efektivním způsobem na první pokus. V reálném světě to bohužel tak nebývá, proto si prosím uvědom, že některé informace, technické prvky cviků, návyky a prvky tréninku vyžadují, abys je prováděl a opakoval delší dobu a dobře sis je v praxi osvojil/a a zafixoval.</span>
+                            {isExpanded? <span className="font-medium"><strong>UPOZORNĚNÍ! </strong> První věc, kterou je nutné říci a vždy ji zmiňuji i lidem v posilovně. Dnešní zrychlená doba vytváří v lidech pocit, že lze tak komplexní téma jako silový trénink / fitness / výživu celé nacpat a shrnout do jedné nebo dvou tréninkových jednotek či konzultací, po kterých je člověk schopen vše dělat a chápat vhodným efektivním způsobem na první pokus. V reálném světě to bohužel tak nebývá, proto si prosím uvědom, že některé informace, technické prvky cviků, návyky a prvky tréninku vyžadují, abys je prováděl a opakoval delší dobu a dobře sis je v praxi osvojil/a a zafixoval.</span>
                              : ""}
-                            <span class="font-medium"><strong>{isExpanded? "" : "UPOZORNĚNÍ!"} </strong></span>
+                            <span className="font-medium"><strong>{isExpanded? "" : "UPOZORNĚNÍ!"} </strong></span>
                             <button id="toggleButton" className="underline mt-2 decoration-red-500 text-center md:text-start" onClick={toggleText}>{isExpanded ? 'Zobrazit méně' : 'Zobrazit více'}</button>
 
                         </div>
@@ -94,15 +95,7 @@ function EdukacniTreninkoveJednotky() {
 
                     
 
-                    <div class="flex items-center flex-col md:flex-row p-4 mb-4 text-sm text-yellow-900 border border-yellow-300 rounded-lg bg-yellow-50" role="alert">
-                        <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
-                        </svg>
-                        <span class="sr-only">Info</span>
-                        <div className="pt-3 md:pt-0 text-center md:text-start">
-                            <span class="font-medium"> V případě zájmu je možnost domluvit v omezených termínech i soukromé fitko se základním vybavením.</span>
-                        </div>
-                    </div>
+                    
 
                     
    
@@ -113,7 +106,12 @@ function EdukacniTreninkoveJednotky() {
                         <p className="text-xl font-bold underline whitespace-nowrap decoration-deep-orange-500/50">Cena: 1.800 Kč </p>
                         <p className="text-sm text-gray-900 italic text-center"> (zahrnuje diagnostiku pohybového aparátu)</p>
                     </span>
-                    <button type="button" class="mt-5 xl:mt-0 w-full md:w-[200px] focus:outline-none text-white bg-deep-orange-500  hover:bg-deep-orange-700 focus:ring-4 focus:ring-deep-orange-300 font-medium rounded-lg text-md px-5 py-2.5 me-2 mb-2 ">Mám zájem</button>
+
+                    <span className="flex justify-center items-center mt-5 xl:mt-0 w-full md:w-[200px] focus:outline-none text-white bg-deep-orange-500  hover:bg-deep-orange-700 focus:ring-4 focus:ring-deep-orange-300 font-medium rounded-lg text-md px-5 py-2 me-2 mb-2 ">
+                        <button type="button" >Mám zájem </button>
+                        <Popover></Popover>
+                    </span>
+                    
                     </span>
 
             </div>

@@ -43,7 +43,7 @@ function Kontakt() {
 
               <span className='flex flex-row justify-start items-center text-lg md:text-xl flex-wrap break-words'>
                 <MdOutlineEmail></MdOutlineEmail>
-                <a href="mailto:trener.jirikocvara@gmail.com" target='_blank' className='break-words overflow-auto font-semibold'>trener.jirikocvara@gmail.com</a>
+                <a href="mailto:kocvara.trainer@seznam.cz" target='_blank' className='break-words overflow-auto font-semibold'>kocvara.trainer@seznam.cz</a>
               </span>
 
               <div>
