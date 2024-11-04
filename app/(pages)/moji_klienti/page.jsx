@@ -152,7 +152,7 @@ const deleteMessages = async (id) => {
                         </Table.Head>
 
                         <Table.Body className="divide-y">
-                          <Table.Row className="bg-white ">
+                          <Table.Row className="bg-white">
                             <Table.Cell className="whitespace-nowrap font-medium text-gray-900 ">
                             {user.name}
                             </Table.Cell>
