@@ -12,12 +12,12 @@ import Image from 'next/image';
 
 function Footer() {
   return (
-    <footer className='flex flex-col md:flex-row justify-between items-center h-max font-bold bg-gray-500 '>
+    <footer className='flex flex-col md:flex-row justify-between items-center h-max font-bold bg-gray-500 px-3 '>
 
-        <div className='flex pb-5 md:pb-0 order-3 mr-0 md:mr-2 lg:mr-5'>
+        <div className='flex pb-5 md:pb-0 order-3 '>
         <Image src={Logo}
               height={65}
-              width={75}
+              width={120}
               alt="Logo stránky Jiřího Kočvary" 
               priority
               className="hidden lg:block"
@@ -34,7 +34,7 @@ function Footer() {
              
         </div>
         
-        <div className='ml-0 md:ml-2 lg:ml-5 order-1 text-sm text-center md:text-left pt-5 md:py-5 '>
+        <div className='order-1 text-sm text-center md:text-left pt-5 md:py-5  '>
               <p>Jiří Kočvara - Coach</p>
               <p>IČO: 05430402</p>
               <p>U Trati 57</p>
@@ -42,7 +42,7 @@ function Footer() {
           </div> 
       
 
-      <div className='order-2 text-center'>
+      <div className='order-2 my-4 md:my-0  w-full text-center'>
         <a href="https://martinpatera.cz/" target='_blank' className='text-sm'>Copyright ©2024 Martin Patera</a>
         
       </div>
