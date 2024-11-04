@@ -8,6 +8,8 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
 import { MdAlternateEmail } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa6";
+
 
 
 export const metadata = {
@@ -31,20 +33,27 @@ function Kontakt() {
 
               <p className='text-2xl md:text-4xl flex-wrap break-words font-semibold'>Jiří Kočvara</p>
 
-              <span className='flex flex-row justify-start items-center text-lg md:text-xl flex-wrap break-words'>
+              <span className='flex flex-row justify-start items-center text-base md:text-lg flex-wrap break-words pt-5'>
+                <FaPhone></FaPhone>
+                <a href="tel:+420721469798" target='_blank' className='break-words overflow-auto font-semibold'>+420 721 469 798</a>
+              </span>
+
+              <span className='flex flex-row justify-start items-center text-base md:text-lg flex-wrap break-words'>
+                <MdOutlineEmail></MdOutlineEmail>
+                <a href="mailto:kocvara.trainer@seznam.cz" target='_blank' className='break-words overflow-auto font-semibold'>kocvara.trainer@seznam.cz</a>
+              </span>
+
+              <span className='flex flex-row justify-start items-center text-base md:text-lg flex-wrap break-words'>
                 <FaSquareFacebook></FaSquareFacebook>
                 <a href="https://www.facebook.com/jirka.kocvara.1" className='font-semibold' target='_blank'>Facebook</a>
               </span>
 
-              <span className='flex flex-row  justify-start items-center text-lg md:text-xl flex-wrap break-words'>
+              <span className='flex flex-row justify-start items-center text-base md:text-lg flex-wrap break-words'>
                 <FaInstagram></FaInstagram>
                 <a href="https://www.instagram.com/jiri_kocvara/" className='font-semibold' target='_blank'>Instagram</a>
               </span>
 
-              <span className='flex flex-row justify-start items-center text-lg md:text-xl flex-wrap break-words'>
-                <MdOutlineEmail></MdOutlineEmail>
-                <a href="mailto:kocvara.trainer@seznam.cz" target='_blank' className='break-words overflow-auto font-semibold'>kocvara.trainer@seznam.cz</a>
-              </span>
+              
 
               <div>
                 <Image src={JirkaD}
@@ -55,7 +64,7 @@ function Kontakt() {
                 </Image>
               </div>
 
-              <hr className="w-full h-1 mx-auto my-4 bg-red-500 border-0 rounded md:my-4 animate-fade "></hr>
+              <hr className="w-full h-1 mx-auto my-4 bg-red-500 border-0 rounded md:my-0 animate-fade "></hr>
 
               <h2 className='text-xl font-semibold lg:text-2xl'>Kde mě najdete? </h2>
               <span className='flex flex-col justify-center items-start text-lg md:text-xl flex-wrap break-words'>
