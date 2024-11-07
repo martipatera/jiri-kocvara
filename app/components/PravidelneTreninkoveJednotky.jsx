@@ -57,18 +57,18 @@ function PravidelneTreninkoveJednotky() {
    
                 </ul>
 
-                <span className="flex flex-col xl:flex-row items-center justify-between pt-5 md:px-10 md:pt-16 xl:pt-32 ">
+                <span className="flex flex-col xl:flex-row items-center justify-between pt-5 md:px-10 md:pt-16 xl:pt-32">
                     <span className="flex flex-col  justify-center items-center 2xl:items-start">
                         <p className="text-xl font-bold underline whitespace-nowrap decoration-deep-orange-500/50">Cena: 1.100 Kč </p>
-                        <p className="text-sm text-gray-900 italic text-center xl:w-3/4">(formou předplatného, vždy na 4 týdny dopředu - např. tréninková jednotka s frekvencí 1x týdně, tedy předplatné 4 tréninky na 4 týdny - 4400Kč)</p>
+                        <p className="text-sm text-gray-900 italic text-center xl:pr-5">(formou předplatného, vždy na 4 týdny dopředu - např. tréninková jednotka s frekvencí 1x týdně, tedy předplatné 4 tréninky na 4 týdny - 4400Kč)</p>
                     </span>
 
-                    <Link href="/kontakt">
-                    <span className="flex text-center justify-center h-12 items-center mt-5 xl:mt-0 w-[200px] focus:outline-none text-white bg-deep-orange-500 hover:bg-deep-orange-700 focus:ring-4 focus:ring-deep-orange-300 font-medium rounded-lg text-md px-5 py-2 me-2 mb-2">
-                        Mám zájem!
-                        <Popover></Popover>
-                    </span>
-                    </Link>
+                    <div className="flex text-center justify-center h-12 items-center mt-5 xl:mt-0 min-w-[200px] focus:outline-none text-white bg-deep-orange-500 hover:bg-deep-orange-700 focus:ring-4 focus:ring-deep-orange-300 font-medium rounded-lg text-md px-5 py-2 me-2 mb-2">
+                        <Link href="/kontakt">
+                            <span className="whitespace-nowrap">Mám zájem!</span>
+                        </Link>
+                        <Popover className="pointer-events-auto" />
+                    </div>
                     
                     </span>
 

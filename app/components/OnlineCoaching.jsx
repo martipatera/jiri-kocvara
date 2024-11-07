@@ -139,11 +139,11 @@ function OnlineCoaching() {
                         <p className="text-sm text-gray-900 italic text-center">(minimální délka spolupráce 16 týdnů)</p>
                     </span>
 
-                    <Link href="/kontakt">
-                    <span className="flex text-center justify-center h-12 items-center mt-5 xl:mt-0 w-[200px] focus:outline-none text-white bg-deep-orange-500 hover:bg-deep-orange-700 focus:ring-4 focus:ring-deep-orange-300 font-medium rounded-lg text-md px-5 py-2 me-2 mb-2">
-                        Mám zájem!
-                    </span>
-                    </Link> 
+                    <div className="flex text-center justify-center h-12 items-center mt-5 xl:mt-0 min-w-[200px] focus:outline-none text-white bg-deep-orange-500 hover:bg-deep-orange-700 focus:ring-4 focus:ring-deep-orange-300 font-medium rounded-lg text-md px-5 py-2 me-2 mb-2">
+                        <Link href="/kontakt">
+                            <span>Mám zájem!</span>
+                        </Link>
+                    </div> 
 
                 </span>
 
