@@ -7,6 +7,7 @@ import pravidelne from "./pravidelnejednotky.jpg"
 import online from "./online.jpg"
 import online1 from "./online1.jpg"
 import { useState } from "react";
+import Link from "next/link";
 
 function OnlineCoaching() {
 
@@ -132,12 +133,15 @@ function OnlineCoaching() {
                 
 
                 <span className="flex flex-col xl:flex-row items-center justify-between pt-5 md:px-10 md:pt-10 ">
-                <span className="flex flex-col  justify-center items-center 2xl:items-start">
+                    <span className="flex flex-col  justify-center items-center 2xl:items-start">
                         <p className="text-xl font-bold underline whitespace-nowrap decoration-deep-orange-500/50">Cena: 3.500 Kč/měsíc </p>
                         <p className="text-sm text-gray-900 italic text-center">(minimální délka spolupráce 16 týdnů)</p>
                     </span>
-                    <button type="button" className="mt-5 xl:mt-0 w-full md:w-[200px] focus:outline-none text-white bg-deep-orange-500  hover:bg-deep-orange-700 focus:ring-4 focus:ring-deep-orange-300 font-medium rounded-lg text-md px-5 py-2.5 me-2 mb-2 ">Mám zájem</button>
-                    </span>
+
+                    <span className="flex justify-center items-center mt-5 xl:mt-0 w-full md:w-[200px] focus:outline-none text-white bg-deep-orange-500  hover:bg-deep-orange-700 focus:ring-4 focus:ring-deep-orange-300 font-medium rounded-lg text-md px-5 py-2 me-2 mb-2 ">
+                        <Link href="/kontakt"> Mám zájem!</Link>
+                    </span>                    
+                </span>
 
             </div>
 
