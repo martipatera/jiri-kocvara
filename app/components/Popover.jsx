@@ -17,7 +17,7 @@ function Popover() {
     <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <button
         type="button"
-        className="text-deep-orange-700 hover:text-deep-orange-800 font-medium rounded-lg text-sm py-2 pl-2"
+        className="text-deep-orange-700 hover:text-deep-orange-800 font-medium rounded-lg text-sm py-2 pl-2 pointer-events-none"
       >
         <FaInfoCircle className='text-white' size={20} />
       </button>
