@@ -35,7 +35,7 @@ function VzdelaniList() {
                                 onClick={toggleText}
                                 className="underline text-blue-600 text-xs sm:text-sm md:text-base"
                             >
-                                {!isExpanded ? "Zobrazit více (19 řádků)" : "Zobrazit méně"}
+                                {!isExpanded ? "Zobrazit více (15 řádků)" : "Zobrazit méně"}
                             </button>
                         </td>
                     </tr>

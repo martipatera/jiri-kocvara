@@ -22,7 +22,7 @@ function Vzdelani() {
       </div>
 
       <div>
-      <p className='animate-fade mb-5 font-medium bg-slate-100 rounded-xl py-2 px-3 lg:px-16 lx:px-28 text-center'>
+      <p className='animate-fade mb-5 font-medium bg-slate-100 rounded-xl py-2 px-3 lg:px-8 text-center xl:px-20'>
             Vzdělání trenéra by za mě nemělo začít a skončit základním rekvalifikačním kurzem, naopak. Dlouhodobé vzdělávání, ať už samostudiem či navštěvování kvalitních workshopů,
              kurzů a seminářů je nedílnou součástí mojí práce, díky kterým dokážu svým klientům pomáhat na základě kvalitních ověřených informací, 
              praxe a moderního přístupu k tréninku s přesahem i do dalších oblastí, které se silovým tréninkem úzce souvisí.
