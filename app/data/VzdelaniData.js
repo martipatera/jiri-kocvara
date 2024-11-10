@@ -1,6 +1,8 @@
-const VzdelaniData = [
+const VzdelaniData = {
+
+Long : [
     
-"Osobní trenér kondičního posilování - Trenérská škola Olympia",
+    "Osobní trenér kondičního posilování - Trenérská škola Olympia",
     "Instruktor fitness - Trenérská škola Olympia",
     "Instruktor kondičního posilování - trenérská škola Olympia",
     "Komplexní diagnostika pohybového aparátu Level 1,",
@@ -25,4 +27,25 @@ const VzdelaniData = [
     "Strength & Neuromuscular conditioning for rehabilitation - Dr.Claire Minshull",
     "Neuroscientific painmodulation - Lars Avemarie",
     "3 měsíční stáž v Core centru u Martina Snášela",
-    ]
+    ],
+
+Short : [
+    
+        "   Osobní trenér kondičního posilování - Trenérská škola Olympia",
+            "Instruktor fitness - Trenérská škola Olympia",
+            "Instruktor kondičního posilování - trenérská škola Olympia",
+            "Komplexní diagnostika pohybového aparátu Level 1,",
+            "3S Diagnostika",
+            "Tlak - Prehab/Rehab",
+            "Dřep - Prehab/Rehab",
+            "Ramenní kloub - Diagnostika, prevence a náprava v tréninku",
+            "Kyčle - Diagnostika, prevence a náprava v tréninku",
+            "(P)Rehabilitace bolestí zad a návrat do výkonu/tréninku",
+
+            
+
+
+            ]
+
+}
+export default VzdelaniData
