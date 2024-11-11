@@ -10,9 +10,9 @@ function PhotoCarousel() {
     return (
       <div className="h-[400px] px-3 md:px-5 lg:px-0 w-full md:h-[650px] md:max-h-full lg:max-h-full xl:max-w-lg rounded-md">
         <Carousel slideInterval={5000}>
-            <Image src={C1} alt="Slide 1" className="rounded-md"/>
-            <Image src={C2} alt="Slide 2" className="rounded-md"/>
-            <Image src={C3} alt="Slide 3" className="rounded-md"/>
+            <Image src={C1} alt="Trenér Jiří Kočvara stojí vedle kolegy, se kterým získal certifikát, oba se usmívají a drží certifikáty." className="rounded-md"/>
+            <Image src={C2} alt="Trenér Jiří Kočvara a jeho mentor stojí společně s certifikáty, které potvrzují jejich odborné vzdělání." className="rounded-md"/>
+            <Image src={C3} alt="Jiří Kočvara, certifikovaný trenér, spolu s kolegou drží certifikáty, které získali po absolvování odborného kurzu." className="rounded-md"/>
         </Carousel>
       </div>
     );
