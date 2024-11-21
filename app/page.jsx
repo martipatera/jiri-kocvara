@@ -8,7 +8,6 @@ import { CgGym } from "react-icons/cg";
 import { CiCircleChevDown } from "react-icons/ci";
 import { FaChevronDown } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa6";
-import gymBackground from "../public/gymBackground.jpg"
 import { IoBookOutline } from "react-icons/io5";
 import { FaMedal } from "react-icons/fa";
 import { CiMedal } from "react-icons/ci";
