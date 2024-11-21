@@ -132,6 +132,7 @@ export default function Home() {
 
               </Image>
               </span>
+
               <h5 className=" mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">Osobní trénink</h5>
               <p className="mb-3 font-normal text-gray-900 text-center min-h-[120px]">Osobní individuální trénink je klíčem k maximálnímu dosažení vašich fitness cílů s maximální efektivitou. S našimi odbornými trenéry získáte osobní přístup, který vám pomůže překonat překážky a dosáhnout výsledků, které jste si vždy přáli.</p>
               <Link href="/sluzby" className='text-center text-blue-500 underline font-semibold text-lg'>To mě zajímá!</Link>
@@ -148,7 +149,7 @@ export default function Home() {
               </Image>
               </span>
 
-
+              
               <h5 className=" mb-2  text-2xl text-center font-semibold tracking-tight text-gray-900 ">Tréninkový plán</h5>
               <p className="mb-3 font-normal text-gray-900 text-center min-h-[120px]">Tréninkový plán je klíčem k dosažení vašich fitness cílů s maximální efektivitou a podporou. Tréninkové programy jsou navrženy tak, aby odpovídaly vašim individuálním potřebám a cílům, ať už se snažíte zhubnout, nabrat svaly nebo zlepšit svou kondici.</p>
               <Link href="/sluzby" className='text-center text-blue-500 underline font-semibold text-lg'>Chci vědět víc!</Link>
