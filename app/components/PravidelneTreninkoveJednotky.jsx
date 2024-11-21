@@ -18,6 +18,7 @@ function PravidelneTreninkoveJednotky() {
             <Image src={pravidelne}
             className="w-full h-full rounded-md md:max-w-sm md:h-auto lg:w-auto lg:h-[650px]  xl:max-w-max xl:h-[550px] xl:w-auto"
             alt="Trenér Jiří Kočvara asistuje své klientce při provádění dřepu"
+            quality={50}
             ></Image>
             
             </div>

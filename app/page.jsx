@@ -65,6 +65,7 @@ export default function Home() {
                 <Image href="/"
                  src={JirkaKocvara}
                  className="rounded-xl lg:max-h-[400px] lg:max-w-[350px]"
+                 quality={50}
                  
                  alt="Trenér Jiří Kočvara sedící u zrcadla ve fitness centru TJ Lokomotiva Beroun, s rukama podél těla."
 
