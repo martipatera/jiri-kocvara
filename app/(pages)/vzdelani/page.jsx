@@ -45,7 +45,7 @@ function Vzdelani() {
             <Image 
             src={cer1}
             quality={20}
-            
+            alt='Certifikát 3S Diagnostika Jiřího Kočvary'
             className="flex-shrink-0"
           ></Image>
           </a>
@@ -53,6 +53,8 @@ function Vzdelani() {
             <Image 
             src={cer2}
             quality={20}
+            alt='Certifikát (P)Rehabilitace bolestí zad a návrat do výkonu/tréninku Jiřího Kočvary'
+
             className="flex-shrink-0"
           ></Image>
           </a>
@@ -60,6 +62,8 @@ function Vzdelani() {
             <Image 
             src={cer3}
             quality={20}
+            alt='Osvědčení trenér kulturistiky Jiří Kočvara'
+
             className="flex-shrink-0"
           ></Image>
           </a>
@@ -68,6 +72,8 @@ function Vzdelani() {
             src={cer4}
             quality={20}
             className="flex-shrink-0"
+            alt='Osvědčení osobní trenér kondičního posilování Jiří Kočvara'
+
           ></Image>
           </a>
           <a href='/5.png' target='_blank'>
@@ -75,6 +81,8 @@ function Vzdelani() {
             src={cer5}
             quality={20}
             className="flex-shrink-0"
+            alt='Certifikát Neuroscientific painmodulation Jiří Kočvara'
+
           ></Image>
           </a>
         </div>
