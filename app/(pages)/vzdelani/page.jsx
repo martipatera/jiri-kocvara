@@ -5,7 +5,11 @@ import JirkaFotom from "../../../public/JirkaKocvara.jpg"
 import JirkaPoza from "../../../public/jirkaPoza.jpg"
 import VzdelaniList from '@/app/components/VzdelaniList'
 import PhotoCarousel from '@/app/components/PhotoCarousel'
-
+import cer1 from "./1.png"
+import cer2 from "./2.png"
+import cer3 from "./3.png"
+import cer4 from "./4.png"
+import cer5 from "./5.png"
 
 export const metadata = {
   title: "Jiří Kočvara | Vzdělání",
@@ -35,6 +39,46 @@ function Vzdelani() {
 
 
         </div>
+
+        <div className='flex flex-col md:flex-row justify-center items-center gap-3 md:gap-5 my-10 overflow-auto flex-wrap'>
+          <a href='/1.png' target='_blank'>
+            <Image 
+            src={cer1}
+            quality={20}
+            
+            className="flex-shrink-0"
+          ></Image>
+          </a>
+          <a href='/2.png' target='_blank'>
+            <Image 
+            src={cer2}
+            quality={20}
+            className="flex-shrink-0"
+          ></Image>
+          </a>
+          <a href='/3.png' target='_blank'>
+            <Image 
+            src={cer3}
+            quality={20}
+            className="flex-shrink-0"
+          ></Image>
+          </a>
+          <a href='/4.png' target='_blank'>
+            <Image 
+            src={cer4}
+            quality={20}
+            className="flex-shrink-0"
+          ></Image>
+          </a>
+          <a href='/5.png' target='_blank'>
+            <Image 
+            src={cer5}
+            quality={20}
+            className="flex-shrink-0"
+          ></Image>
+          </a>
+        </div>
+
    
     </div>
 
