@@ -14,7 +14,7 @@ function CarouselComponent() {
             {
                 carouselData.map((data, index)=>{
                     return <div key={index} className="text-center pb-7 md:pb-4  2xl:pb-5 px-4 md:px-5 xl:px-0 lg:w-3/4">
-                        <p>{data.name}</p>
+                        <p><strong>{data.name}</strong></p>
                         <p className="italic 2xl:px-0">&ldquo;{data.review}&rdquo;</p>
                     </div>
                 })
