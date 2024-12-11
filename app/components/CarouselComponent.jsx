@@ -9,7 +9,7 @@ function CarouselComponent() {
   return (
     
     <div className="h-[375px] md:h-[225px] lg:h-[200px] xl:h-80 2xl:h-40 my-0 text-white bg-gray-500 opacity-100 lg:px-0">
-      <Carousel slideInterval={4000}>
+      <Carousel slideInterval={10000}>
         
             {
                 carouselData.map((data, index)=>{
