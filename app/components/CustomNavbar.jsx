@@ -44,13 +44,14 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src={Logo}
-              height={65}
-              width={85}
-              alt="Logo stránky Jiřího Kočvary"
-              priority
+                src={Logo}
+                height={50} // Výchozí velikost
+                width={50}
+                alt="Logo stránky Jiřího Kočvary"
+                priority
+                className="sm:height-[50px] sm:width-[50px] lg:height-[65px] lg:width-[65px]"
             />
-          </Link>
+            </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-center w-full">
