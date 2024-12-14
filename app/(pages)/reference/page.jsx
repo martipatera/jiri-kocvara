@@ -41,7 +41,13 @@ function Reference() {
 
                 <span className='flex flex-col lg:justify-center lg:items-start justify-center items-center overflow-auto flex-wrap'>
                   <h2 className='text-xl lg:text-2xl font-bold '>{data.name}</h2>
-                  <p className='break-words overflow-y-auto text-center lg:text-start lg:h-[375px] italic p-2 mx-3 md:mx-5'>&ldquo;{data.description}&rdquo;</p>
+                  <span className='lg:h-[375px]'>
+                    <p className='break-words overflow-y-auto text-center lg:text-start  italic p-2 mx-3 md:mx-5'>&ldquo;{data.description}&rdquo;</p>
+                    <p className='md:mx-5 my-3 '><strong>{data.soutez1}</strong></p>
+                    <p className='md:mx-5 my-3 '><strong>{data.soutez2}</strong></p>
+                    <p className='md:mx-5 my-3 '><strong>{data.soutez3}</strong></p>
+                    <p className='md:mx-5 my-3 '><strong>{data.soutez4}</strong></p>
+                  </span>
                   </span>
                
               </div>
@@ -59,6 +65,7 @@ function Reference() {
                 <span className='flex flex-col lg:justify-center lg:items-start justify-center items-center overflow-auto flex-wrap'>
                   <h2 className='text-xl lg:text-2xl font-bold md:mx-5 my-3 '>{data.name}</h2>
                   <p className='break-words overflow-y-auto text-center lg:text-start italic p-2 lg:h-[125px] mx-3 md:mx-5'>&ldquo;{data.review}&rdquo;</p>
+
                   </span>
                
               </div>

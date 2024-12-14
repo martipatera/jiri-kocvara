@@ -11,8 +11,11 @@ const reviewData = [
         img: MarekB,
         alt: "Trenér Jiří Kočvara stojící vedle svého klienta Marka B., který vyhrál medaili na kulturistickém závodě",
         name: "Marek",
-        description: "fdsa odnasimdnaisndia no iaiod asim odnasimdnaisndia no iaiod asimdoimo osand io odnasimdnaisndia no iaiod asimdoimo osand iodoimo osand iomdsadsad"
-
+        description: "Spolupráce byla super. Jirka mě provedl  celou závodní přípravou od objemu až po super kompenzaci a přes všechny moje hladové nálady  Jirka zachoval profesionalitu a dotáhl to semnou do konce.",
+        soutez1: "Partner Cup 2020 - 4. Místo",
+        soutez2: "Mistrovství Čech 2022 - 3.místo",
+        soutez3: "Extrifit Cup 2022 - 5.místo",
+        soutez4: "Mistrovství Čech 2023 - 5.místo",
     },
 
     {
@@ -30,6 +33,7 @@ const reviewData = [
         description: "30 let diet a hladovění mě dovedlo na více než 100 kg. Poprvé ve fitku – obří mikina a sebevědomí na bodu mrazu. Jirka mi nastavil tréninkový plán s ohledem na můj věk i kila. Pořešili jsme také jídelníček, začala jsem jíst bez výčitek a jídlo si užívám. Moc si vážím nejen jeho profesionálního přístupu, znalostí s přesahem do fyzioterapie a psychosomatiky, ale hlavně podpory na mé cestě k novému já. Těším se na každý trénink."
 
     },
+    
     
 
     
