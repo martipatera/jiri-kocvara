@@ -79,7 +79,9 @@ function Profil() {
                      budou mít smysl a dosáhneš dlouhodobě udržitelného progresu.
                     Největší část mojí klientely tvoří stabilní základna <strong>začínajících, středně pokročilých nebo kondičních / hobby cvičenců. </strong> 
                     <strong>závodníky</strong> do různých kategorií kulturistiky <strong>(jak mužské, tak ženské kategorie).</strong> 
-                    Mám zkušenost s nastavením silového tréninku po různých <strong>úrazech a operačních zákrocích.</strong>   
+                    Mám zkušenost s nastavením silového tréninku po různých <strong>úrazech a operačních zákrocích.</strong>
+                    Za svou více než <strong>10letou</strong> trenérskou kariéru 
+                    jsem odtrénoval již <strong>nižší stovky klientů. </strong>    
                     </p>
               </div>
 
@@ -98,9 +100,8 @@ function Profil() {
                 >
               </Image>
 
-              <span className='hidden lg:block xl:hidden 2xl:hidden pt-20'>
-                <p className='lg:text-start text-lg md:text-lg'>Za svou více než <strong>10letou</strong> trenérskou kariéru 
-                    jsem odtrénoval již <strong>nižší stovky klientů. </strong> S nemalým počtem klientů spolupracujeme pravidelně již mnoho let a můžeme tak dosahovat i pokročilejších výsledků. Spousta spokojených klientů se 
+              <span className='hidden lg:block xl:hidden 2xl:hidden pt-4'>
+                <p className='lg:text-start text-lg md:text-lg'>S nemalým počtem klientů spolupracujeme pravidelně již mnoho let a můžeme tak dosahovat i pokročilejších výsledků. Spousta spokojených klientů se 
                     ke mně vrací i opakovaně.
                     <strong> Vzhledem k nesporným benefitům silového tréninku si nesmírně vážím každého, kdo se rozhodne, ať už s mojí pomocí či jinak, silový trénink zařadit 
                     do svého života.</strong>
