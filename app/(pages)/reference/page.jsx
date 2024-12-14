@@ -3,6 +3,7 @@ import cenikData from '@/app/data/cenikData'
 import Image from 'next/image'
 import reviewData from '@/app/data/reviewData'
 import Counter from '@/app/components/CountUp'
+import reviewDataNoPhoto from '@/app/data/reviewDataNoPhoto'
 
 export const metadata = {
   title: "Jiří Kočvara | Reference",
@@ -47,8 +48,23 @@ function Reference() {
             })
           }
 
-        </div>
 
+
+        </div>
+        <div className='flex flex-row gap-4 my-5 flex-wrap justify-center mx-3 md:mx-14 lg:mx-0'>
+        {
+            reviewDataNoPhoto.map((data, index)=>{
+              return <div key={index} className=' flex flex-col items-center justify-center lg:flex-row max-w-md flex-wrap opacity-95 bg-gray-200 border border-gray-300 rounded-xl shadow gap-4 md:max-w-lg lg:max-w-2xl xl:max-w-2xl'>
+
+                <span className='flex flex-col lg:justify-center lg:items-start justify-center items-center overflow-auto flex-wrap'>
+                  <h2 className='text-xl lg:text-2xl font-bold md:mx-5 my-3 '>{data.name}</h2>
+                  <p className='break-words overflow-y-auto text-center lg:text-start italic p-2 lg:h-[125px] mx-3 md:mx-5'>&ldquo;{data.review}&rdquo;</p>
+                  </span>
+               
+              </div>
+            })
+          }
+        </div>
       </div>
 
     </div>
