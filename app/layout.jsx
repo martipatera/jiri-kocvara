@@ -6,6 +6,9 @@ import ReduxProvider  from "./store/provider"; //import provideru ktery jsem si 
 //components
 import {CustomNavbar} from "./components/Navbar";
 import Footer from "./components/Footer";
+import {Navbar} from "./components/CustomNavbar";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +27,7 @@ export default function RootLayout({ children }) {
       
       <body className={inter.className}>
       <ReduxProvider>   
-        <CustomNavbar></CustomNavbar>
+        <Navbar></Navbar>
         {children}
       </ReduxProvider>  
       <Footer></Footer>

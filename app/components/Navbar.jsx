@@ -17,6 +17,9 @@ export function CustomNavbar() {
   const pathname = usePathname()
   const [isScrolled, setIsScrolled] = useState(false)
 
+
+
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
