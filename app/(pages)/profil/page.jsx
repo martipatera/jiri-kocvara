@@ -24,7 +24,7 @@ function Profil() {
 
       <div className='rounded-lg flex flex-col lg:flex-row justify-around p-1 md:p-3  mx-2 lg:mx-5 2xl:px-5 2xl:mx-28' >
 
-            <div className='flex flex-col flex-wrap justify-start items-center'>
+            <div className='flex flex-col flex-wrap justify-start items-center '>
 
 
               <div>
@@ -42,8 +42,8 @@ function Profil() {
               
  
 
-              <div className=' flex md:px-0 lg:hidden 2xl:flex 2xl:h-full flex-row px-2 justify-start items-center text-center lg:w-[500px] xl:w-[800px] lg:text-start text-lg md:text-lg  flex-wrap break-words pt-10 xl:pt-0 pb-10'>
-                <p> <strong>Kdo jsem a jak pracuji?</strong><br></br>
+              <div className=' flex md:px-0 lg:hidden 2xl:flex 2xl:h-full flex-row px-2 justify-start items-center text-center lg:w-[500px] xl:w-[800px] lg:text-start text-lg md:text-lg flex-wrap break-words pt-10 xl:pt-0 pb-10'>
+                <p className='lg:px-5'> <strong>Kdo jsem a jak pracuji?</strong><br></br>
                     Trénování v posilovně, vedení lidí k dosažení progresu a mnohdy i zlepšení kvality běžného života se věnuji stabilně již  <strong>více než 10 let.</strong> Věřím, 
                     že právě díky mojí filozofii, se kterou ke své práci přistupuji, mohu s lidmi pracovat full-time, aniž bych byl nucen mít k trénovaní ještě další práci. 
                     To mi za posledních několik let umožňuje neustále se dál vzdělávat a následně <strong>- to absolutně nejdůležitější –</strong>  aplikovat tyto znalosti v praxi s mými klienty, 
@@ -94,7 +94,7 @@ function Profil() {
             
               <div className=''>
               <Image src={Jirka1}
-                className='hidden lg:block rounded-xl w-full max-w-sm md:max-w-md lg:w-[500px] xl:w-max-w-2xl 2xl:max-w-2xl '
+                className='hidden lg:block rounded-xl w-full max-w-sm md:max-w-md lg:w-[450px] xl:w-max-w-2xl 2xl:max-w-2xl'
                 alt='Jiří Kočvara sedící na činkách'
                 quality={50}
                 >

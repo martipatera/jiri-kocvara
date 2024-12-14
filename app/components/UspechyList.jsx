@@ -7,7 +7,7 @@ function UspechyList() {
     
 
     return (
-        <div className="overflow-x-auto w-full max-w-full lg:h-[650px] xl:w-1/2 pt-10 2xl:pt-0 lg:ml-5 lg:pt-9 pb-7">
+        <div className="overflow-x-auto w-full max-w-full lg:h-[650px] xl:w-1/2 2xl:pt-0 lg:ml-5 lg:pt-12 pb-7">
             <Table hoverable>
                 <Table.Head>
                     <Table.HeadCell className="bg-gray-100 font-bold text-gray-800 text-sm sm:text-base md:text-base">
