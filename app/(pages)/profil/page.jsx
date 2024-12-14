@@ -1,8 +1,12 @@
 
 import Image from 'next/image'
 import React from 'react'
-import JirkaFotom from "../../../public/JirkaKocvara.jpg"
 import JirkaPoza from "../../../public/jirkaPoza.jpg"
+import UspechyList from '@/app/components/UspechyList'
+import Jirka1 from "./jirkaD.jpg"
+import Jirka2 from "./jirkaA.jpg"
+import Jirka3 from "./jirka.jpg"
+
 
 export const metadata = {
   title: "Jiří Kočvara | Profil",
@@ -24,9 +28,9 @@ function Profil() {
 
 
               <div>
-                <Image src={JirkaPoza}
+                <Image src={Jirka1}
                     className='block md:max-w-lg lg:hidden rounded-xl pt-0'
-                    alt='Jiří Kočvara pózující s medailí za vítězství v soutěži'
+                    alt='Jiří Kočvara sedící na činkách'
                     quality={50}
                     >
                 </Image>
@@ -38,7 +42,7 @@ function Profil() {
               
  
 
-              <div className=' flex md:px-8 lg:hidden 2xl:flex 2xl:h-full flex-row px-2 justify-start items-center text-center lg:w-[500px] xl:w-[800px] lg:text-start text-lg md:text-lg  flex-wrap break-words pt-10 xl:pt-0 pb-10'>
+              <div className=' flex md:px-0 lg:hidden 2xl:flex 2xl:h-full flex-row px-2 justify-start items-center text-center lg:w-[500px] xl:w-[800px] lg:text-start text-lg md:text-lg  flex-wrap break-words pt-10 xl:pt-0 pb-10'>
                 <p> <strong>Kdo jsem a jak pracuji?</strong><br></br>
                     Trénování v posilovně, vedení lidí k dosažení progresu a mnohdy i zlepšení kvality běžného života se věnuji stabilně již  <strong>více než 10 let.</strong> Věřím, 
                     že právě díky mojí filozofii, se kterou ke své práci přistupuji, mohu s lidmi pracovat full-time, aniž bych byl nucen mít k trénovaní ještě další práci. 
@@ -87,9 +91,9 @@ function Profil() {
             </div>
             
               <div className=''>
-              <Image src={JirkaPoza}
+              <Image src={Jirka1}
                 className='hidden lg:block rounded-xl w-full max-w-sm md:max-w-md lg:w-[500px] xl:w-max-w-2xl 2xl:max-w-2xl '
-                alt='Jiří Kočvara pózující s medailí za vítězství v soutěži'
+                alt='Jiří Kočvara sedící na činkách'
                 quality={50}
                 >
               </Image>
@@ -105,6 +109,28 @@ function Profil() {
                 
 
               </div>
+          </div>
+          <div className='rounded-lg flex flex-col justify-around items-center p-1 md:p-3  mx-2 lg:mx-5 2xl:px-5 2xl:mx-28 lg:flex-row-reverse mt-0 lg:mt-14'>
+
+              
+
+            
+              <Image src={JirkaPoza}
+                  className='hidden lg:block rounded-xl w-full max-w-sm md:max-w-md lg:w-[500px] xl:w-max-w-2xl 2xl:max-w-2xl lg:order-1 mb-10'
+                  alt='Jiří Kočvara pózující s medailí za vítězství v soutěži'
+                  quality={50}
+                  >
+                </Image>
+
+                <Image src={JirkaPoza}
+                      className='block md:max-w-lg lg:hidden rounded-xl pt-0 order-1 mb-10'
+                      alt='Jiří Kočvara pózující s medailí za vítězství v soutěži'
+                      quality={50}
+                      >
+                  </Image>
+
+                <UspechyList></UspechyList>
+              
           </div>
 
 
