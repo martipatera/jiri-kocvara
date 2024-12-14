@@ -7,7 +7,7 @@ const reviewDataNoPhoto = [
 
     {
         name: "Diana",
-        review: "Počáteční strach a nejistotu ze cvičení odboural Jirka hned při prvním tréninku, vlastně konzultaci ještě před cvičením. Hlavně díky němu chodím cvičit hrozně ráda. po úrazu byl ochoten a schopen “hodit” mě zpátky do formy"
+        review: "Počáteční strach a nejistotu ze cvičení odboural Jirka hned při prvním tréninku, vlastně konzultaci ještě před cvičením. Hlavně díky němu chodím cvičit hrozně ráda. I po úrazu byl ochoten a schopen “hodit” mě zpátky do formy"
     }, 
 
     {
