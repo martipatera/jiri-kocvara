@@ -11,7 +11,7 @@ const carouselData = [
     }, 
 
     {
-        name: "Lenko",
+        name: "Lenka",
         review: "Jirkovi děkuju, že jsem se díky jemu profesionálnímu přístupu vyhnula reoperaci krční páteře. Je to člověk na svém místě a jeho milý a nenásilný přístup ke klientovi, vás donutí cvičení neošidit a snažit o co nejlepší výkon."
     }, 
 
