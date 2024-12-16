@@ -22,7 +22,7 @@ function Sluzby() {
 
   return (
     <div className='min-h-screen bg-blue-gray-50 overflow-hidden bg-none lg:bg-bgLogo75 bg-center bg-no-repeat '>
-      <div className='pt-28 md:pt-36 xl:pt-28'>
+      <div className='pt-28 md:pt-40  px-5 lg:px-10 pb-5 2xl:pb-0 '>
 
         <h1 className='text-3xl md:text-4xl text-center animate-fade font-semibold'>Služby</h1>
         <hr className="w-2/3 h-1 mx-auto mt-4 bg-red-500 border-0 rounded animate-fade"></hr>
