@@ -25,9 +25,9 @@ function Konzultace() {
             <p className='animate-fade mb-5 font-medium bg-slate-100 rounded-xl p-2 text-center'>Chceš udělat první krok k lepšímu zdraví, kondici a spokojenosti? Rezervuj si osobní konzultaci, kde společně probereme tvoje cíle, současný stav a vytvoříme plán na míru tvým potřebám. Ať už jsi úplný začátečník, nebo zkušený sportovec, spolu dosáhneme toho nejlepšího výsledku.</p>
         
             
-            <button className="text-black border-black border-2 md:hidden animate-fade rounded-full mt-5 p-3 xl:p-3 hover:brightness-110 hover:scale-105 transition-all whitespace-nowrap"><a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0lVcQhJdQ4F_xMW8k2IaANwupnudGrLTQ1PihBTO1NdI8WdicyZJcKcI4IhmvZYVjeu4i4DYDM?gv=true">Objednat se online</a></button>
+            <button className="text-black border-black border-2 md:hidden animate-fade rounded-full mt-5 p-3 xl:p-3 hover:brightness-110 hover:scale-105 transition-all whitespace-nowrap"><a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1H8wiQyHKQd3ptWPshU-2YA8NVeJI26v8BkwfAw8vOJWxsmFMis1eKBqEE4laMJi5LeLd-XlE-?gv=true">Objednat se online</a></button>
 
-            <iframe className='hidden md:block border-2 border-gray-300 shadow rounded-xl w-full h-[600px] bg-white' src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0lVcQhJdQ4F_xMW8k2IaANwupnudGrLTQ1PihBTO1NdI8WdicyZJcKcI4IhmvZYVjeu4i4DYDM?gv=true"   frameBorder="0"></iframe>
+            <iframe className='hidden md:block border-2 border-gray-300 shadow rounded-xl w-full h-[600px] bg-white' src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1H8wiQyHKQd3ptWPshU-2YA8NVeJI26v8BkwfAw8vOJWxsmFMis1eKBqEE4laMJi5LeLd-XlE-?gv=true"   frameBorder="0"></iframe>
     
         </span>
 

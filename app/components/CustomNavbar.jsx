@@ -45,11 +45,11 @@ export function Navbar() {
           <Link href="/" className="flex items-center">
             <Image
                 src={Logo}
-                height={50} // Výchozí velikost
-                width={50}
+                height={65} // Výchozí velikost
+                width={65}
                 alt="Logo stránky Jiřího Kočvary"
                 priority
-                className="sm:height-[50px] sm:width-[50px] lg:height-[65px] lg:width-[65px]"
+                className="lg:w-[85px]"
             />
             </Link>
 
