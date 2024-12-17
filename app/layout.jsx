@@ -15,11 +15,18 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Jiří Kočvara | Certifikovaný Fitness trenér",
   description: "Jiří Kočvara je certifikovaný fitness trenér a bodybuilder s dlouholetou praxí. Nabízím osobní tréninky, výživové poradenství a skupinové lekce. Najděte plán, který vám vyhovuje.",
-  icons:{
-    icon: "/favicon.ico"
+  icons: {
+    icon: [
+      { rel: "icon", url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
+      { rel: "icon", url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { rel: "icon", url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" }
+    ],
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "manifest", url: "/site.webmanifest" },
+    ]
   }
-  
-};
+}
 
 export default function RootLayout({ children }) {
   return (
