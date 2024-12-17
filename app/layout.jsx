@@ -16,7 +16,7 @@ export const metadata = {
   title: "Jiří Kočvara | Certifikovaný Fitness trenér",
   description: "Jiří Kočvara je certifikovaný fitness trenér a bodybuilder s dlouholetou praxí. Nabízím osobní tréninky, výživové poradenství a skupinové lekce. Najděte plán, který vám vyhovuje.",
   icons:{
-    icon: "/favicon2.png"
+    icon: "/favicon.ico"
   }
   
 };
