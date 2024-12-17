@@ -35,7 +35,7 @@ export default function Home() {
 
           <div className="p-5 backdrop-blur-md rounded-xl animate-fade mt-72 mx-4 sm:mt-40 sm:ml-10 md:mt-72 lg:mt-40">
             <h1 className="text-white text-4xl sm:text-6xl font-semibold">Jiří Kočvara</h1>
-            <p className="text-white text-xl sm:text-2xl">Bodybuilder | Coach</p> 
+            <p className="text-white text-xl sm:text-2xl">Coach | Bodybuilder</p> 
 
           </div>
 
