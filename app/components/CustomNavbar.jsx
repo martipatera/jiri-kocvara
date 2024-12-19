@@ -47,9 +47,10 @@ export function Navbar() {
                 src={Logo}
                 height={65} // Výchozí velikost
                 width={65}
-                alt="Logo stránky Jiřího Kočvary"
+                alt="Logo stránky Jiřího Kočvary není favicon"
                 priority
                 className="lg:w-[85px]"
+                data-noindex
             />
             </Link>
 
