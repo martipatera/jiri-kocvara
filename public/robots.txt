@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.jirikocvara.cz
+
+# Sitemaps
+Sitemap: https://www.jirikocvara.cz/sitemap.xml
