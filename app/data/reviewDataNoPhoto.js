@@ -29,5 +29,6 @@ const reviewDataNoPhoto = [
         name: "Radek",
         review: "S Jirkou cvičím už několik let. Asi to prvni co si uvědomím je disciplína a trénink na míru. Není to o trenérovi a klientovi, ale o konzultacích, hledání řešení a motivaci, ale i přátelství."
     },
+
 ]
 export default reviewDataNoPhoto
