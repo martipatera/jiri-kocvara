@@ -43,7 +43,7 @@ function Footer() {
       
 
       <div className='order-2 my-4 md:my-0  w-full text-center'>
-        <a href="https://martinpatera.cz/" target='_blank' className='text-sm'>©2024 Martin Patera</a>
+        <a href="https://martinpatera.cz/" target='_blank' className='text-sm'>©2024 FRAMELAB Studio</a>
         
       </div>
       
