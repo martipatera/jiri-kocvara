@@ -106,7 +106,7 @@ function EdukacniTreninkoveJednotky() {
 
                 <span className="flex flex-col xl:flex-row items-center justify-between pt-5 md:px-10 md:pt-10 ">
                     <span className="flex flex-col  justify-center items-center 2xl:items-start">
-                        <p className="text-xl font-bold underline whitespace-nowrap decoration-deep-orange-500/50">Cena: 1.800 Kč </p>
+                        <p className="text-xl font-bold underline whitespace-nowrap decoration-deep-orange-500/50">Cena: 2000 Kč </p>
                         <p className="text-sm text-gray-900 italic text-center"> (zahrnuje diagnostiku pohybového aparátu)</p>
                     </span>
 
