@@ -60,7 +60,7 @@ function PravidelneTreninkoveJednotky() {
 
                 <span className="flex flex-col xl:flex-row items-center justify-between pt-5 md:px-10 md:pt-16 xl:pt-32">
                     <span className="flex flex-col  justify-center items-center 2xl:items-start">
-                        <p className="text-xl font-bold underline whitespace-nowrap decoration-deep-orange-500/50">Cena: 1.100 Kč </p>
+                        <p className="text-xl font-bold underline whitespace-nowrap decoration-deep-orange-500/50">Cena: 1500 Kč </p>
                         <p className="text-sm text-gray-900 italic text-center xl:pr-5">(formou předplatného, vždy na 4 týdny dopředu - např. tréninková jednotka s frekvencí 1x týdně, tedy předplatné 4 tréninky na 4 týdny - 4400Kč)</p>
                     </span>
 
