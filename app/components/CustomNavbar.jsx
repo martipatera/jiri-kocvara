@@ -148,33 +148,7 @@ export function Navbar() {
               </li>
             ))}
 
-            {/* Login/Register Links for Mobile */}
-            {!isLogged ? (
-              <>
-                <li>
-                  <Link
-                    href="/register"
-                    className="block py-2 px-4 text-lg text-white font-semibold border-2 rounded-full hover:text-orange hover:scale-105 transition-all text-center"
-                    onClick={closeMenu}
-                  >
-                    Registrovat se
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/login"
-                    className="block py-2 px-4 text-lg text-white font-semibold border-2 rounded-full hover:text-orange hover:scale-105 transition-all text-center"
-                    onClick={closeMenu}
-                  >
-                    Přihlásit se
-                  </Link>
-                </li>
-              </>
-            ) : (
-              <li>
-                <Logout />
-              </li>
-            )}
+      
           </ul>
         </div>
       </nav>
