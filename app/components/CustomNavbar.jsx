@@ -65,7 +65,6 @@ export function Navbar() {
                 { href: '/vzdelani', label: 'Vzdělání' },
                 { href: '/reference', label: 'Reference' },
                 { href: '/kontakt', label: 'Kontakt' },
-                { href: '/konzultace', label: 'Konzultace' },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -131,7 +130,6 @@ export function Navbar() {
               { href: '/vzdelani', label: 'Vzdělání' },
               { href: '/reference', label: 'Reference' },
               { href: '/kontakt', label: 'Kontakt' },
-              { href: '/konzultace', label: 'Konzultace' },
             ].map((link) => (
               <li key={link.href}>
                 <Link
